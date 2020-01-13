@@ -1,0 +1,80 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hey. First of all, thanks a lot. Good job, well done. Great...\nAnd issue:\nIs it possible to bind `ChartSeries`' properties? I have tried this, but not works. Thanks in advance.\n\nCode:\n\n        <chart:ClusteredColumnChart Grid.Row=\"1\">\n            <chart:ClusteredColumnChart.Series>\n                <chart:ChartSeries\n                        SeriesTitle=\"{Binding ElementName=MainUserControl,Path=DataContext.SeriesTitle}\"\n                        DisplayMember=\"Date\"\n                        ValueMember=\"{Binding RelativeSource={RelativeSource FindAncestor, \n                                        AncestorType={x:Type UserControl}}, Path=DataContext.SelectedField,\n                                        Mode=OneWay, UpdateSourceTrigger=PropertyChanged}\"\n                        ItemsSource=\"{Binding Path=Items}\" />\n            </chart:ClusteredColumnChart.Series>\n        </chart:ClusteredColumnChart>\n\nNone of `SeriesTitle` nor `ValueMember` got bind.",
+    "LastUpdatedDate": "2017-12-18T15:14:39.813-08:00",
+    "PlannedForRelease": "Source Code and Test Applications BETA",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2013-06-08T17:26:15.52-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Binding ChartSeries propertis not works",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 5,
+    "Id": 16247
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hi,\r\n\r\nthe chart properties are bindable but the charts are currently not \"recalculated\" if the properties change.\r\n\r\nI will add this to the final version. In the mean time you could try to trigger an update to data source which forces the chart to be recalculated.\nThanks for reporting the issue.\r\n\r\nCheers,\nTorsten",
+      "PostedDate": "2013-06-09T00:22:53.747-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-06-09T00:23:30.88-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Thanks to answer. I have another suggestion too. I'm using the `Chart` in a `.NET 4` desktop app. So, I had no choice, except creating a new project, copy solution items, and compile it again. It seems some features you have used in project, are not compatible with `.NET 4`.  While `.NET 4` is a public version developers use, I think it will be a good functionality to have a `.NET 4` compatible version. Thanks again. I really enjoy the project. It's perfect.",
+      "PostedDate": "2013-06-09T01:11:34.287-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-06-17T08:02:26.3-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-08-28T06:18:37.723-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-12-19T19:18:59.873-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2014-11-13T07:46:11.307-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2017-12-18T15:14:39.813-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

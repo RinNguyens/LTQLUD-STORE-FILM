@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1240700",
+    "ThreadId": "544071",
+    "Html": "Hi,<br />\n<br />\nI've written two quick help posts for dealing with Problems when using negative numbers.<br />\n<br />\nThese posts are no real fixes but &quot;first help patches&quot; to avoid crashes AND they are not covering the whole stack of Chart types, only a few of them.<br />\n<br />\nAnyway, I hope this is of help for someone :-)<br />\n<br />\nLink to the Blog Entries:<br />\n<ul>\n<li><a href=\"http://infoboter.wordpress.com/2014/05/01/metro-ui-chartgauge-chart-negative-values-debugged/\" rel=\"nofollow\">Gauge Control</a></li>\n<li>\n<a href=\"http://infoboter.wordpress.com/2014/05/01/metro-ui-chartspatched-barcolumn-bug/\" rel=\"nofollow\">BarChart / Column Chart</a><br />\n</li>\n</ul>\nBesides that... I hope Thorsten will add Support for negative numbers!!!<br />\n",
+    "PostedDate": "2014-05-02T08:57:19.09-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

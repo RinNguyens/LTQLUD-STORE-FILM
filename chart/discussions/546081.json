@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1247825",
+    "ThreadId": "546081",
+    "Html": "Hi, I have a question, I tested your library and I found it is not Blendable because your components are not inherited from FrameworkElement (UIElement) so several properties generate XAML error: Style, ItemsSource .\r<br />\nIs what I'm wrong?\r<br />\n<br />\nThank<br />\n",
+    "PostedDate": "2014-05-21T03:06:04.897-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

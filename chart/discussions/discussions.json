@@ -1,0 +1,502 @@
+[
+  {
+    "Id": "427363",
+    "Title": "COMException: Error HRESULT E_FAIL has been returned from a call to a COM component.",
+    "LatestDate": "2014-03-27T01:26:21.787-07:00"
+  },
+  {
+    "Id": "430528",
+    "Title": "How do I use the library in my solution?",
+    "LatestDate": "2013-01-25T05:25:07.057-08:00"
+  },
+  {
+    "Id": "434408",
+    "Title": "Series Styling",
+    "LatestDate": "2013-05-05T12:09:47.25-07:00"
+  },
+  {
+    "Id": "439900",
+    "Title": "line chart",
+    "LatestDate": "2015-08-22T20:32:32.273-07:00"
+  },
+  {
+    "Id": "440714",
+    "Title": "bug in pie chart and how to change color combination",
+    "LatestDate": "2013-05-05T12:07:07.023-07:00"
+  },
+  {
+    "Id": "442618",
+    "Title": "PieChart when the endAngle = 360",
+    "LatestDate": "2013-05-05T13:39:07.79-07:00"
+  },
+  {
+    "Id": "442619",
+    "Title": "Also When the title propertie invisible * Edit * sorry  am wrong ",
+    "LatestDate": "2013-05-05T14:03:58.303-07:00"
+  },
+  {
+    "Id": "443307",
+    "Title": "Can't get the how-to to work",
+    "LatestDate": "2014-05-15T10:23:28.12-07:00"
+  },
+  {
+    "Id": "443600",
+    "Title": "Nice work! NuGet package available?",
+    "LatestDate": "2013-05-22T09:28:55.253-07:00"
+  },
+  {
+    "Id": "444404",
+    "Title": "Request for your support to finish version 1.0",
+    "LatestDate": "2013-10-03T06:21:01.377-07:00"
+  },
+  {
+    "Id": "444529",
+    "Title": "Customising bar size in bar charts",
+    "LatestDate": "2013-05-22T23:17:17.87-07:00"
+  },
+  {
+    "Id": "444861",
+    "Title": "Duplicates",
+    "LatestDate": "2013-05-24T02:46:04.887-07:00"
+  },
+  {
+    "Id": "446553",
+    "Title": "Windows Phone 8 Support",
+    "LatestDate": "2014-01-19T10:33:55.21-08:00"
+  },
+  {
+    "Id": "446936",
+    "Title": "Magic zeros in Piechart and Legendissues",
+    "LatestDate": "2015-10-21T05:36:40.717-07:00"
+  },
+  {
+    "Id": "448089",
+    "Title": "Some questions....",
+    "LatestDate": "2013-06-24T14:43:38.197-07:00"
+  },
+  {
+    "Id": "448354",
+    "Title": "Adding Chart series dynamicly.",
+    "LatestDate": "2013-07-23T04:21:36.687-07:00"
+  },
+  {
+    "Id": "449163",
+    "Title": "How to reduce size of the Piechart control?",
+    "LatestDate": "2013-07-11T07:53:15.913-07:00"
+  },
+  {
+    "Id": "449429",
+    "Title": "Legend Issue",
+    "LatestDate": "2013-07-09T04:24:35.447-07:00"
+  },
+  {
+    "Id": "449669",
+    "Title": "Disable Animation?",
+    "LatestDate": "2014-05-13T06:56:59.03-07:00"
+  },
+  {
+    "Id": "450666",
+    "Title": "Does it allow saving as PNG image",
+    "LatestDate": "2013-08-07T13:55:01.647-07:00"
+  },
+  {
+    "Id": "450908",
+    "Title": "Bar Chart with dynamic series allowed only 18 series?",
+    "LatestDate": "2013-07-23T04:30:24.753-07:00"
+  },
+  {
+    "Id": "451097",
+    "Title": "Fixed height for column on ClusteredBarChart",
+    "LatestDate": "2013-07-24T09:24:01.3-07:00"
+  },
+  {
+    "Id": "452216",
+    "Title": "Data From MySQL Database",
+    "LatestDate": "2013-08-05T07:28:26.597-07:00"
+  },
+  {
+    "Id": "452251",
+    "Title": "Are there plans to add a line chart in the near future?",
+    "LatestDate": "2014-04-09T05:28:15.99-07:00"
+  },
+  {
+    "Id": "452649",
+    "Title": "Where I can change the number caption/format?",
+    "LatestDate": "2013-08-06T23:18:40.44-07:00"
+  },
+  {
+    "Id": "452802",
+    "Title": "work with .net 4.0",
+    "LatestDate": "2013-09-02T19:46:06.273-07:00"
+  },
+  {
+    "Id": "455521",
+    "Title": "win 7 and VS2010",
+    "LatestDate": "2013-09-05T06:24:35.043-07:00"
+  },
+  {
+    "Id": "457091",
+    "Title": "How to have no selection color?",
+    "LatestDate": "2013-09-17T07:24:40.183-07:00"
+  },
+  {
+    "Id": "461721",
+    "Title": "Tooltip for a ChartItem?",
+    "LatestDate": "2015-05-20T14:32:05.017-07:00"
+  },
+  {
+    "Id": "461885",
+    "Title": "How to convert ClusteredColumnChart.Series to ClusteredColumnChart.SeriesTemplate with DataTemplate.",
+    "LatestDate": "2013-10-11T06:55:34.017-07:00"
+  },
+  {
+    "Id": "462106",
+    "Title": "Windows Phone 8",
+    "LatestDate": "2013-12-27T15:01:26.213-08:00"
+  },
+  {
+    "Id": "462194",
+    "Title": "Add interactivity to Chart(Click event)",
+    "LatestDate": "2015-05-22T03:46:08.16-07:00"
+  },
+  {
+    "Id": "462202",
+    "Title": "Single item in the collection does not draw pie chart",
+    "LatestDate": "2013-10-15T05:20:11.643-07:00"
+  },
+  {
+    "Id": "463490",
+    "Title": "Successful implementation of line chart",
+    "LatestDate": "2014-03-18T09:15:11.587-07:00"
+  },
+  {
+    "Id": "463651",
+    "Title": "How can I bind my colors with chart items?",
+    "LatestDate": "2014-06-11T22:58:48.793-07:00"
+  },
+  {
+    "Id": "464222",
+    "Title": "Point Chart",
+    "LatestDate": "2013-10-30T03:43:36.353-07:00"
+  },
+  {
+    "Id": "464702",
+    "Title": ".NET 4.5 Please",
+    "LatestDate": "2013-10-30T17:24:09.073-07:00"
+  },
+  {
+    "Id": "466916",
+    "Title": "How to customize Legend with % character in pie slice or bar",
+    "LatestDate": "2014-12-19T02:16:50.747-08:00"
+  },
+  {
+    "Id": "471871",
+    "Title": "Good work! Btw I think .NET 4 is enough to make it work",
+    "LatestDate": "2013-12-04T02:36:09.21-08:00"
+  },
+  {
+    "Id": "476979",
+    "Title": "De.TorstenMandelkow.MetroChart.dll WPF Error",
+    "LatestDate": "2014-03-01T07:42:50.207-08:00"
+  },
+  {
+    "Id": "478041",
+    "Title": "Congratulation !",
+    "LatestDate": "2013-12-26T08:33:40.6-08:00"
+  },
+  {
+    "Id": "479134",
+    "Title": "Change RadialGaugeChart Size",
+    "LatestDate": "2014-11-23T12:08:46.467-08:00"
+  },
+  {
+    "Id": "484109",
+    "Title": "Request for WPF DLL targeted to framework 4.0",
+    "LatestDate": "2014-03-19T10:19:33.36-07:00"
+  },
+  {
+    "Id": "500323",
+    "Title": "setting a constant MaxDataPointValue",
+    "LatestDate": "2014-11-14T13:50:26.267-08:00"
+  },
+  {
+    "Id": "528705",
+    "Title": "how to prevent Overlapping of labels in DoughnutChart",
+    "LatestDate": "2014-02-03T00:44:30.683-08:00"
+  },
+  {
+    "Id": "528883",
+    "Title": "Metro UI with python",
+    "LatestDate": "2014-02-04T06:56:31.777-08:00"
+  },
+  {
+    "Id": "540578",
+    "Title": "Reference to WP8 project",
+    "LatestDate": "2014-03-29T10:21:09.17-07:00"
+  },
+  {
+    "Id": "541701",
+    "Title": "Does Modern UI chart control support on Windows Phone 8 Apps??",
+    "LatestDate": "2014-04-09T02:52:20.863-07:00"
+  },
+  {
+    "Id": "541714",
+    "Title": "I have to show a Column chart and Line Chart both in one chart is it possible with Moder UI controls",
+    "LatestDate": "2014-04-09T04:46:10.613-07:00"
+  },
+  {
+    "Id": "541892",
+    "Title": "How to remove white border around Pie or Doughnut chart?",
+    "LatestDate": "2014-06-05T13:11:38.13-07:00"
+  },
+  {
+    "Id": "542958",
+    "Title": "Doughnut Chart Hiding Display number",
+    "LatestDate": "2014-06-06T01:11:51.95-07:00"
+  },
+  {
+    "Id": "543391",
+    "Title": "App using Modern UI Charts",
+    "LatestDate": "2014-04-25T21:00:46.427-07:00"
+  },
+  {
+    "Id": "544071",
+    "Title": "Bug with negative numbers - quick help",
+    "LatestDate": "2014-05-02T08:57:19.09-07:00"
+  },
+  {
+    "Id": "545952",
+    "Title": "Binding Chart and DataGrid to same ObservableCollection",
+    "LatestDate": "2014-05-20T07:00:30.647-07:00"
+  },
+  {
+    "Id": "546081",
+    "Title": "Visual in designtime (Blend) ?",
+    "LatestDate": "2014-05-21T03:06:04.897-07:00"
+  },
+  {
+    "Id": "546586",
+    "Title": "GridLines Add Default Value",
+    "LatestDate": "2014-05-26T05:34:11.223-07:00"
+  },
+  {
+    "Id": "546729",
+    "Title": "Gauge with non-percent display value",
+    "LatestDate": "2014-05-27T10:50:58.713-07:00"
+  },
+  {
+    "Id": "546756",
+    "Title": "Pie chart value inside pie",
+    "LatestDate": "2014-06-09T12:43:49.34-07:00"
+  },
+  {
+    "Id": "546893",
+    "Title": "Series Label Format",
+    "LatestDate": "2014-06-03T08:53:16.467-07:00"
+  },
+  {
+    "Id": "548055",
+    "Title": "Getting a single series column or bar chart to show legend values next to column?",
+    "LatestDate": "2014-11-10T02:09:46.76-08:00"
+  },
+  {
+    "Id": "549310",
+    "Title": "Is it possible to hide zero (0) values / categories from ClusteredColumnChart ? ",
+    "LatestDate": "2014-11-13T19:22:20.103-08:00"
+  },
+  {
+    "Id": "554410",
+    "Title": "Unsupported Project and xmlns:char doesn't contain any chart",
+    "LatestDate": "2014-08-06T19:45:56.38-07:00"
+  },
+  {
+    "Id": "562185",
+    "Title": "Adjust Size of Gauge Chart",
+    "LatestDate": "2014-10-16T08:01:54.22-07:00"
+  },
+  {
+    "Id": "562323",
+    "Title": "how can I create a gauge chart?",
+    "LatestDate": "2014-08-28T03:17:30.62-07:00"
+  },
+  {
+    "Id": "562602",
+    "Title": "If I binding the title of the PieChart, the chart is not shown",
+    "LatestDate": "2014-08-29T02:49:55.433-07:00"
+  },
+  {
+    "Id": "562635",
+    "Title": "I can`t see the mainWindow.axml in the test project",
+    "LatestDate": "2014-08-29T03:14:40.663-07:00"
+  },
+  {
+    "Id": "562653",
+    "Title": "Does someone explain me the code?",
+    "LatestDate": "2014-08-29T04:17:37.473-07:00"
+  },
+  {
+    "Id": "568077",
+    "Title": "How include this library in a WP8 project?",
+    "LatestDate": "2014-11-27T06:23:37.573-08:00"
+  },
+  {
+    "Id": "568404",
+    "Title": "Calculating Percentage of Series for RadialGaugeCharts",
+    "LatestDate": "2014-09-25T23:22:56.763-07:00"
+  },
+  {
+    "Id": "568439",
+    "Title": "How to hide Axes lines/labels?",
+    "LatestDate": "2014-11-12T13:28:34.767-08:00"
+  },
+  {
+    "Id": "570866",
+    "Title": "Change default colors in palette",
+    "LatestDate": "2014-10-29T17:20:13.533-07:00"
+  },
+  {
+    "Id": "571670",
+    "Title": "Displaying bar titles to the left in ClusteredBarChart?",
+    "LatestDate": "2015-08-22T20:34:58.633-07:00"
+  },
+  {
+    "Id": "572280",
+    "Title": "Adding ChartSeries programmatically (MVVM)",
+    "LatestDate": "2015-11-08T02:29:36.743-08:00"
+  },
+  {
+    "Id": "574359",
+    "Title": "Empty window",
+    "LatestDate": "2014-12-08T10:44:38.663-08:00"
+  },
+  {
+    "Id": "575814",
+    "Title": "Displaying Data Labels as Percentage",
+    "LatestDate": "2015-07-30T11:16:05.683-07:00"
+  },
+  {
+    "Id": "578700",
+    "Title": "Print Charts",
+    "LatestDate": "2015-06-08T04:10:36.227-07:00"
+  },
+  {
+    "Id": "581791",
+    "Title": "How to extend this library to make Pyramid/Funnel Chart?",
+    "LatestDate": "2015-02-28T08:48:28.86-08:00"
+  },
+  {
+    "Id": "585915",
+    "Title": "Step-by-Step SQL table/DataTable to column/bar chart?",
+    "LatestDate": "2015-03-10T07:13:11.673-07:00"
+  },
+  {
+    "Id": "587567",
+    "Title": "Bar Chart Bar Thickness?",
+    "LatestDate": "2015-03-17T04:15:11.857-07:00"
+  },
+  {
+    "Id": "588409",
+    "Title": "Change Gray color in Modern Guage Chart",
+    "LatestDate": "2015-03-19T23:39:07.823-07:00"
+  },
+  {
+    "Id": "588653",
+    "Title": "Tooltip duration",
+    "LatestDate": "2015-03-21T02:28:17.587-07:00"
+  },
+  {
+    "Id": "620741",
+    "Title": "Windows 8.1 support",
+    "LatestDate": "2015-04-11T06:42:46.987-07:00"
+  },
+  {
+    "Id": "637857",
+    "Title": "Installing Modern UI (Metro) Charts",
+    "LatestDate": "2015-05-26T16:22:20.68-07:00"
+  },
+  {
+    "Id": "638062",
+    "Title": "Change to the source code",
+    "LatestDate": "2015-05-26T15:24:48.927-07:00"
+  },
+  {
+    "Id": "638639",
+    "Title": "Getting item on click (Pie Chart)",
+    "LatestDate": "2015-05-22T22:21:25.97-07:00"
+  },
+  {
+    "Id": "639004",
+    "Title": "SeriesTitle Size",
+    "LatestDate": "2015-06-01T06:20:12.8-07:00"
+  },
+  {
+    "Id": "640425",
+    "Title": "Is it possible to color the text on the chart?",
+    "LatestDate": "2016-01-19T08:27:46.897-08:00"
+  },
+  {
+    "Id": "641314",
+    "Title": "Change Inner Radius of Gauge Chart",
+    "LatestDate": "2015-07-14T00:26:16.073-07:00"
+  },
+  {
+    "Id": "642504",
+    "Title": "bar chart Legend not working",
+    "LatestDate": "2015-08-09T08:33:29.103-07:00"
+  },
+  {
+    "Id": "645970",
+    "Title": "Windows phone 8.1",
+    "LatestDate": "2015-10-08T05:37:51.503-07:00"
+  },
+  {
+    "Id": "647767",
+    "Title": "RadialGaugeChart missing?",
+    "LatestDate": "2015-11-18T02:17:33.46-08:00"
+  },
+  {
+    "Id": "648171",
+    "Title": "PieChart inner radius",
+    "LatestDate": "2015-11-30T11:42:36.047-08:00"
+  },
+  {
+    "Id": "648960",
+    "Title": "How to add thousand separator?",
+    "LatestDate": "2016-10-12T00:55:09.133-07:00"
+  },
+  {
+    "Id": "649398",
+    "Title": "How to modify the style of columns in ClusteredColumnChart",
+    "LatestDate": "2016-11-25T23:43:07.27-08:00"
+  },
+  {
+    "Id": "652016",
+    "Title": "Fixed Scale for ClusteredColumnChart",
+    "LatestDate": "2016-03-02T14:25:53.963-08:00"
+  },
+  {
+    "Id": "652393",
+    "Title": "Change series orientation",
+    "LatestDate": "2016-03-14T02:40:14.243-07:00"
+  },
+  {
+    "Id": "655002",
+    "Title": "constant Maximum line",
+    "LatestDate": "2016-05-27T00:17:03.103-07:00"
+  },
+  {
+    "Id": "658612",
+    "Title": "How to add  thousand separator in the PieChart?",
+    "LatestDate": "2016-10-10T04:42:28.533-07:00"
+  },
+  {
+    "Id": "659237",
+    "Title": "Box Plot  Chart",
+    "LatestDate": "2016-11-07T11:06:06.483-08:00"
+  },
+  {
+    "Id": "663805",
+    "Title": "RadialGaugeChart - Use more than 100 value in ValueMember field",
+    "LatestDate": "2017-09-25T23:38:32.827-07:00"
+  }
+]

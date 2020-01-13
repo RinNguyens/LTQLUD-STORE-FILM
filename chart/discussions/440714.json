@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1032250",
+    "ThreadId": "440714",
+    "Html": "Hello There,\r<br />\n<br />\nFirst of all I would like to congratulate developers for there great work.\r<br />\n<br />\n1) I guess its a bug, I am using pie chart in my app, once I select a area in pie chart its color will be changed to yellow, and same repeat for all area in pie chart. Even deselecting item will not change yellow(selection) color to normal color.\r<br />\n<br />\n2) How we can change default colors of pie chart. Instead of blue, light blue etc. I would like to use different color.\r<br />\n<br />\n3) How to handle click event on pie chart for a area in chart.\r<br />\n<br />\n-Shyam<br />\n",
+    "PostedDate": "2013-04-18T00:01:53.553-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1039590",
+    "ThreadId": "440714",
+    "Html": "Hi Shyam,\r<br />\n<br />\nsorry for my late answer, I had to finish the BETA release of the charts :-)\r<br />\n<br />\nRegarding your questions:\r<br />\n<br />\n1) The bug in pie chart is fixed.\r<br />\n<br />\n2) In the new release you can change the color palette for the charts. You can fnd a sample in the test applications. You define your custom ResourceDictionaryCollection with all the color values and assign it to the chart in property &quot;Palette&quot;.\r<br />\n<br />\n3) To handle a click in the pie chart I would recommend to bind the property &quot;SelectedItem&quot; of the pie chart to your ViewModel and then you can react on changes of the SelectedItem (e.g. by switching to a different page). Currently there is no click event. If my recommendation does not help you please describe your use case and I could find a possible implementation in the charts.\r<br />\n<br />\nCheers,\r<br />\nTorsten<br />\n",
+    "PostedDate": "2013-05-05T12:07:07.023-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

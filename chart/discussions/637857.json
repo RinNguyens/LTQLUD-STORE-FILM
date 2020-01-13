@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "1425101",
+    "ThreadId": "637857",
+    "Html": "I have followed the instructions in documentation to install Modern UI (Metro) charts, by registering the De.TorstenMandelkow.MetroChart.dll in my project and adding xmlns:metroChart=&quot;clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart&quot; to the &lt;ResourceDictionary&gt;. However, when adding the ChartBase to my XAML, the following displays: <br />\n<br />\n<strong>The name &quot;ChartBase&quot; does not exist in the namespace &quot;clr-namespace:De.TorstenMandelkow.MetroChart; assembly=De.TorstenMandelkow.MetroChart&quot;</strong><br />\n<br />\nAm I missing something else?<br />\n<br />\nThank you<br />\n",
+    "PostedDate": "2015-05-12T23:20:16.59-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1425955",
+    "ThreadId": "637857",
+    "Html": "Hi LCOELHO,\r<br />\n<br />\nI had the same issue and discovered that windows was blocking the file because it's from the web. Just open the properties of De.TorstenMandelkow.MetroChart.dll and click on accept on the bottom. This solved it for me. I hope it also solves it for you.<br />\n",
+    "PostedDate": "2015-05-18T02:32:32.01-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1427709",
+    "ThreadId": "637857",
+    "Html": "Could you explain a little more? Which properties are you speaking of? Do I have to navigate to it on my file system or select it in the references in my project. My project builds fine, but the designer keeps showing this error.<br />\n",
+    "PostedDate": "2015-05-26T16:11:31.55-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1427712",
+    "ThreadId": "637857",
+    "Html": "<strong>ebsanu wrote:</strong><br />\n<blockquote>\nCould you explain a little more? Which properties are you speaking of? Do I have to navigate to it on my file system or select it in the references in my project. My project builds fine, but the designer keeps showing this error.<br />\n</blockquote>\nI figured it out by going to the actual dll file on my computer and right-clicking &gt; Properties. In the general tab you'll see something near the bottom (I forget what it's called) and accept that. Then restart Visual Studio and you should be good to go.<br />\n",
+    "PostedDate": "2015-05-26T16:22:20.68-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1278362",
+    "ThreadId": "554410",
+    "Html": "Hello All,\r<br />\n<br />\nI would like to add a chart to my C# WPF application, I'm using VS2013.\r<br />\n<br />\nI'm not able to launch the MetroChart demo included on the download.\r<br />\nAnd when I'm trying to add a chart like (<a href=\"https://modernuicharts.codeplex.com/documentation\" rel=\"nofollow\">https://modernuicharts.codeplex.com/documentation</a>) it seems that the dll don't have any chart.\r<br />\n<br />\n....<br />\n<pre><code>xmlns:chart=&quot;clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart&quot;</code></pre>\n\n....\r<br />\n<br />\n&lt;chart:PieChart<br />\n<pre><code>    Style=&quot;{StaticResource MinimalChartStyle}&quot;\n    ChartTitle=&quot;Minimal Pie Chart&quot;\n    ChartSubTitle=&quot;Chart with fixed width and height&quot;\n    SelectedItem=&quot;{Binding Path=SelectedItem, Mode=TwoWay}&quot; &gt;\n    &lt;chart:PieChart.Series&gt;\n        &lt;chart:ChartSeries\n            SeriesTitle=&quot;Errors&quot;\n            DisplayMember=&quot;Category&quot;\n            ValueMember=&quot;Number&quot;\n            ItemsSource=&quot;{Binding Path=Errors}&quot; /&gt;\n    &lt;/chart:PieChart.Series&gt;\n&lt;/chart:PieChart&gt;</code></pre>\n\n......\r<br />\n<br />\nBut I have the following error message;\r<br />\nThe name &quot;PieChart&quot; does not exist in the namespace &quot;clr-namespace:De.Tor.....&quot;\r<br />\n<br />\nDo you what I'm doing wrong ?\r<br />\n<br />\nThanks\r<br />\nDan<br />\n",
+    "PostedDate": "2014-07-28T05:43:21.207-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1287380",
+    "ThreadId": "554410",
+    "Html": "Do not use the downloaded binaries. Just download the source code and compile it your self.<br />\n",
+    "PostedDate": "2014-08-06T19:45:56.38-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

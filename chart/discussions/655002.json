@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1474485",
+    "ThreadId": "655002",
+    "Html": "Hi folks,\r<br />\n<br />\nI want to add &quot;Maximum&quot; line to my Clustered Column Chart. \r<br />\nThe line is just a constant line through the whole chart that shall indicate the highest possible values for the Columns. \r<br />\nDoes anybody know if and how this is implemented?<br />\n",
+    "PostedDate": "2016-05-27T00:17:03.103-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

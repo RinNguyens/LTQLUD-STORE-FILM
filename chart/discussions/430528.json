@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "990662",
+    "ThreadId": "430528",
+    "Html": "\r\n<p>Hi Torman,</p>\r\n<p>&nbsp;</p>\r\n<p>I need to use these controls in my silverlight app. How do I put them in my xaml?</p>\r\n<p>&nbsp;</p>\r\n<p>Regards,</p>\r\n<p>Vitor</p>\r\n",
+    "PostedDate": "2013-01-22T20:33:04.823-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "990858",
+    "ThreadId": "430528",
+    "Html": "\r\n<p>Sorry,</p>\r\n<p>&nbsp;</p>\r\n<p>Im using the controls perfectly in my xaml, but how do I create the series or &nbsp;how do I pass to ItemSource my values, as an example, a KeyValuePair list.</p>\r\n<p>&nbsp;</p>\r\n<p>HELP!!!</p>\r\n",
+    "PostedDate": "2013-01-23T04:01:50-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "991890",
+    "ThreadId": "430528",
+    "Html": "\r\n<p>You find a working sample in the source code.</p>\r\n<p>Take a look into Project &quot;TestApplication.Shared/ViewModel/TestPageViewModel.cs&quot;. Here you find a sample, how to create a series and add data to it.</p>\r\n<p><a href=\"http://modernuicharts.codeplex.com/SourceControl/changeset/view/97971#1822330\">http://modernuicharts.codeplex.com/SourceControl/changeset/view/97971#1822330</a></p>\r\n<p>Hope it helps.</p>\r\n<p>Kind regards,</p>\r\n<p>Torsten</p>\r\n",
+    "PostedDate": "2013-01-24T23:37:24.297-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "992047",
+    "ThreadId": "430528",
+    "Html": "\r\n<p>Ok,&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>But I can't find how the controls are declared. I'm missing something.</p>\r\n<p><span style=\"font-size:10pt\">I declared like this:</span></p>\r\n<p>&nbsp;</p>\r\n<p></p>\r\n<div style=\"color:black; background-color:white\">\r\n<pre>&lt;metrochart:ChartArea x:Name=&quot;mcChart&quot; Width=&quot;395&quot; Height=&quot;240&quot;&nbsp;</pre>\r\n<pre><span style=\"white-space:pre\">\t\t\t</span>Grid.Row=&quot;0&quot; Grid.Column=&quot;1&quot;&nbsp;</pre>\r\n<pre><span style=\"white-space:pre\">\t\t\t</span>Style=&quot;{StaticResource PieChartChartAreaStyle}&quot;&gt;</pre>\r\n<pre><span style=\"color:blue\">&lt;</span><span style=\"color:#a31515\">metrochart</span><span style=\"color:blue\">:</span><span style=\"color:#a31515\">ChartSeries</span><span style=\"color:blue\">&gt;</span></pre>\r\n<pre><span style=\"color:blue\">&lt;</span><span style=\"color:#a31515\">metrochart</span><span style=\"color:blue\">:</span><span style=\"color:#a31515\">PieChart</span> <span style=\"color:red\">ChartTitle</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;Title&quot;&nbsp;</span></pre>\r\n<pre><span style=\"color:blue\">                     </span><span style=\"color:red\">Width</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;395&quot;</span><span style=\"font-size:1em\"> </span><span style=\"color:red\">Height</span><span style=\"color:blue\">=</span><span style=\"color:blue\">&quot;240&quot;</span><span style=\"color:blue\">/&gt;</span></pre>\r\n<pre><span style=\"color:blue\">&lt;/</span><span style=\"color:#a31515\">metrochart</span><span style=\"color:blue\">:</span><span style=\"color:#a31515\">ChartSeries</span><span style=\"color:blue\">&gt;</span></pre>\r\n<pre><span style=\"color:blue\">&lt;/</span><span style=\"color:#a31515\">metrochart</span><span style=\"color:blue\">:</span><span style=\"color:#a31515\">ChartArea</span><span style=\"color:blue\">&gt;</span>\r\n</pre>\r\n</div>\r\n<p></p>\r\n<p>&nbsp;</p>\r\n<p>Thanks for you answer, but I really need to know how I will declare the controls that I want and how to I fill them with my data.</p>\r\n<p>What I'm trying to do is, put a pie and some bar charts inside a xaml page and then fill them with my data that that comes from page .cs</p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-size:10pt\">Im used to put a control in a page and then point it ItemSource so a IEnumerable, like a Dictionary or other collections...</span></p>\r\n<p>&nbsp;</p>\r\n<p><span style=\"font-size:10pt\">Best Regards</span></p>\r\n",
+    "PostedDate": "2013-01-25T05:25:07.057-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

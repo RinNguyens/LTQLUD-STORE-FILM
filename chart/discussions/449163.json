@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1064912",
+    "ThreadId": "449163",
+    "Html": "Hello, First thanks for such a nice charts. It really helps for my app.\r<br />\n<br />\nComing to my issue, i am having a requirement when I need to display chart for the selected item in grid view. So I need to display in small size. I tried setting Height and Width to minimum (Say 200,200). What i am seeing is the control is not rendering based on Height and Width. It is getting truncated.\r<br />\nIs there any way to render chart based on random Height nad Width? or Do I need to use any default Height and Width?\r<br />\n<br />\nThanks in advance.<br />\n",
+    "PostedDate": "2013-07-05T08:41:09.653-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1065484",
+    "ThreadId": "449163",
+    "Html": "Hi,\r<br />\n<br />\nthe pie chart has a parameter &quot;PieMinimalSize&quot; which defines the minimal size of the piechart. \r<br />\nSet this value to &quot;200.0&quot; and the chart should be smaller. Search in the sample of the project for &quot;PieMinimalSize&quot; to see how to change it.\r<br />\n<br />\nTorsten<br />\n",
+    "PostedDate": "2013-07-08T02:15:22.19-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1065503",
+    "ThreadId": "449163",
+    "Html": "Thank You.\r<br />\n<br />\nThat Helped.\r<br />\n<br />\nAlso just one more question, How can i change the colours combinations in Pie chart?<br />\n",
+    "PostedDate": "2013-07-08T03:51:14.957-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1065525",
+    "ThreadId": "449163",
+    "Html": "To change the color palette follow the documentation: <a href=\"http://modernuicharts.codeplex.com/wikipage?title=Custom%20Color%20Palette\" rel=\"nofollow\">http://modernuicharts.codeplex.com/wikipage?title=Custom%20Color%20Palette</a>\r<br />\n<br />\nOr check the sample applications in this project. It should be easy.\r<br />\n<br />\nTorsten<br />\n",
+    "PostedDate": "2013-07-08T04:55:09.327-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1067069",
+    "ThreadId": "449163",
+    "Html": "Hello, I am facing &quot;FaultExecutionEngine&quot; exception when I am using chart in UserControl. here is what i did<br />\n<ol>\n<li>I am uing chart in a DataTemplate and loading this datatemplate for each selected Item of a grid view. GridView is in User control. i am loading thi suser control on Mainpage.</li>\n<li>\nWhen I navigate to different page and come back to MianPage Iam facing this error.<br />\nFor reference here is souruce code. (<a href=\"https://skydrive.live.com/redir?resid=A24BECFFD74E0BC4!108&amp;authkey=!ABS_yzTK8Atx1lI\" rel=\"nofollow\">https://skydrive.live.com/redir?resid=A24BECFFD74E0BC4!108&authkey=!ABS_yzTK8Atx1lI</a>)<br />\n</li>\n</ol>\nSteps to reproduce issue:<br />\n<ol>\n<li>Run the App.</li>\n<li>In &quot;MonthlySummary&quot; you should see piechart for each month.</li>\n<li>click on &quot;View&quot; button for any month.</li>\n<li>\nYou will navigate to a another page.<br />\n5, Now click back, you should see the crash.<br />\n</li>\n</ol>\nFYI- now comment out pie chart code in &quot;MonthlySummaryPage.xaml&quot; and run the app with above steps. Crah will not happen.<br />\n<br />\nCan you help me with this?<br />\n<br />\nThanks,<br />\n",
+    "PostedDate": "2013-07-11T07:53:15.913-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

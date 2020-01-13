@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "1056316",
+    "ThreadId": "446936",
+    "Html": "Hey,<br />\n<br />\nHow do i fix those errors marked in the screenshot?<br />\n<br />\n<img src=\"http://img196.imageshack.us/img196/1656/chartcontrols.png\" alt=\"Problem with charts\" /><br />\n<br />\n<a href=\"http://imageshack.us/photo/my-images/196/chartcontrols.png/\" rel=\"nofollow\">Link to picture</a><br />\n<br />\nRegards,<br />\nXenolith<br />\n",
+    "PostedDate": "2013-06-13T04:06:39.01-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1056336",
+    "ThreadId": "446936",
+    "Html": "Hi,\r<br />\n<br />\nthe &quot;0&quot; values in the piechart are not intended. It is a bug and will be fixed.\r<br />\n<br />\nThe problem with the legend should also not happen and I will check this. \r<br />\nIn the mean you could try to set the width of the chart to a fixed value (e.g. &quot;800&quot;). Maybe this helps the legend items to measure their own width better.\r<br />\n<br />\nCheers,\r<br />\nTorsten<br />\n",
+    "PostedDate": "2013-06-13T04:53:37.88-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1056383",
+    "ThreadId": "446936",
+    "Html": "Thank you!\r<br />\n<br />\nShould i provide you with an demo project to reproduce this behavior or is this error known to you anyway?<br />\n",
+    "PostedDate": "2013-06-13T06:44:39.047-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1056828",
+    "ThreadId": "446936",
+    "Html": "I get a bunch of binding errors in the output window, my guess would be that they are related to the Legend display bug.\r<br />\n<br />\nHere the binding error:<br />\n<pre><code>System.Windows.Data Error: 40 : BindingExpression path error: 'ChartLegendItemStyle' property not found on 'object' ''ContentPresenter' (Name='')'. BindingExpression:Path=ChartLegendItemStyle; DataItem='ContentPresenter' (Name=''); target element is 'ChartLegendItem' (Name=''); target property is 'Style' (type 'Style')</code></pre>\n\n",
+    "PostedDate": "2013-06-14T05:05:26.667-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1132785",
+    "ThreadId": "446936",
+    "Html": "I receive this error too, (either 0 and ChartLegendItemStyle errors)<br />\n",
+    "PostedDate": "2013-12-07T08:56:44.47-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1223999",
+    "ThreadId": "446936",
+    "Html": "Did anyone get to the bottom of this as im getting this bind error too<br />\n",
+    "PostedDate": "2014-03-18T07:53:47.537-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1449253",
+    "ThreadId": "446936",
+    "Html": "I am getting this error too. Anyone figured out what it is, by now?<br />\n",
+    "PostedDate": "2015-10-21T05:36:40.717-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

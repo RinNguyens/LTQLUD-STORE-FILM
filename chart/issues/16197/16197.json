@@ -1,0 +1,71 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "First of all - thanks for the great free library. The demo app you provided works great and the charts look amazing.\n\nI am trying to start from scratch using \n\n__[https://modernuicharts.codeplex.com/documentation#howto1](https://modernuicharts.codeplex.com/documentation#howto1)__\n\nbut I can't get this one to work/show. Everything builds, runs, but no charts are shown. Am I missing something? The only thing I changed was the name of the view model (MainViewModel instead of TestPageViewModel)\n\nI did the binding to datacontext using:\n\nthis.DataContext = new MainViewModel();\n\nin the page constructor.\n\nI added a demo I'm trying to run. The binding works fine with the ListView, but not with the charts.\n\nThanks!",
+    "LastUpdatedDate": "2015-06-01T02:41:22.59-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2013-05-14T17:56:56.123-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Can't get the how-to to work",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 16197
+  },
+  "FileAttachments": [
+    {
+      "FileId": 4744,
+      "FileName": "MetroChartDemo.zip",
+      "DownloadUrl": ".\\4744"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Hi Igrali & Mandelkow,\r\n\r\nEven I am facing the same issue..\nNeed help",
+      "PostedDate": "2013-05-20T03:59:52.453-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Here's solution.\r\n\r\nhttp://stackoverflow.com/questions/16662201/not-able-to-use-modern-ui-charts-for-windows-8/16664642#16664642",
+      "PostedDate": "2013-05-21T01:45:28.41-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Following costed me 4 hours of work - so I hope I can help another one not to run in the same issue:\r\n\r\nDon't forget the getter and setter! If you forget to implement them, no charts data will be displayed!\r\n\r\n// Don't use this:\npublic class TestClass\n{\n    public string Category;\n    public int Number;\n}\r\n\r\n// This will work:\npublic class TestClass\n{\n    public string Category { get; set; }\n    public int Number { get; set; }\n}\r\n\r\n\nARGH!",
+      "PostedDate": "2014-11-14T00:45:34.98-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2014-11-14T01:17:04.67-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I've got the same issue, but I have got the getter and setter...",
+      "PostedDate": "2015-06-01T02:41:22.59-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

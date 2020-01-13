@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Dear Torsten\n\nAgain thanks for your great work.\n\nWhen I use your chart in a flipview, it works fine most of the time. However when I open and close the Page with the flipview a couple of times I get the following error:\n\nFatalExecutionEngineError was detected\nMessage: The runtime has encountered a fatal error. The address of the error was at 0x6f5e92e3, on thread 0x18dc. The error code is 0x80131544. This error may be a bug in the CLR or in the unsafe or non-verifiable portions of user code. Common sources of this bug include user marshaling errors for COM-interop or PInvoke, which may corrupt the stack.\n\nThe call stack seems to indicate a problem with your chart:\n\n[Managed to Native Transition] System.dll!System.Collections.ObjectModeI.ObservableCollection<string>.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs e) System.dll!System.Collections.ObjectModeI.ObservableCollection<System._Canon>.Clearltems() mscorlib.dll!System.Collections.ObjectModeI.Collection<string>.Clear() De.TorstenMandelkow.MetroChart.DLL!De.TorstenMandelkow.MetroChart.ChartBase.UpdateGroupedSeries() De.TorstenMandelkow.MetroChart.DLL!De.TorstenMandelkow.MetroChart.ChartBase.UpdateSeries() De.TorstenMandelkow.MetroChart.DLL!De.TorstenMandelkow.MetroChart.ChartBase.UpdateDataContextOfSeries() De.TorstenMandelkow.MetroChart.DLL!De.TorstenMandelkow.MetroChart.ChartBase.lnternaIDataContextChanged() \nDe.T orstenMandelkow. MetroChart. O LL! De.T orstenMandelkow. MetroChart. ChartBase. DataContextWatcher _ Changed(Windows. U I. Xaml. DependencyObject sender; Windows. U I. Xaml. DependencyPropertyChangedEventArgs args} [Native to Managed Transition] \n\n\nI would be really grateful for your help.\n\nKind Regards\nGraham",
+    "LastUpdatedDate": "2013-08-05T06:44:13.477-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2013-05-23T01:45:26.607-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "FatalExecutionEngineError was detected",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 2,
+    "Id": 16215
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I have the same issue when i instanciate a viewmodel with a chart.\r\n\r\nThis error appends randomly , somtimes with 3 instances and sometimes with more than 20 instances.\r\n\r\n\n",
+      "PostedDate": "2013-08-05T06:44:13.477-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

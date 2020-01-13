@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1250142",
+    "ThreadId": "546729",
+    "Html": "I'd love to use this in my app, but I realized that the Gauge only displays a percentage.\r<br />\n<br />\nWhat I really need is to change the display value in its raw form (say, 1566, not 74%). \r<br />\n<br />\nUnlike today, you'd need to provide a numerator and a denominator (now it's not just x/100). But there's already a MaxDataPointValue. So you could set MaxDataPointValue to 3000, for instance, and Value to 1566 and it would still be able to calculate the RadialGaugePiece correctly.\r<br />\n<br />\nAny other thoughts on something like this?<br />\n",
+    "PostedDate": "2014-05-27T10:50:58.713-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1107592",
+    "ThreadId": "462202",
+    "Html": "I am drawing pie chart and bind it to an observable collection, when ever I have single item in collection then map does not draw anything. I then test it on the demo, but it yields same result.\r<br />\n<br />\nAny solution or workaround?\r<br />\n<br />\nThanks<br />\n",
+    "PostedDate": "2013-10-15T05:20:11.643-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

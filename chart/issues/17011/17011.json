@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I noticed that the RadialGuageChart uses the actual value of the series' items to display percentage instead of calculating the percentage like the Pie Chart. Is there any way to change the behavior so that the displayed values are calculated in the same manor as the Pie Chart's values?",
+    "LastUpdatedDate": "2014-10-01T07:31:20.34-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2014-09-25T20:49:33.79-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "RadialGuageChart Value not calculated",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 2,
+    "Id": 17011
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

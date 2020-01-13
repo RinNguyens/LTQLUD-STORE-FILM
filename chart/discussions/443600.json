@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1043385",
+    "ThreadId": "443600",
+    "Html": "Is there a nuget package available to use?<br />\n",
+    "PostedDate": "2013-05-14T07:22:33.167-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1046406",
+    "ThreadId": "443600",
+    "Html": "User Xyroid created a nuget package: <a href=\"https://nuget.org/packages/ModernChart/\" rel=\"nofollow\">https://nuget.org/packages/ModernChart/</a><br />\n",
+    "PostedDate": "2013-05-21T02:47:02.517-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1047206",
+    "ThreadId": "443600",
+    "Html": "That one is for Windows 8 only. I'm Looking for a Windows 7 / WPF nuget package.<br />\n",
+    "PostedDate": "2013-05-22T09:28:55.253-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

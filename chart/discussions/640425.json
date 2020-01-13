@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1431774",
+    "ThreadId": "640425",
+    "Html": "I have a ClusteredColumnChart and values that fall on the columns are white and colors that appear above the columns are black.  How do you set the colors?\r<br />\n<br />\n<img src=\"http://www.homerpokerleague.com/chart.png\" alt=\"Image\" /><br />\n",
+    "PostedDate": "2015-06-24T14:22:08.14-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1459808",
+    "ThreadId": "640425",
+    "Html": "I have the same question. Still no reply?\r<br />\n<br />\nI have a palette with lighter colors and the numbers are unreadable. I need to be able to select another color. I can't find the property that exposes these labels. The ones outside the bars take the foreground color assigned to the control (property Foreground).<br />\n",
+    "PostedDate": "2016-01-19T08:25:54.313-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1459809",
+    "ThreadId": "640425",
+    "Html": "No, I haven't gotten any replies.<br />\n",
+    "PostedDate": "2016-01-19T08:27:46.897-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

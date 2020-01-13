@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "hello,\n\ni am trying to use modern UI chart control in windows8 market app as per the suggestion in link http://stackoverflow.com/questions/16662201/not-able-to-use-modern-ui-charts-for-windows-8/16664642#16664642 i am able to add chart control in to XAML. application building with without error and able to run application, but chart control not visible in APP :( .\n\nwhen i open design showing \nXamlParseException: The property 'Caption' was not found in type 'ChartSeries'. [Line: 317 Position: 44]\nstack trace \nat System.Runtime.InteropServices.WindowsRuntime.IVector`1.InsertAt(UInt32 index, T value)\n   at System.Runtime.InteropServices.WindowsRuntime.VectorToListAdapter.InsertAtHelper[T](IVector`1 _this, UInt32 index, T item)\n   at System.Runtime.InteropServices.WindowsRuntime.VectorToListAdapter.Insert[T](Int32 index, T item)\n\nerror.\nwhat could be reason and need solution?\nthanks in advance.",
+    "LastUpdatedDate": "2014-05-01T12:14:04.347-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2014-02-12T23:11:17.327-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "XamlParseException: The property 'Caption' was not found in type 'ChartSeries'. [Line: 317 Position: 44]",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16706
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I've run into the same problem using the NuGet package. Some spelunking revealed there was no ChartSeries.Caption property, but there was a ChartSeries.SeriesTitle property. Setting that made everything work. I assume the property name was changed at some point, but the error message is not at all helpful, and it's frustrating that if you leave SeriesTitle out the chart won't display even when that SeriesTitle isn't displayed.",
+      "PostedDate": "2014-05-01T12:14:04.347-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

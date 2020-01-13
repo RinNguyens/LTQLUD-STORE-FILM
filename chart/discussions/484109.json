@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "1151060",
+    "ThreadId": "484109",
+    "Html": "Hi,\r<br />\n<br />\nCan I get a compiled WPF DLL targeted to framework 4.0. My project has a limitation that it should work with Windows XP and I cannot install framework 4.5 on Windows XP. If I try to use WPF DLL with my framework 4.0 project I get the following error!!<br />\n<pre><code>Error   2   The tag 'PieChart' does not exist in XML namespace 'clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart'. Line 7 Position 10.  D:\\ESCENER\\Repo\\POS\\POS\\Window1.xaml    7   10  POS\n\nWarning 1   The primary reference &quot;De.TorstenMandelkow.MetroChart&quot; could not be resolved because it was built against the &quot;.NETFramework,Version=v4.5&quot; framework. This is a higher version than the currently targeted framework &quot;.NETFramework,Version=v4.0&quot;.  POS\n</code></pre>\n\nAny help on this issue is greatly appreciated.<br />\n",
+    "PostedDate": "2014-01-08T13:01:02.84-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1224044",
+    "ThreadId": "484109",
+    "Html": "Did you get this sorted? Ive just had compile it in .net 4<br />\n",
+    "PostedDate": "2014-03-18T09:14:12.447-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1224257",
+    "ThreadId": "484109",
+    "Html": "It would be helpful if you share your work!! :)\r<br />\nThanks!!<br />\n",
+    "PostedDate": "2014-03-18T21:56:50.3-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1224415",
+    "ThreadId": "484109",
+    "Html": "Will do. \r<br />\n<br />\nJust fixing the mysterious '0' error in the legend items and the ChartLegendItemStyle issue<br />\n",
+    "PostedDate": "2014-03-19T06:39:10.153-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1224451",
+    "ThreadId": "484109",
+    "Html": "Thanks a lot!!\r<br />\nWaiting for your reply<br />\n",
+    "PostedDate": "2014-03-19T08:23:34.96-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1224481",
+    "ThreadId": "484109",
+    "Html": "Here you go. The dll is built and runs in .Net 4\r<br />\n<br />\nI haven't had time to fix the &quot;ChartLegendItemStyle&quot; issue but the &quot;0&quot; issue is sorted although have only tested in the column charts. The fix is applied in the ChartBase so should apply to all.\r<br />\n<br />\nObviously this is only me messing around trying to fix it for my WPF app and is relatively untested but certainly does work in .Net 4.\r<br />\n<br />\n<a href=\"http://goo.gl/iGc7B8\" rel=\"nofollow\">http://goo.gl/iGc7B8</a><br />\n",
+    "PostedDate": "2014-03-19T09:15:41.973-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1224515",
+    "ThreadId": "484109",
+    "Html": "once again thanks a lot!!<br />\n",
+    "PostedDate": "2014-03-19T10:19:33.36-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

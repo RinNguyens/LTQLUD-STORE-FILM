@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\n\ni compile it with .NET 4.0 and it works.\nIt is possible to change your source code and use 4.0 instead 4.5 as default?\n\nThanks",
+    "LastUpdatedDate": "2014-09-22T07:20:55.337-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2014-06-15T00:32:36.543-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Request for WPF DLL targeted to framework 4.0",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 2,
+    "Id": 16886
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

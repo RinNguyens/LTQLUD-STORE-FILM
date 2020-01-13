@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "If I bind Series property with ObservableCollection<ChartSeries> It is throwing null reference error on initialization in  UpdateDataContextOfSeries() method inside ChartBase.cs. It is trying to call this method before the MVVM calls the getter of the binded property, the Series is coming out null and hence the error. Just checking if series is null before running the loop on series will solve the issue. I tried changing the code but I was not able to run the application due to a lot of errors.",
+    "LastUpdatedDate": "2014-12-13T11:06:29.7-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2014-12-13T11:06:29.7-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Binding Source property throwing error inside ModernChart library",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 17256
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

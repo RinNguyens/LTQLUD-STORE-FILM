@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1427213",
+    "ThreadId": "638639",
+    "Html": "Hello \r<br />\n<br />\n<br />\nCan any one help me on getting the item which one i click on pie chart \r<br />\nMy code:\r<br />\n<br />\npublic class MainViewModel : MainWindow<br />\n<pre><code>{\n    public ObservableCollection&lt;TestClass&gt; Errors { get; private set; }\n\n    public MainViewModel()\n    {\n        Errors = new ObservableCollection&lt;TestClass&gt;();\n        Errors.Add(new TestClass() { Category = &quot;Globalization&quot;, Number = 75 });\n        Errors.Add(new TestClass() { Category = &quot;Features&quot;, Number = 2 });\n        Errors.Add(new TestClass() { Category = &quot;ContentTypes&quot;, Number = 12 });\n        Errors.Add(new TestClass() { Category = &quot;Correctness&quot;, Number = 83 });\n        Errors.Add(new TestClass() { Category = &quot;Best Practices&quot;, Number = 29 });\n    }\n\n    private object selectedItem = null;\n    public object SelectedItem\n    {\n        get\n        {\n            return selectedItem;\n        }\n        set\n        {\n            // selected item has changed\n            selectedItem = value;\n            selectedItemChangeHandler();\n        }\n    }\n\n    public void selectedItemChangeHandler()\n    {\n        //on selected item changed   \n\n    }\n}</code></pre>\n\nhow can i get the category with selected item on change?\r<br />\nAnyone help me?<br />\n",
+    "PostedDate": "2015-05-22T22:21:25.97-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

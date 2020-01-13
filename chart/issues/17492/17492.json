@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Good Morning,\n\nI added your .dll to my reference library.  Then I added the following line in mainwindow.xaml\n```\n        xmlns:chart=\"clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart\"\n```\nintellisense autopopulates the entry.  However when I goto add any chart I get the DOES NOT EXIST IN NAMESPACE error.\n\nAny ideas what I am doing wrong?",
+    "LastUpdatedDate": "2015-12-11T09:08:24.047-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2015-08-05T10:52:08.59-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "The name \"PieChart\" does not exist in the namespace \"clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart\".",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 2,
+    "Id": 17492
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

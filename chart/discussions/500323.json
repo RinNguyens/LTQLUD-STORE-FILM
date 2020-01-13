@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "1168966",
+    "ThreadId": "500323",
+    "Html": "Hi,\r<br />\nIs there any way to set the MaxDataPointValue of a bar chart (or ClusteredBarChart) to constant?\r<br />\njust adding MaxDataPointValue=5 doesn't work. it still calculates the max value based on the values of the series items.\r<br />\n<br />\nThanks!<br />\n",
+    "PostedDate": "2014-01-15T06:17:41.243-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1321336",
+    "ThreadId": "500323",
+    "Html": "I am looking for a solution to this problem as well.  Any luck with this?<br />\n",
+    "PostedDate": "2014-11-12T09:28:29.523-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1321405",
+    "ThreadId": "500323",
+    "Html": "I fixed this issue by adding a Dependency Property called &quot;IsMaxDataValueFixed&quot; to ChartBase.cs.<br />\n<pre><code>        public static readonly DependencyProperty IsMaxDataPointValueFixedProperty =\n            DependencyProperty.Register(&quot;IsMaxDataPointValueFixed&quot;, typeof(bool), typeof(ChartBase), new PropertyMetadata(false));\n\n        public bool IsMaxDataPointValueFixed\n        {\n            get { return (bool)GetValue(IsMaxDataPointValueFixedProperty); }\n            set { SetValue(IsMaxDataPointValueFixedProperty, value); }\n        }</code></pre>\n\nThen, in CreateDataPointBindings, I changed the BindingMode to TwoWay:<br />\n<pre><code>            var maxDataPointValueBinding = new Binding();\n            maxDataPointValueBinding.Source = this;\n            maxDataPointValueBinding.Mode = BindingMode.TwoWay;  //Change this from OneWay to TwoWay\n            maxDataPointValueBinding.Path = new PropertyPath(&quot;MaxDataPointValue&quot;);\n            BindingOperations.SetBinding(datapoint, DataPoint.MaxDataPointValueProperty, maxDataPointValueBinding);\n</code></pre>\n\nThen, in RecalcMaxDataPointValue() I short-circuit the execution by adding a check for IsMaxDataPointValueFixed:<br />\n<pre><code>        private void RecalcMaxDataPointValue()\n        {\n            if (IsMaxDataPointValueFixed)\n            {\n                return;\n            }  \n            ...\n        }</code></pre>\n\nIn the XAML of my project:<br />\n<pre><code>        &lt;chart:ClusteredColumnChart \n                ...\n                MaxDataPointValue=&quot;100&quot;\n                IsMaxDataPointValueFixed=&quot;True&quot;&gt;</code></pre>\n\nThis change had the desired effect for the Clustered Column Chart in my environment.  I haven't tested it with other chart types.  When I set the MaxDataPointValue to something lower than the actual max value, the bars stay &quot;maxed-out&quot; on the chart, but display their actual values.\r<br />\n<br />\nHope this help anyone who needs it.<br />\n",
+    "PostedDate": "2014-11-12T11:55:04.783-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1322360",
+    "ThreadId": "500323",
+    "Html": "This should really be included into the main source. Well done.<br />\n",
+    "PostedDate": "2014-11-14T13:50:26.267-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

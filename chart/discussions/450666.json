@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1070758",
+    "ThreadId": "450666",
+    "Html": "Does this chart control allow saving chart as PNG image? I am basically looking for charting control that can produce good graphs for Printable Reports.<br />\n",
+    "PostedDate": "2013-07-19T23:54:39.623-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1071714",
+    "ThreadId": "450666",
+    "Html": "dito!, thanks<br />\n",
+    "PostedDate": "2013-07-23T04:20:10.81-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1077836",
+    "ThreadId": "450666",
+    "Html": "I'm looking for something very similar, this might be of use <a href=\"http://blogs.msdn.com/b/saveenr/archive/2008/09/18/wpf-xaml-saving-a-window-or-canvas-as-a-png-bitmap.aspx\" rel=\"nofollow\">http://blogs.msdn.com/b/saveenr/archive/2008/09/18/wpf-xaml-saving-a-window-or-canvas-as-a-png-bitmap.aspx</a><br />\n",
+    "PostedDate": "2013-08-07T09:52:21.31-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1077848",
+    "ThreadId": "450666",
+    "Html": "This fortunately I know, but the problem is I need it when I do not have a WPF or Form visible. I need feature for background processing. <br />\n",
+    "PostedDate": "2013-08-07T10:22:50.207-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1077960",
+    "ThreadId": "450666",
+    "Html": "use a ViewBox to render in memory, then save to png as suggested by this <a href=\"http://stackoverflow.com/a/1409145\" rel=\"nofollow\">stackoverflow</a> answer.<br />\n",
+    "PostedDate": "2013-08-07T13:55:01.647-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

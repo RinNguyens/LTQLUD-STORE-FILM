@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When using a dataseries that contains only one non zero entry or when all entries are null the pie is not render at all (see .jpg picture). It seems to me a bad behavior, I think, we would like to have a pie with only one color.\n\nA proposed fix will come with svn patch",
+    "LastUpdatedDate": "2014-12-05T06:04:11.99-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2014-12-05T06:04:11.433-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Pie charts and corner cases",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 17206
+  },
+  "FileAttachments": [
+    {
+      "FileId": 4957,
+      "FileName": "degeneratedSituation.jpg",
+      "DownloadUrl": ".\\4957"
+    }
+  ],
+  "Comments": []
+}

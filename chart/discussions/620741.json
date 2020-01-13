@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1403619",
+    "ThreadId": "620741",
+    "Html": "Hi!\r<br />\n<br />\nI used this library for a wpf application before and it was beautiful. Now I try to use it in a Windows 8.1 universal app but I'm stucked because when I try to draw a pie chart then nothing happens - no exception, no chart, nothing. \r<br />\n<br />\nDoes this library support windows 8.1 at all?\r<br />\n<br />\nMany thanks.<br />\n",
+    "PostedDate": "2015-04-11T06:42:46.987-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

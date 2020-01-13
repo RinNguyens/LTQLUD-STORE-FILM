@@ -1,0 +1,87 @@
+<div class="wikidoc">
+<ul>
+<li><a href="#howto1">How to use the chart in your application</a> </li><li><a href="/wikipage?title=Chart%20Options">How to configure the appearance</a>
+</li><li><a href="/wikipage?title=Custom%20Styling">How to apply custom styling</a> </li><li><a href="/wikipage?title=Custom%20Color%20Palette">How to use a custom color palette</a>
+</li></ul>
+<p><a name="howto1"></a></p>
+<p><strong>How to use the charts in your application</strong></p>
+<p>1. Add a reference to De.TorstenMandelkow.MetroChart.dll to your project <br>
+2. Add the following xaml code to your resource dictionary (e.g. Generic.xaml)</p>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">ResourceDictionary</span>    
+    ...    
+    <span class="attr">xmlns:chart</span><span class="kwrd">=&quot;clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart&quot;</span> <span class="kwrd">&gt;</span>
+    <span class="rem">&lt;!-- for windows 8 it is different: xmlns:chart=&quot;<strong>using</strong>:De.TorstenMandelkow.MetroChart&quot; --&gt;</span>
+    ...
+    <span class="kwrd">&lt;</span><span class="html">Style</span> <span class="attr">x:Key</span><span class="kwrd">=&quot;MinimalChartStyle&quot;</span> <span class="attr">TargetType</span><span class="kwrd">=&quot;chart:ChartBase&quot;</span><span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">Setter</span> <span class="attr">Property</span><span class="kwrd">=&quot;Width&quot;</span> <span class="attr">Value</span><span class="kwrd">=&quot;500&quot;</span><span class="kwrd">/&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">Setter</span> <span class="attr">Property</span><span class="kwrd">=&quot;Height&quot;</span> <span class="attr">Value</span><span class="kwrd">=&quot;500&quot;</span><span class="kwrd">/&gt;</span>
+    <span class="kwrd">&lt;/</span><span class="html">Style</span><span class="kwrd">&gt;</span>
+    ...  
+
+<span class="kwrd">&lt;/</span><span class="html">ResourceDictionary</span><span class="kwrd">&gt;</span>
+</pre>
+<p>3. Add the following xaml code to your page or window to embed the chart</p>
+<pre class="csharpcode"><span class="kwrd">&lt;</span><span class="html">Page</span>
+    ...
+    <span class="attr">xmlns:chart</span><span class="kwrd">=&quot;clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart&quot;</span> <span class="kwrd">&gt;</span>
+    <span class="rem">&lt;!-- for windows 8 it is different: xmlns:chart=&quot;<strong>using</strong>:De.TorstenMandelkow.MetroChart&quot; --&gt;</span>
+    ...
+    <span class="kwrd">&lt;</span><span class="html">chart:PieChart</span>
+        <span class="attr">Style</span><span class="kwrd">=&quot;{StaticResource MinimalChartStyle}&quot;</span>
+        <span class="attr">ChartTitle</span><span class="kwrd">=&quot;Minimal Pie Chart&quot;</span>
+        <span class="attr">ChartSubTitle</span><span class="kwrd">=&quot;Chart with fixed width and height&quot;</span>
+        <span class="attr">SelectedItem</span><span class="kwrd">=&quot;{Binding Path=SelectedItem, Mode=TwoWay}&quot;</span> <span class="kwrd">&gt;</span>
+        <span class="kwrd">&lt;</span><span class="html">chart:PieChart.Series</span><span class="kwrd">&gt;</span>
+            <span class="kwrd">&lt;</span><span class="html">chart:ChartSeries</span>
+                <span class="attr">SeriesTitle</span><span class="kwrd">=&quot;Errors&quot;</span>
+                <span class="attr">DisplayMember</span><span class="kwrd">=&quot;Category&quot;</span>
+                <span class="attr">ValueMember</span><span class="kwrd">=&quot;Number&quot;</span>
+                <span class="attr">ItemsSource</span><span class="kwrd">=&quot;{Binding Path=Errors}&quot;</span> <span class="kwrd">/&gt;</span>
+        <span class="kwrd">&lt;/</span><span class="html">chart:PieChart.Series</span><span class="kwrd">&gt;</span>
+    <span class="kwrd">&lt;/</span><span class="html">chart:PieChart</span><span class="kwrd">&gt;</span>
+    ...
+<span class="kwrd">&lt;/</span><span class="html">Page</span><span class="kwrd">&gt;</span></pre>
+<p>4. Add the data to your code and bind it to the chart</p>
+<pre class="csharpcode"><span class="kwrd">namespace</span> TestApplication
+{
+    <span class="rem">// bind this view model to your page or window (DataContext)</span>
+    <span class="kwrd">public</span> <span class="kwrd">class</span> TestPageViewModel
+    {
+        <span class="kwrd">public</span> ObservableCollection&lt;TestClass&gt; Errors { get; <span class="kwrd">private</span> set; }
+
+        <span class="kwrd">public</span> TestPageViewModel()
+        {
+            Errors = <span class="kwrd">new</span> ObservableCollection&lt;TestClass&gt;();
+            Errors.Add(<span class="kwrd">new</span> TestClass() { Category = <span class="str">&quot;Globalization&quot;</span>, Number = 75 });
+            Errors.Add(<span class="kwrd">new</span> TestClass() { Category = <span class="str">&quot;Features&quot;</span>, Number = 2 });
+            Errors.Add(<span class="kwrd">new</span> TestClass() { Category = <span class="str">&quot;ContentTypes&quot;</span>, Number = 12 });
+            Errors.Add(<span class="kwrd">new</span> TestClass() { Category = <span class="str">&quot;Correctness&quot;</span>, Number = 83});
+            Errors.Add(<span class="kwrd">new</span> TestClass() { Category = <span class="str">&quot;Best Practices&quot;</span>, Number = 29 });
+        }
+
+        <span class="kwrd">private</span> <span class="kwrd">object</span> selectedItem = <span class="kwrd">null</span>;
+        <span class="kwrd">public</span> <span class="kwrd">object</span> SelectedItem
+        {
+            get
+            {
+                <span class="kwrd">return</span> selectedItem;
+            }
+            set
+            {
+                <span class="rem">// selected item has changed</span>
+                selectedItem = <span class="kwrd">value</span>;                
+            }
+        }
+    }
+
+    <span class="rem">// class which represent a data point in the chart</span>
+    <span class="kwrd">public</span> <span class="kwrd">class</span> TestClass
+    {
+        <span class="kwrd">public</span> <span class="kwrd">string</span> Category { get; set; }
+
+        <span class="kwrd">public</span> <span class="kwrd">int</span> Number  { get; set; }        
+    }
+}</pre>
+<p>Result</p>
+<p><img src="http://download-codeplex.sec.s-msft.com/Download?ProjectName=modernuicharts&DownloadId=674991" alt=""></p>
+</div><div class="ClearBoth"></div>

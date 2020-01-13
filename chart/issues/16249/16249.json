@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Column and bar charts do not handle negative values property. The height of the column (width of the bar) are set to 0.",
+    "LastUpdatedDate": "2017-12-18T15:14:40.013-08:00",
+    "PlannedForRelease": "Source Code and Test Applications BETA",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2013-06-09T11:16:01.497-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Negative values on series",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 16249
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "That's correct. Negative values are currently not supported.\r\n\r\nI added it as new feature request.\r\n\r\nTorsten",
+      "PostedDate": "2013-06-09T22:37:45.33-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Thank you very much.",
+      "PostedDate": "2013-06-10T15:45:22.53-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Hi Torsten,\nAny update on this issue?",
+      "PostedDate": "2014-12-22T06:09:57.83-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2017-12-18T15:14:40.013-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

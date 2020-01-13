@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\n\nThanks for the great control.\n\nI am developing a Metro app and I have three DoughnutChart chart controls in app. When I tapped on first one should display the second chart and tapped on second chart should display third chart and tapped on third chart should display first chart.\n\nMy problem is like, when I tapping continuously on chart control I am getting \"__The runtime has encountered a fatal error. The address of the error was at 0xb022d028, on thread 0x297c. The error code is 0xc0000005. This error may be a bug in the CLR or in the unsafe or non-verifiable portions of user code. Common sources of this bug include user marshaling errors for COM-interop or PInvoke, which may corrupt the stack.__\" issue. And this issue is not coming for all times, it's coming for randomly only.\n\nCan you please help me resolve the issue.\n\nRegards,\nChandra.",
+    "LastUpdatedDate": "2014-12-10T01:56:07.013-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2014-12-10T01:49:18.253-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "The runtime has encountered a fatal error. The address of the error was at 0xb022d028, on thread 0x297c. The error code is 0xc0000005. This error may be a bug in the CLR or in the unsafe or non-verifiable portions of user code. Common sources of this bug",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 17248
+  },
+  "FileAttachments": [
+    {
+      "FileId": 4965,
+      "FileName": "chart.png",
+      "DownloadUrl": ".\\4965"
+    }
+  ],
+  "Comments": []
+}

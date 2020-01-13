@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I need to handle the click event on the chart, upon click it could just return me the associated object. I am following the code from the documentation section and it has a \"SelectedItem\" property in it, but is not working. \n\n Upon click on the pie, item got selected and thus change the background of the pie piece which makes me sure there is a way to get it done.",
+    "LastUpdatedDate": "2014-05-14T07:23:53.467-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2013-10-25T10:41:58.013-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Add interactivity to Chart(Click event)",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 2,
+    "Id": 16476
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

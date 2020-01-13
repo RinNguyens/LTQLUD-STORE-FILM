@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1437907",
+    "ThreadId": "642504",
+    "Html": "I have some simple bar chart which is working fine but the thing is that the legend shows only wpfsimplechart instead of the categories in the bars.<br />\n<br />\n&lt;chart:ClusteredColumnChart ChartSubTitle=&quot;Most traveled nationalities&quot; ChartTitle=&quot;Top 10 Visiting Portugal&quot; &gt;<br />\n<pre><code>                &lt;chart:ClusteredColumnChart.Series&gt;\n                    &lt;chart:ChartSeries DisplayMember=&quot;Name&quot; ItemsSource=&quot;{Binding MostTraveledNationalities}&quot; ValueMember=&quot;Count&quot;/&gt;\n                &lt;/chart:ClusteredColumnChart.Series&gt;\n            &lt;/chart:ClusteredColumnChart&gt;\n</code></pre>\n\nAll works as expected and the chart looks really nice but the legend is not ok (also the color of the bars are the same , should t be diferent? ), if i switch to pie chart all works as expected colors and legend.<br />\n",
+    "PostedDate": "2015-08-09T08:33:29.103-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

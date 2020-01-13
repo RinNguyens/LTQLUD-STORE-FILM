@@ -1,0 +1,98 @@
+[
+  {
+    "Id": "1028891",
+    "ThreadId": "439900",
+    "Html": "What is with a nice line chart?\r<br />\nI think this is one of the basics :-)<br />\n",
+    "PostedDate": "2013-04-11T02:11:36.367-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1039592",
+    "ThreadId": "439900",
+    "Html": "Yes, you are right. It should be easy :-)\r<br />\n<br />\nUnfortunately I was not able to implement a line chart in the new BETA release. But now after the BETA release with several improvements and bug fixes the line chart is on top of the TODO list :-)\r<br />\n<br />\nCheers,\r<br />\nTorsten<br />\n",
+    "PostedDate": "2013-05-05T12:11:56.92-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1042832",
+    "ThreadId": "439900",
+    "Html": "Great job Torsten and thanks for sharing this nice lib. \r<br />\n<br />\nA line chart would be definitely helpful. I opened an issue so others can vote for it as well. See <a href=\"https://modernuicharts.codeplex.com/workitem/16195\" rel=\"nofollow\">here</a>.<br />\n",
+    "PostedDate": "2013-05-13T07:26:27.767-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1242252",
+    "ThreadId": "439900",
+    "Html": "Any news with this one? btw great work Torsten! <br />\n",
+    "PostedDate": "2014-05-06T13:07:27.6-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1243142",
+    "ThreadId": "439900",
+    "Html": "@torman119: Fantastic looking library.\r<br />\n<br />\nAre there any technical issues that you'd need help with to get a line chart out? I'd like to help if possible, as this looks to be a promising component in a new WPF tool I am creating. If that allows me to spend some time contributing to an awesome OSS project like this, all the better.<br />\n",
+    "PostedDate": "2014-05-08T08:58:28.497-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1243553",
+    "ThreadId": "439900",
+    "Html": "Hi all,\r<br />\n<br />\ncurrently I'm heavily involved in my job and in a different software project and will find no time to create more charts in the next months (and I regret not being able to do it) :-(. \r<br />\nIt would be great if some of you joins the project and improves the library. \r<br />\nI'm amazed that so many developers are using it and it would be great if the project can grow.\r<br />\n<br />\nPlease contact me so I can add you to the project.\r<br />\n<br />\nCheers,\r<br />\nTorsten<br />\n",
+    "PostedDate": "2014-05-09T09:29:55.18-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1263648",
+    "ThreadId": "439900",
+    "Html": "E-mail send, Torsten. Looking to help where I can and I have a patch waiting to go :)<br />\n",
+    "PostedDate": "2014-07-08T06:47:35.063-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1286636",
+    "ThreadId": "439900",
+    "Html": "Hi Guys, \r<br />\n<br />\n<br />\nAny updates on this? Would be really great!\r<br />\n<br />\nCheers, \r<br />\n<br />\nMaC<br />\n",
+    "PostedDate": "2014-08-05T12:40:10.56-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1289237",
+    "ThreadId": "439900",
+    "Html": "Ohai o/\r<br />\n<br />\na line chart would be great!<br />\n",
+    "PostedDate": "2014-08-12T05:38:01.837-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1311783",
+    "ThreadId": "439900",
+    "Html": "How to use charts for Windows7, VS2010 and .NET 4.0? If click the solution MetroChart.sln then it doesn't response anything. Please help me.\r<br />\n<br />\nThanks in advance.\r<br />\nnetlancer<br />\n",
+    "PostedDate": "2014-10-09T01:41:14.5-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1326934",
+    "ThreadId": "439900",
+    "Html": "any progress on the line chart yet? <br />\ni would love to see them included in the library. <br />\namazing work, btw!<br />\n",
+    "PostedDate": "2014-11-28T01:53:06.203-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1441428",
+    "ThreadId": "439900",
+    "Html": "If anyone is interested I have started a new project with Torsten's approval that includes all his charts plus the addition of scatter / line charts. It also includes negative value support on the column chart. <a href=\"https://gamandelkowcharts.codeplex.com/\" rel=\"nofollow\">WPF Metro UI Charts</a><br />\n",
+    "PostedDate": "2015-08-22T20:32:32.273-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

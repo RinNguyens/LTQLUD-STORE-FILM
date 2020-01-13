@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DBNewFilmModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CapDo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="SoNgay" Type="int" />
+          <Property Name="Phi" Type="int" />
+        </EntityType>
+        <EntityType Name="LoaiTaiKhoan">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Profile_Playlist">
+          <Key>
+            <PropertyRef Name="UserProfileID" />
+            <PropertyRef Name="ProfileID" />
+            <PropertyRef Name="PhimID" />
+          </Key>
+          <Property Name="UserProfileID" Type="int" Nullable="false" />
+          <Property Name="ProfileID" Type="int" Nullable="false" />
+          <Property Name="PhimID" Type="int" Nullable="false" />
+          <Property Name="ThoiGianXem" Type="time" Precision="7" />
+        </EntityType>
+        <EntityType Name="Phim">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Category" Type="int" Nullable="false" />
+          <Property Name="NoiDung" Type="text" Nullable="false" />
+          <Property Name="ThoiGian" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Trailer" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="Hinh" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="Linkfilm" Type="nvarchar" MaxLength="500" />
+          <Property Name="Views" Type="int" />
+          <Property Name="Logo" Type="nvarchar" MaxLength="500" />
+          <Property Name="RatingIMDB" Type="float" />
+          <Property Name="ReleaseDate" Type="varchar" MaxLength="50" />
+          <Property Name="NgayCapNhat" Type="date" />
+        </EntityType>
+        <EntityType Name="Phim_TheLoai">
+          <Key>
+            <PropertyRef Name="IDFIlm" />
+            <PropertyRef Name="IDCat" />
+          </Key>
+          <Property Name="IDFIlm" Type="int" Nullable="false" />
+          <Property Name="IDCat" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="TinhTrangThanhToan">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="TinhTrang" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TheLoai">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="isCheckLoai" Type="int" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Phone" Type="nchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="MaCapDo" Type="int" Nullable="false" />
+          <Property Name="ThanhToan" Type="int" Nullable="false" />
+          <Property Name="Hinh" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="User_Playlist">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="PhimID" />
+          </Key>
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="PhimID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserProfile">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ProfileName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Hinh" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="UserThanhToan">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="CapDo" />
+            <PropertyRef Name="NgayTT" />
+          </Key>
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="CapDo" Type="int" Nullable="false" />
+          <Property Name="NgayTT" Type="date" Nullable="false" />
+          <Property Name="NgayKT" Type="date" />
+        </EntityType>
+        <Association Name="FK_Profile_Playlist_Phim">
+          <End Role="Phim" Type="Self.Phim" Multiplicity="1" />
+          <End Role="Profile_Playlist" Type="Self.Profile_Playlist" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Phim">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Profile_Playlist">
+              <PropertyRef Name="PhimID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Profile_Playlist_UserProfile">
+          <End Role="UserProfile" Type="Self.UserProfile" Multiplicity="1" />
+          <End Role="Profile_Playlist" Type="Self.Profile_Playlist" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserProfile">
+              <PropertyRef Name="UserID" />
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Profile_Playlist">
+              <PropertyRef Name="UserProfileID" />
+              <PropertyRef Name="ProfileID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Phim_TheLoai">
+          <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="1" />
+          <End Role="Phim" Type="Self.Phim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TheLoai">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Phim">
+              <PropertyRef Name="Category" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Phim_TheLoai_Phim">
+          <End Role="Phim" Type="Self.Phim" Multiplicity="1" />
+          <End Role="Phim_TheLoai" Type="Self.Phim_TheLoai" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Phim">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Phim_TheLoai">
+              <PropertyRef Name="IDFIlm" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Phim_TheLoai_TheLoai">
+          <End Role="TheLoai" Type="Self.TheLoai" Multiplicity="1" />
+          <End Role="Phim_TheLoai" Type="Self.Phim_TheLoai" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TheLoai">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Phim_TheLoai">
+              <PropertyRef Name="IDCat" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TaiKhoan_CapDo">
+          <End Role="CapDo" Type="Self.CapDo" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CapDo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="MaCapDo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TaiKhoan_LoaiTaiKhoan">
+          <End Role="LoaiTaiKhoan" Type="Self.LoaiTaiKhoan" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LoaiTaiKhoan">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="isCheckLoai" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UPlayist_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="User_Playlist" Type="Self.User_Playlist" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="User_Playlist">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_Playlist_Phim">
+          <End Role="Phim" Type="Self.Phim" Multiplicity="1" />
+          <End Role="User_Playlist" Type="Self.User_Playlist" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Phim">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="User_Playlist">
+              <PropertyRef Name="PhimID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_TinhTrangThanhToan">
+          <End Role="TinhTrangThanhToan" Type="Self.TinhTrangThanhToan" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TinhTrangThanhToan">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="ThanhToan" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserProfile_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="UserProfile" Type="Self.UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UserProfile">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserThanhToan_CapDo">
+          <End Role="CapDo" Type="Self.CapDo" Multiplicity="1" />
+          <End Role="UserThanhToan" Type="Self.UserThanhToan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CapDo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UserThanhToan">
+              <PropertyRef Name="CapDo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserThanhToan_User">
+          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="UserThanhToan" Type="Self.UserThanhToan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UserThanhToan">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="DBNewFilmModelStoreContainer">
+          <EntitySet Name="CapDo" EntityType="Self.CapDo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LoaiTaiKhoan" EntityType="Self.LoaiTaiKhoan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Profile_Playlist" EntityType="Self.Profile_Playlist" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Phim" EntityType="Self.Phim" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Phim_TheLoai" EntityType="Self.Phim_TheLoai" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TinhTrangThanhToan" EntityType="Self.TinhTrangThanhToan" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TheLoai" EntityType="Self.TheLoai" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User_Playlist" EntityType="Self.User_Playlist" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserProfile" EntityType="Self.UserProfile" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserThanhToan" EntityType="Self.UserThanhToan" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Profile_Playlist_Phim" Association="Self.FK_Profile_Playlist_Phim">
+            <End Role="Phim" EntitySet="Phim" />
+            <End Role="Profile_Playlist" EntitySet="Profile_Playlist" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Profile_Playlist_UserProfile" Association="Self.FK_Profile_Playlist_UserProfile">
+            <End Role="UserProfile" EntitySet="UserProfile" />
+            <End Role="Profile_Playlist" EntitySet="Profile_Playlist" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Phim_TheLoai" Association="Self.FK_Phim_TheLoai">
+            <End Role="TheLoai" EntitySet="TheLoai" />
+            <End Role="Phim" EntitySet="Phim" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Phim_TheLoai_Phim" Association="Self.FK_Phim_TheLoai_Phim">
+            <End Role="Phim" EntitySet="Phim" />
+            <End Role="Phim_TheLoai" EntitySet="Phim_TheLoai" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Phim_TheLoai_TheLoai" Association="Self.FK_Phim_TheLoai_TheLoai">
+            <End Role="TheLoai" EntitySet="TheLoai" />
+            <End Role="Phim_TheLoai" EntitySet="Phim_TheLoai" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TaiKhoan_CapDo" Association="Self.FK_TaiKhoan_CapDo">
+            <End Role="CapDo" EntitySet="CapDo" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TaiKhoan_LoaiTaiKhoan" Association="Self.FK_TaiKhoan_LoaiTaiKhoan">
+            <End Role="LoaiTaiKhoan" EntitySet="LoaiTaiKhoan" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UPlayist_User" Association="Self.FK_UPlayist_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="User_Playlist" EntitySet="User_Playlist" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_Playlist_Phim" Association="Self.FK_User_Playlist_Phim">
+            <End Role="Phim" EntitySet="Phim" />
+            <End Role="User_Playlist" EntitySet="User_Playlist" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_TinhTrangThanhToan" Association="Self.FK_User_TinhTrangThanhToan">
+            <End Role="TinhTrangThanhToan" EntitySet="TinhTrangThanhToan" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserProfile_User" Association="Self.FK_UserProfile_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="UserProfile" EntitySet="UserProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserThanhToan_CapDo" Association="Self.FK_UserThanhToan_CapDo">
+            <End Role="CapDo" EntitySet="CapDo" />
+            <End Role="UserThanhToan" EntitySet="UserThanhToan" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserThanhToan_User" Association="Self.FK_UserThanhToan_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="UserThanhToan" EntitySet="UserThanhToan" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DBNewFilmModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="DBNewFilmEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CapDo" EntityType="DBNewFilmModel.CapDo" />
+          <EntitySet Name="LoaiTaiKhoan" EntityType="DBNewFilmModel.LoaiTaiKhoan" />
+          <EntitySet Name="Profile_Playlist" EntityType="DBNewFilmModel.Profile_Playlist" />
+          <EntitySet Name="Phim" EntityType="DBNewFilmModel.Phim" />
+          <EntitySet Name="sysdiagrams" EntityType="DBNewFilmModel.sysdiagrams" />
+          <EntitySet Name="TinhTrangThanhToan" EntityType="DBNewFilmModel.TinhTrangThanhToan" />
+          <EntitySet Name="TheLoai" EntityType="DBNewFilmModel.TheLoai" />
+          <EntitySet Name="User" EntityType="DBNewFilmModel.User" />
+          <EntitySet Name="UserProfile" EntityType="DBNewFilmModel.UserProfile" />
+          <EntitySet Name="UserThanhToan" EntityType="DBNewFilmModel.UserThanhToan" />
+          <AssociationSet Name="FK_TaiKhoan_CapDo" Association="DBNewFilmModel.FK_TaiKhoan_CapDo">
+            <End Role="CapDo" EntitySet="CapDo" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserThanhToan_CapDo" Association="DBNewFilmModel.FK_UserThanhToan_CapDo">
+            <End Role="CapDo" EntitySet="CapDo" />
+            <End Role="UserThanhToan" EntitySet="UserThanhToan" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TaiKhoan_LoaiTaiKhoan" Association="DBNewFilmModel.FK_TaiKhoan_LoaiTaiKhoan">
+            <End Role="LoaiTaiKhoan" EntitySet="LoaiTaiKhoan" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Profile_Playlist_Phim" Association="DBNewFilmModel.FK_Profile_Playlist_Phim">
+            <End Role="Phim" EntitySet="Phim" />
+            <End Role="Profile_Playlist" EntitySet="Profile_Playlist" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Profile_Playlist_UserProfile" Association="DBNewFilmModel.FK_Profile_Playlist_UserProfile">
+            <End Role="UserProfile" EntitySet="UserProfile" />
+            <End Role="Profile_Playlist" EntitySet="Profile_Playlist" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Phim_TheLoai" Association="DBNewFilmModel.FK_Phim_TheLoai">
+            <End Role="TheLoai" EntitySet="TheLoai" />
+            <End Role="Phim" EntitySet="Phim" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_TinhTrangThanhToan" Association="DBNewFilmModel.FK_User_TinhTrangThanhToan">
+            <End Role="TinhTrangThanhToan" EntitySet="TinhTrangThanhToan" />
+            <End Role="User" EntitySet="User" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserProfile_User" Association="DBNewFilmModel.FK_UserProfile_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="UserProfile" EntitySet="UserProfile" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserThanhToan_User" Association="DBNewFilmModel.FK_UserThanhToan_User">
+            <End Role="User" EntitySet="User" />
+            <End Role="UserThanhToan" EntitySet="UserThanhToan" />
+          </AssociationSet>
+          <AssociationSet Name="Phim_TheLoai" Association="DBNewFilmModel.Phim_TheLoai">
+            <End Role="Phim" EntitySet="Phim" />
+            <End Role="TheLoai" EntitySet="TheLoai" />
+          </AssociationSet>
+          <AssociationSet Name="User_Playlist" Association="DBNewFilmModel.User_Playlist">
+            <End Role="User" EntitySet="User" />
+            <End Role="Phim" EntitySet="Phim" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="CapDo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SoNgay" Type="Int32" />
+          <Property Name="Phi" Type="Int32" />
+          <NavigationProperty Name="User" Relationship="DBNewFilmModel.FK_TaiKhoan_CapDo" FromRole="CapDo" ToRole="User" />
+          <NavigationProperty Name="UserThanhToan" Relationship="DBNewFilmModel.FK_UserThanhToan_CapDo" FromRole="CapDo" ToRole="UserThanhToan" />
+        </EntityType>
+        <EntityType Name="LoaiTaiKhoan">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="User" Relationship="DBNewFilmModel.FK_TaiKhoan_LoaiTaiKhoan" FromRole="LoaiTaiKhoan" ToRole="User" />
+        </EntityType>
+        <EntityType Name="Profile_Playlist">
+          <Key>
+            <PropertyRef Name="UserProfileID" />
+            <PropertyRef Name="ProfileID" />
+            <PropertyRef Name="PhimID" />
+          </Key>
+          <Property Name="UserProfileID" Type="Int32" Nullable="false" />
+          <Property Name="ProfileID" Type="Int32" Nullable="false" />
+          <Property Name="PhimID" Type="Int32" Nullable="false" />
+          <Property Name="ThoiGianXem" Type="Time" Precision="7" />
+          <NavigationProperty Name="Phim" Relationship="DBNewFilmModel.FK_Profile_Playlist_Phim" FromRole="Profile_Playlist" ToRole="Phim" />
+          <NavigationProperty Name="UserProfile" Relationship="DBNewFilmModel.FK_Profile_Playlist_UserProfile" FromRole="Profile_Playlist" ToRole="UserProfile" />
+        </EntityType>
+        <EntityType Name="Phim">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Category" Type="Int32" Nullable="false" />
+          <Property Name="NoiDung" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="ThoiGian" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Trailer" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Hinh" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Linkfilm" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Views" Type="Int32" />
+          <Property Name="Logo" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="RatingIMDB" Type="Double" />
+          <Property Name="ReleaseDate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NgayCapNhat" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="Profile_Playlist" Relationship="DBNewFilmModel.FK_Profile_Playlist_Phim" FromRole="Phim" ToRole="Profile_Playlist" />
+          <NavigationProperty Name="TheLoai" Relationship="DBNewFilmModel.FK_Phim_TheLoai" FromRole="Phim" ToRole="TheLoai" />
+          <NavigationProperty Name="TheLoai1" Relationship="DBNewFilmModel.Phim_TheLoai" FromRole="Phim" ToRole="TheLoai" />
+          <NavigationProperty Name="User" Relationship="DBNewFilmModel.User_Playlist" FromRole="Phim" ToRole="User" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TinhTrangThanhToan">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="TinhTrang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="User" Relationship="DBNewFilmModel.FK_User_TinhTrangThanhToan" FromRole="TinhTrangThanhToan" ToRole="User" />
+        </EntityType>
+        <EntityType Name="TheLoai">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Phim" Relationship="DBNewFilmModel.FK_Phim_TheLoai" FromRole="TheLoai" ToRole="Phim" />
+          <NavigationProperty Name="Phim1" Relationship="DBNewFilmModel.Phim_TheLoai" FromRole="TheLoai" ToRole="Phim" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="isCheckLoai" Type="Int32" Nullable="false" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" Nullable="false" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MaCapDo" Type="Int32" Nullable="false" />
+          <Property Name="ThanhToan" Type="Int32" Nullable="false" />
+          <Property Name="Hinh" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CapDo" Relationship="DBNewFilmModel.FK_TaiKhoan_CapDo" FromRole="User" ToRole="CapDo" />
+          <NavigationProperty Name="LoaiTaiKhoan" Relationship="DBNewFilmModel.FK_TaiKhoan_LoaiTaiKhoan" FromRole="User" ToRole="LoaiTaiKhoan" />
+          <NavigationProperty Name="TinhTrangThanhToan" Relationship="DBNewFilmModel.FK_User_TinhTrangThanhToan" FromRole="User" ToRole="TinhTrangThanhToan" />
+          <NavigationProperty Name="UserProfile" Relationship="DBNewFilmModel.FK_UserProfile_User" FromRole="User" ToRole="UserProfile" />
+          <NavigationProperty Name="UserThanhToan" Relationship="DBNewFilmModel.FK_UserThanhToan_User" FromRole="User" ToRole="UserThanhToan" />
+          <NavigationProperty Name="Phim" Relationship="DBNewFilmModel.User_Playlist" FromRole="User" ToRole="Phim" />
+        </EntityType>
+        <EntityType Name="UserProfile">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="ProfileName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Hinh" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Profile_Playlist" Relationship="DBNewFilmModel.FK_Profile_Playlist_UserProfile" FromRole="UserProfile" ToRole="Profile_Playlist" />
+          <NavigationProperty Name="User" Relationship="DBNewFilmModel.FK_UserProfile_User" FromRole="UserProfile" ToRole="User" />
+        </EntityType>
+        <EntityType Name="UserThanhToan">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="CapDo" />
+            <PropertyRef Name="NgayTT" />
+          </Key>
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="CapDo" Type="Int32" Nullable="false" />
+          <Property Name="NgayTT" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="NgayKT" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="CapDo1" Relationship="DBNewFilmModel.FK_UserThanhToan_CapDo" FromRole="UserThanhToan" ToRole="CapDo" />
+          <NavigationProperty Name="User" Relationship="DBNewFilmModel.FK_UserThanhToan_User" FromRole="UserThanhToan" ToRole="User" />
+        </EntityType>
+        <Association Name="FK_TaiKhoan_CapDo">
+          <End Type="DBNewFilmModel.CapDo" Role="CapDo" Multiplicity="1" />
+          <End Type="DBNewFilmModel.User" Role="User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CapDo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="MaCapDo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserThanhToan_CapDo">
+          <End Type="DBNewFilmModel.CapDo" Role="CapDo" Multiplicity="1" />
+          <End Type="DBNewFilmModel.UserThanhToan" Role="UserThanhToan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CapDo">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UserThanhToan">
+              <PropertyRef Name="CapDo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TaiKhoan_LoaiTaiKhoan">
+          <End Type="DBNewFilmModel.LoaiTaiKhoan" Role="LoaiTaiKhoan" Multiplicity="1" />
+          <End Type="DBNewFilmModel.User" Role="User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LoaiTaiKhoan">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="isCheckLoai" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Profile_Playlist_Phim">
+          <End Type="DBNewFilmModel.Phim" Role="Phim" Multiplicity="1" />
+          <End Type="DBNewFilmModel.Profile_Playlist" Role="Profile_Playlist" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Phim">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Profile_Playlist">
+              <PropertyRef Name="PhimID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Profile_Playlist_UserProfile">
+          <End Type="DBNewFilmModel.UserProfile" Role="UserProfile" Multiplicity="1" />
+          <End Type="DBNewFilmModel.Profile_Playlist" Role="Profile_Playlist" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserProfile">
+              <PropertyRef Name="UserID" />
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Profile_Playlist">
+              <PropertyRef Name="UserProfileID" />
+              <PropertyRef Name="ProfileID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Phim_TheLoai">
+          <End Type="DBNewFilmModel.TheLoai" Role="TheLoai" Multiplicity="1" />
+          <End Type="DBNewFilmModel.Phim" Role="Phim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TheLoai">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Phim">
+              <PropertyRef Name="Category" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_TinhTrangThanhToan">
+          <End Type="DBNewFilmModel.TinhTrangThanhToan" Role="TinhTrangThanhToan" Multiplicity="1" />
+          <End Type="DBNewFilmModel.User" Role="User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TinhTrangThanhToan">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="User">
+              <PropertyRef Name="ThanhToan" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserProfile_User">
+          <End Type="DBNewFilmModel.User" Role="User" Multiplicity="1" />
+          <End Type="DBNewFilmModel.UserProfile" Role="UserProfile" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UserProfile">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserThanhToan_User">
+          <End Type="DBNewFilmModel.User" Role="User" Multiplicity="1" />
+          <End Type="DBNewFilmModel.UserThanhToan" Role="UserThanhToan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="UserThanhToan">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Phim_TheLoai">
+          <End Type="DBNewFilmModel.Phim" Role="Phim" Multiplicity="*" />
+          <End Type="DBNewFilmModel.TheLoai" Role="TheLoai" Multiplicity="*" />
+        </Association>
+        <Association Name="User_Playlist">
+          <End Type="DBNewFilmModel.User" Role="User" Multiplicity="*" />
+          <End Type="DBNewFilmModel.Phim" Role="Phim" Multiplicity="*" />
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DBNewFilmModelStoreContainer" CdmEntityContainer="DBNewFilmEntities">
+          <EntitySetMapping Name="CapDo">
+            <EntityTypeMapping TypeName="DBNewFilmModel.CapDo">
+              <MappingFragment StoreEntitySet="CapDo">
+                <ScalarProperty Name="Phi" ColumnName="Phi" />
+                <ScalarProperty Name="SoNgay" ColumnName="SoNgay" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LoaiTaiKhoan">
+            <EntityTypeMapping TypeName="DBNewFilmModel.LoaiTaiKhoan">
+              <MappingFragment StoreEntitySet="LoaiTaiKhoan">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Profile_Playlist">
+            <EntityTypeMapping TypeName="DBNewFilmModel.Profile_Playlist">
+              <MappingFragment StoreEntitySet="Profile_Playlist">
+                <ScalarProperty Name="ThoiGianXem" ColumnName="ThoiGianXem" />
+                <ScalarProperty Name="PhimID" ColumnName="PhimID" />
+                <ScalarProperty Name="ProfileID" ColumnName="ProfileID" />
+                <ScalarProperty Name="UserProfileID" ColumnName="UserProfileID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Phim">
+            <EntityTypeMapping TypeName="DBNewFilmModel.Phim">
+              <MappingFragment StoreEntitySet="Phim">
+                <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+                <ScalarProperty Name="ReleaseDate" ColumnName="ReleaseDate" />
+                <ScalarProperty Name="RatingIMDB" ColumnName="RatingIMDB" />
+                <ScalarProperty Name="Logo" ColumnName="Logo" />
+                <ScalarProperty Name="Views" ColumnName="Views" />
+                <ScalarProperty Name="Linkfilm" ColumnName="Linkfilm" />
+                <ScalarProperty Name="Hinh" ColumnName="Hinh" />
+                <ScalarProperty Name="Trailer" ColumnName="Trailer" />
+                <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+                <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="DBNewFilmModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TinhTrangThanhToan">
+            <EntityTypeMapping TypeName="DBNewFilmModel.TinhTrangThanhToan">
+              <MappingFragment StoreEntitySet="TinhTrangThanhToan">
+                <ScalarProperty Name="TinhTrang" ColumnName="TinhTrang" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TheLoai">
+            <EntityTypeMapping TypeName="DBNewFilmModel.TheLoai">
+              <MappingFragment StoreEntitySet="TheLoai">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User">
+            <EntityTypeMapping TypeName="DBNewFilmModel.User">
+              <MappingFragment StoreEntitySet="User">
+                <ScalarProperty Name="Hinh" ColumnName="Hinh" />
+                <ScalarProperty Name="ThanhToan" ColumnName="ThanhToan" />
+                <ScalarProperty Name="MaCapDo" ColumnName="MaCapDo" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="isCheckLoai" ColumnName="isCheckLoai" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserProfile">
+            <EntityTypeMapping TypeName="DBNewFilmModel.UserProfile">
+              <MappingFragment StoreEntitySet="UserProfile">
+                <ScalarProperty Name="Hinh" ColumnName="Hinh" />
+                <ScalarProperty Name="ProfileName" ColumnName="ProfileName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserThanhToan">
+            <EntityTypeMapping TypeName="DBNewFilmModel.UserThanhToan">
+              <MappingFragment StoreEntitySet="UserThanhToan">
+                <ScalarProperty Name="NgayKT" ColumnName="NgayKT" />
+                <ScalarProperty Name="NgayTT" ColumnName="NgayTT" />
+                <ScalarProperty Name="CapDo" ColumnName="CapDo" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="Phim_TheLoai" TypeName="DBNewFilmModel.Phim_TheLoai" StoreEntitySet="Phim_TheLoai">
+            <EndProperty Name="TheLoai">
+              <ScalarProperty Name="ID" ColumnName="IDCat" />
+            </EndProperty>
+            <EndProperty Name="Phim">
+              <ScalarProperty Name="ID" ColumnName="IDFIlm" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="User_Playlist" TypeName="DBNewFilmModel.User_Playlist" StoreEntitySet="User_Playlist">
+            <EndProperty Name="Phim">
+              <ScalarProperty Name="ID" ColumnName="PhimID" />
+            </EndProperty>
+            <EndProperty Name="User">
+              <ScalarProperty Name="ID" ColumnName="UserID" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "For some reason `SeriesTemplate` attribute is always processed AFTER `SeriesSource` when I set both of them in XAML. This prevents series initialization process that is performed in `OnSeriesSourceChanged` (ChartBase.cs). Thus the chart is not immediately visible after loading. Is there a workaround for this?",
+    "LastUpdatedDate": "2016-11-30T21:29:06.143-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2016-11-30T21:29:06.143-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "SeriesTemplate assigned AFTER SeriesSource",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 17726
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1060593",
+    "ThreadId": "448089",
+    "Html": "<strong>a)</strong> Is it possible to have a &quot;mouse over&quot; color, when the mouse is hovering over a chart value (i.e; a bar or a segment of the pie, etc.) like we see in the the charts provided by the Data Visualization Toolkit's charts?\r<br />\n<br />\n<strong>b)</strong> How can we make the chart's SelectedItem value binding to always be updated, even if it isn't changed? I need to react to the &quot;clicking&quot; of a chart value (i.e.: bar, pie segment, etc)) . I wasn't able to figure this out with playing with the UpdateSourceTrigger binding attribute.\r<br />\n<br />\n<strong>c)</strong> how can I clear out the selected chart value? I've tried setting the viewmodel property to null, but it didn't work. When using KeyValuePair and setting it to the default, it still didn't seem to clear it out.<br />\n",
+    "PostedDate": "2013-06-24T14:43:38.197-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

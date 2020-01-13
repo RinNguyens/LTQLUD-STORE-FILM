@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\n\nthis chart shows the same (first) value for all 3 series. It seems to bind to the ValueMember of the first element in the series for all 3 series.\n\n          <charts:ClusteredColumnChart Style=\"{StaticResource MinimalChartStyle}\" ChartTitle=\"Overview\">\n            <charts:ClusteredColumnChart.Series>\n              <charts:ChartSeries SeriesTitle=\"Takeoffs\" ValueMember=\"TotalTakeoffs\" DisplayMember=\"AircraftDisplayName\" ItemsSource=\"{Binding Statistics}\" />\n              <charts:ChartSeries SeriesTitle=\"Flight-Time\" ValueMember=\"TotalFlightTimeMinutes\" DisplayMember=\"AircraftDisplayName\" ItemsSource=\"{Binding Statistics}\" />\n              <charts:ChartSeries SeriesTitle=\"Engine-Runtime\" ValueMember=\"TotalEngineRuntimeMinutes\" DisplayMember=\"AircraftDisplayName\" ItemsSource=\"{Binding Statistics}\" />\n            </charts:ClusteredColumnChart.Series>\n          </charts:ClusteredColumnChart>",
+    "LastUpdatedDate": "2013-08-28T06:20:57.843-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2013-08-28T06:20:57.843-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Multiple Series in ClusteredColumnChart all show value of first series",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16385
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

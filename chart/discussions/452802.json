@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1078190",
+    "ThreadId": "452802",
+    "Html": "How to work with .net 4.0?<br />\n",
+    "PostedDate": "2013-08-08T05:25:05.977-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1087502",
+    "ThreadId": "452802",
+    "Html": "Download source code,  open WPF project with any text editor and change TargetFramework from 4.5 to 4.0 as shown bellow.\r<br />\n<br />\n &lt;TargetFrameworkVersion&gt;v4.0&lt;/TargetFrameworkVersion&gt;\r<br />\n<br />\nThen you will be able to open and compile that project in 4.0<br />\n",
+    "PostedDate": "2013-09-02T19:46:06.273-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

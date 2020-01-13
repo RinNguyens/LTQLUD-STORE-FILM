@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "1293663",
+    "ThreadId": "562185",
+    "Html": "Hey all!\r<br />\n<br />\nI'm brand new to WPF so I might be missing something simple, but I can't figure out how to change the size of a Gauge Chart. I tried changing the width/height of the chart but that makes no difference. Now, I am trying to change it through styling the ChartArea, but I can't get it to work either. I've inserted my Resources section below. Thanks for any help!<br />\n<pre><code>&lt;Application.Resources&gt;\n        &lt;ResourceDictionary&gt;\n            &lt;ResourceDictionary.MergedDictionaries&gt;\n                &lt;ResourceDictionary Source=&quot;/De.TorstenMandelkow.MetroChart;component/Themes/Generic.xaml&quot;/&gt;\n            &lt;/ResourceDictionary.MergedDictionaries&gt;\n\n            &lt;Style x:Key=&quot;MinimalChartAreaStyle&quot; TargetType=&quot;chart:ChartArea&quot; BasedOn=&quot;{StaticResource RadialGaugeChartChartAreaStyle}&quot;&gt;\n                &lt;Setter Property=&quot;Width&quot; Value=&quot;50&quot;/&gt;\n                &lt;Setter Property=&quot;Height&quot; Value=&quot;50&quot;/&gt;\n            &lt;/Style&gt;\n            &lt;Style x:Key=&quot;MinimalChartStyle&quot; TargetType=&quot;chart:ChartBase&quot;&gt;\n                &lt;Setter Property=&quot;Width&quot; Value=&quot;200&quot;/&gt;\n                &lt;Setter Property=&quot;Height&quot; Value=&quot;200&quot;/&gt;\n                &lt;Setter Property=&quot;ChartAreaStyle&quot; Value=&quot;{StaticResource MinimalChartAreaStyle}&quot;/&gt;\n            &lt;/Style&gt;\n        &lt;/ResourceDictionary&gt;\n    &lt;/Application.Resources&gt;</code></pre>\n\n",
+    "PostedDate": "2014-08-26T12:57:30.667-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1294226",
+    "ThreadId": "562185",
+    "Html": "This is an example how you can change the size of the Pie Chart, I hope that it is a starting point:<br />\n<pre><code>&lt;chart:PieChart Grid.Row=&quot;1&quot; Margin=&quot;0,0,0,0&quot; VerticalAlignment=&quot;Stretch&quot; HorizontalAlignment=&quot;Stretch&quot;\n        ChartTitle=&quot;Minimal Pie Chart&quot;\n        ChartSubTitle=&quot;Rendimientos&quot;\n        SelectedItem=&quot;{Binding Path=SelectedItem, Mode=TwoWay}&quot; &gt;\n            &lt;chart:PieChart.Series&gt;\n                &lt;chart:ChartSeries\n                    VerticalContentAlignment=&quot;Top&quot;\n                    HorizontalContentAlignment=&quot;Right&quot;\n                    HorizontalAlignment=&quot;Right&quot;\n                    VerticalAlignment=&quot;Top&quot;\n                    Background=&quot;Aquamarine&quot;\n                SeriesTitle=&quot;Rendimientos&quot;\n                DisplayMember=&quot;Category&quot;\n                ValueMember=&quot;Number&quot;\n                ItemsSource=&quot;{Binding Path=OrigenDatos}&quot;/&gt;\n            &lt;/chart:PieChart.Series&gt;\n        &lt;/chart:PieChart&gt;</code></pre>\n\nOFF TOPIC:<br />\n<br />\ncould you show me your code to larne how you insert a gauge chart?<br />\n<br />\n<br />\n<br />\nThanks.<br />\n",
+    "PostedDate": "2014-08-28T03:51:23.347-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1294253",
+    "ThreadId": "562185",
+    "Html": "I'm using this to insert the Radial Gauge Chart. Let me know if it doesn't work.<br />\n<pre><code>&lt;chart:RadialGaugeChart Grid.Row=&quot;0&quot; ChartTitle=&quot;Gauge Chart&quot; ChartSubTitle=&quot;&quot; Style=&quot;{StaticResource MinimalChartStyle}&quot;&gt;\n            &lt;chart:RadialGaugeChart.Series&gt;\n                &lt;chart:ChartSeries SeriesTitle=&quot;Errors&quot; DisplayMember=&quot;Category&quot; ValueMember=&quot;Number&quot; ItemsSource=&quot;{Binding Path=Errors}&quot;/&gt;\n            &lt;/chart:RadialGaugeChart.Series&gt;\n&lt;/chart:RadialGaugeChart&gt;</code></pre>\n\n",
+    "PostedDate": "2014-08-28T05:45:32.55-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1294285",
+    "ThreadId": "562185",
+    "Html": "Thank you so much.<br />\n<br />\nI am trying to modify the size of the charts. For example, I have the half right side of the screen for 4 gauge charts, but I only can see all of the in full screen, but if I change the size of the window then I can olny see one gauge chart.<br />\n<br />\nI would like that the size of the four gauge charts adjust to the space of the control, the half right side of the window, and show all the charts.<br />\n<br />\n<br />\n<br />\nThanks.<br />\n",
+    "PostedDate": "2014-08-28T06:47:08.057-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1298333",
+    "ThreadId": "562185",
+    "Html": "Hello Again,\r<br />\n<br />\nI figured out that the RadialGaugeChart size is based on the ClientWidth &amp; ClientHeight of the RadialGaugePiece, but I cannot figure out a clean way to style it, meaning for each size I would need to have an individual copy of style template for the PlotterArea. Does anyone know a better way to do this?\r<br />\n<br />\nThank you for any help!<br />\n",
+    "PostedDate": "2014-09-02T14:19:14.017-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1308786",
+    "ThreadId": "562185",
+    "Html": "Hi, \r<br />\n<br />\nHope you get some guidance from this <a href=\"http://www.kettic.com/how-to/aspnet-ajax/controls-chart/overview/\" rel=\"nofollow\">chart</a> page!\r<br />\n<br />\nKind regards,\r<br />\nIvy Miller<br />\n",
+    "PostedDate": "2014-09-28T21:22:16.387-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1311957",
+    "ThreadId": "562185",
+    "Html": "Hi friend,\r<br />\n<br />\ntry this in your Generic.xaml, <br />\n<pre><code>&lt;Style x:Key=&quot;RadialGaugeChartChartAreaStyle&quot; TargetType=&quot;chart:ChartArea&quot;&gt;\n        &lt;Setter Property=&quot;Template&quot;&gt;\n            &lt;Setter.Value&gt;\n                &lt;ControlTemplate TargetType=&quot;chart:ChartArea&quot;&gt;\n                    &lt;Grid&gt;\n                        &lt;Viewbox Height=&quot;Auto&quot; Width=&quot;Auto&quot;&gt;\n                            &lt;ContentControl Content=&quot;{TemplateBinding Content}&quot; VerticalAlignment=&quot;Stretch&quot; HorizontalAlignment=&quot;Stretch&quot; VerticalContentAlignment=&quot;Stretch&quot; HorizontalContentAlignment=&quot;Stretch&quot; /&gt;\n                        &lt;/Viewbox&gt;\n                    &lt;/Grid&gt;\n                &lt;/ControlTemplate&gt;\n            &lt;/Setter.Value&gt;\n        &lt;/Setter&gt;\n    &lt;/Style&gt;</code></pre>\n\nRegards,\r<br />\nFrancisco J. N. Jr<br />\n",
+    "PostedDate": "2014-10-09T12:01:24.927-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1313999",
+    "ThreadId": "562185",
+    "Html": "@franciscojunior: That worked great, thanks!<br />\n",
+    "PostedDate": "2014-10-16T08:01:54.22-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

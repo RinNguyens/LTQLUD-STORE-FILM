@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1428216",
+    "ThreadId": "639004",
+    "Html": "Hi folks, \r<br />\n<br />\nI created a Stacked Columns chart and now have the problem, that the series titles are not shown completely. They are cut off on top and bottom. Does someone know how you change the height of seriesTitles?<br />\n",
+    "PostedDate": "2015-06-01T06:20:12.8-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

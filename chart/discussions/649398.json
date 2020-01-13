@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1457410",
+    "ThreadId": "649398",
+    "Html": "I particularly need to add some space between columns in a chart. Is this possible, and how? (please include sample code/xaml)\r<br />\n<br />\nThx in advance<br />\n",
+    "PostedDate": "2015-12-29T01:44:26.49-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1488804",
+    "ThreadId": "649398",
+    "Html": "Don't know if you need it now, but for any future reader, adding space between columns is simply a matter of adding a style in the Resources section of your Chart object. Something like this:<br />\n<pre><code>      &lt;chart:StackedColumnChart.Resources&gt;\n        &lt;Style TargetType=&quot;chart:ColumnPiece&quot;&gt;\n          &lt;Setter Property=&quot;Margin&quot; Value=&quot;10,0&quot; /&gt;\n        &lt;/Style&gt;\n      &lt;/chart:StackedColumnChart.Resources&gt;\n</code></pre>\n\nI used DropShadowEffect to make it look more appealing:<br />\n<pre><code>      &lt;chart:StackedColumnChart.Resources&gt;\n        &lt;Style TargetType=&quot;chart:ColumnPiece&quot;&gt;\n          &lt;Setter Property=&quot;Margin&quot; Value=&quot;10,0&quot; /&gt;\n          &lt;Setter Property=&quot;Effect&quot;&gt;\n            &lt;Setter.Value&gt;\n              &lt;DropShadowEffect /&gt;\n            &lt;/Setter.Value&gt;\n          &lt;/Setter&gt;\n        &lt;/Style&gt;\n      &lt;/chart:StackedColumnChart.Resources&gt;\n</code></pre>\n\n",
+    "PostedDate": "2016-11-25T23:43:07.27-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

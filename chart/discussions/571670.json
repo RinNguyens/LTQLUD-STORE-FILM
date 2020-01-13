@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "1320503",
+    "ThreadId": "571670",
+    "Html": "I have a ClusteredBarChart:<br />\n<pre><code>&lt;chart:ClusteredBarChart ChartTitle=&quot;{Binding AreaChartTitle}&quot; \n    ChartSubTitle=&quot;{Binding AreaChartSubTitle}&quot; \n    SelectedItem=&quot;{Binding SelectedArea, Mode=TwoWay}&quot; Grid.Column=&quot;3&quot; Grid.RowSpan=&quot;10&quot;&gt;\n    &lt;chart:ClusteredBarChart.Series&gt;\n        &lt;chart:ChartSeries SeriesTitle=&quot;Areas&quot; DisplayMember=&quot;Key&quot;\n            ValueMember=&quot;Count&quot; ItemsSource=&quot;{Binding Areas}&quot;/&gt;\n    &lt;/chart:ClusteredBarChart.Series&gt;\n&lt;/chart:ClusteredBarChart&gt;\n\nprivate ObservableCollection&lt;AreaData&gt; Areas { get; set; }\n\npublic class AreaData\n{\n    public string Key { get; set; }\n    public int Count { get; set; }\n}</code></pre>\n\nI would like to display Key to the left of each of the bars... but I'm unable to do so.  The only time I'm able to do it is when I switch rows and column, but then Legend gets messed up and color palette becomes monotone.<br />\n",
+    "PostedDate": "2014-11-10T02:18:36.723-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1321596",
+    "ThreadId": "571670",
+    "Html": "Never mind, I was able to figure out.  I went into source code and under De.TorstenMandelkow.Metro.Chart.WPF, I opened up the Generic.xaml.  Then, I simply added a textblock within ColumnPiece and BarPiece that has a binding to Caption.  I then offset the textblock down for the columns and left for the bars.  Took a bit figuring out, but it's not too bad.  Documentation obviously needs a lot of work, but the project seems to have been dead for a while....  I wish there was a scatter chart.  I might have to create one, but my skills are not nearly as up there as this project manager's.<br />\n",
+    "PostedDate": "2014-11-13T01:54:07.567-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": "2014-11-16T17:21:06.36-08:00"
+  },
+  {
+    "Id": "1321800",
+    "ThreadId": "571670",
+    "Html": "I am in need of a scatter chart and line chart as well.  If you do create one, please post an update.  Maybe at some point, I will have time to dissect the code and work on one.<br />\n",
+    "PostedDate": "2014-11-13T07:41:58.837-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1441429",
+    "ThreadId": "571670",
+    "Html": "ChrisKerens -  I have started a new project with Torsten's approval that includes all his charts plus the addition of scatter / line charts. It also includes negative value support on the column chart. <a href=\"https://gamandelkowcharts.codeplex.com/\" rel=\"nofollow\">WPF Metro UI Charts</a><br />\n",
+    "PostedDate": "2015-08-22T20:34:58.633-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

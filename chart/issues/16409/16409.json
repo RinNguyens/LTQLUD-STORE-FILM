@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "StackedColumnChart dos not support negative numbers",
+    "LastUpdatedDate": "2014-02-05T11:20:17.993-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2013-09-10T01:50:26.347-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "StackedColumnChart dos not support negative numbers",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 2,
+    "Id": 16409
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "It would be nice, if this issue could be solved. ",
+      "PostedDate": "2013-10-15T05:02:52.78-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2014-02-05T11:20:17.993-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

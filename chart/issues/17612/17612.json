@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi guys,\n\nI can't hide the 'WpfSimpleChart' legend in the StackedColumnChart with or without the CHartLegentVisibility property.\n\nI added the following nuget package in my project : https://www.nuget.org/packages/ModernUICharts/ \n\nHere's my code in case I do something wrong :\n\n<chart:StackedColumnChart Name=\"columnSupplier\"\n                    Style=\"{StaticResource MinimalChartStyle}\"\n                    ChartTitle=\"Tendance Fournisseur GBNC\"\n                    ChartSubTitle=\"Sur 12 mois\"\n                    __ChartLegendVisibility=\"Hidden\"__\n                    Background=\"White\" Foreground=\"Black\"\n                    Margin=\"20,0,0,0\">\n                <chart:StackedColumnChart.Series>\n                    <chart:ChartSeries DisplayMember=\"DateReleve\" ValueMember=\"Percentage\"\n                                       ItemsSource=\"{Binding Path=AnalyticsSupplierEvolutionData}\" />\n                </chart:StackedColumnChart.Series>\n            </chart:StackedColumnChart>\n\nThanks for the help",
+    "LastUpdatedDate": "2016-02-22T16:31:03.62-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2016-02-22T16:29:40.237-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "\"WpfSimpleChart\" legend label is displayed",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 17612
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "The \"__ChartLegendVisibility='Hidden__\" was to make it bold ... but it doesn't work ! Consider it without the leading and trailing '__'.",
+      "PostedDate": "2016-02-22T16:31:03.62-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

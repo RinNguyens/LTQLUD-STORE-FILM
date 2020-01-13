@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1334776",
+    "ThreadId": "575814",
+    "Html": "Please tell me how to show Data labels as percentage in pie chart and all other charts?<br />\n",
+    "PostedDate": "2014-12-18T23:49:42.25-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1338297",
+    "ThreadId": "575814",
+    "Html": "Is anyone entertaining this thread?\r<br />\n<br />\nI'm also looking for the solution.<br />\n",
+    "PostedDate": "2015-01-01T03:50:25.02-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1339892",
+    "ThreadId": "575814",
+    "Html": "Yes it is possible, I did something similar for my own needs. You have to spot the name of the control containing the label and override the default style. Unfortunately it depends of the chart type and I do not have a generic solution for all kind of charts.\r<br />\n<br />\nTo continue our example, for the pie charts, you will have to override the default style for the pie piece. You will note that I have added the StringFormat where I needed..<br />\n<pre><code>&lt;Style TargetType=&quot;chart:PiePiece&quot;&gt;\n                        &lt;Setter Property=&quot;Background&quot; Value=&quot;Transparent&quot; /&gt;\n                        &lt;Setter Property=&quot;BorderBrush&quot; Value=&quot;White&quot; /&gt;\n                        &lt;Setter Property=&quot;BorderThickness&quot; Value=&quot;0&quot; /&gt;\n                        &lt;Setter Property=&quot;IsTabStop&quot; Value=&quot;False&quot; /&gt;\n                        &lt;Setter Property=&quot;Template&quot;&gt;\n                            &lt;Setter.Value&gt;\n                                &lt;ControlTemplate TargetType=&quot;chart:PiePiece&quot;&gt;\n                                    &lt;Canvas x:Name=&quot;Root&quot;&gt;\n                                        &lt;Path x:Name=&quot;Slice&quot; Data=&quot;{TemplateBinding Geometry}&quot; Fill=&quot;{TemplateBinding Background}&quot; Stroke=&quot;{TemplateBinding BorderBrush}&quot; StrokeMiterLimit=&quot;1&quot;&gt;\n                                            &lt;ToolTipService.ToolTip&gt;\n                                                &lt;StackPanel&gt;\n                                                    &lt;ContentControl Content=&quot;{TemplateBinding Value, Converter={StaticResource MoneyC}}&quot; /&gt;\n                                                &lt;/StackPanel&gt;\n                                            &lt;/ToolTipService.ToolTip&gt;\n                                        &lt;/Path&gt;\n                                        &lt;Path x:Name=&quot;LabelLine&quot; Data=&quot;{TemplateBinding LineGeometry}&quot; StrokeThickness=&quot;1&quot; StrokeMiterLimit=&quot;1&quot; Stroke=&quot;{TemplateBinding Foreground}&quot;  IsHitTestVisible=&quot;False&quot; /&gt;\n                                        &lt;TextBlock x:Name=&quot;PART_Label&quot;  Margin=&quot;2&quot; &gt;\n                                            &lt;TextBlock.Text&gt;\n                                                &lt;Binding Path=&quot;Value&quot;   StringFormat=&quot;{}{0}%&quot; RelativeSource=&quot;{RelativeSource Mode=TemplatedParent}&quot;/&gt;\n                                            &lt;/TextBlock.Text&gt;\n                                        &lt;/TextBlock&gt;\n                                    &lt;/Canvas&gt;\n                                &lt;/ControlTemplate&gt;\n                            &lt;/Setter.Value&gt;\n                        &lt;/Setter&gt;\n                    &lt;/Style&gt;</code></pre>\n\n",
+    "PostedDate": "2015-01-07T16:09:08.283-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1339951",
+    "ThreadId": "575814",
+    "Html": "Thanks patra for your support. The code snippet helped.<br />\n",
+    "PostedDate": "2015-01-07T23:45:13.933-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1436666",
+    "ThreadId": "575814",
+    "Html": "Thanks a lot.\r<br />\n<br />\nFor BarCharts I did the following:<br />\n<pre><code>&lt;Style TargetType=&quot;chart:AutoSizeTextBlock&quot;&gt;\n        &lt;Setter Property=&quot;HorizontalAlignment&quot; Value=&quot;Stretch&quot; /&gt;\n        &lt;Setter Property=&quot;VerticalAlignment&quot; Value=&quot;Stretch&quot; /&gt;\n        &lt;Setter Property=&quot;Template&quot;&gt;\n            &lt;Setter.Value&gt;\n                &lt;ControlTemplate TargetType=&quot;chart:AutoSizeTextBlock&quot;&gt;\n                    &lt;Border x:Name=&quot;PART_Border&quot; HorizontalAlignment=&quot;Stretch&quot; BorderThickness=&quot;0&quot; Margin=&quot;0&quot;&gt;\n                        &lt;TextBlock x:Name=&quot;PART_TextBlock&quot; VerticalAlignment=&quot;Center&quot; Margin=&quot;5 0 5 0&quot;  Opacity=&quot;1&quot; HorizontalAlignment=&quot;Center&quot; Style=&quot;{TemplateBinding TextBlockStyle}&quot; &gt;\n                                            &lt;TextBlock.Text&gt;\n                                                &lt;Binding Path=&quot;Value&quot;   StringFormat=&quot;{}{0}%&quot;/&gt;\n                                            &lt;/TextBlock.Text&gt;\n                        &lt;/TextBlock&gt;\n                    &lt;/Border&gt;\n                &lt;/ControlTemplate&gt;\n            &lt;/Setter.Value&gt;\n        &lt;/Setter&gt;\n    &lt;/Style&gt;</code></pre>\n\n",
+    "PostedDate": "2015-07-30T11:16:05.683-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

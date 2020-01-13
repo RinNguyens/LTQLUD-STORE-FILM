@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1294853",
+    "ThreadId": "562653",
+    "Html": "In the main window I have this code:<br />\n<pre><code>&lt;Window x:Class=&quot;TestApplicationWPF.MainWindow&quot;\n        xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot;\n        xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;        \n        Title=&quot;Modern UI Charts by Torsten Mandelkow&quot;         \n        Height=&quot;700&quot; \n        Width=&quot;900&quot;        \n        Loaded=&quot;ShellView_Loaded_1&quot;&gt;\n    &lt;Grid x:Name=&quot;mainGrid&quot;&gt;\n        &lt;ContentControl Content=&quot;{Binding}&quot; VerticalAlignment=&quot;Stretch&quot; HorizontalAlignment=&quot;Stretch&quot; /&gt;\n        &lt;Grid.LayoutTransform&gt;\n            &lt;ScaleTransform CenterX=&quot;0.5&quot; CenterY=&quot;0.5&quot; ScaleX=&quot;1.0&quot; ScaleY=&quot;1.0&quot; /&gt;\n        &lt;/Grid.LayoutTransform&gt;\n    &lt;/Grid&gt;\n&lt;/Window&gt;</code></pre>\n\nBut I don't know where is create the charts and the bindigs. I would like to se the code of the axml where the charts are created and the configuration of the bindings.\r<br />\n<br />\nReally  don't know how works the code.\r<br />\n<br />\n<br />\n<br />\nThank so much.<br />\n",
+    "PostedDate": "2014-08-29T04:17:37.473-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1111857",
+    "ThreadId": "463490",
+    "Html": "Has anyone had success with implementing their own line chart into this library?<br />\n",
+    "PostedDate": "2013-10-24T14:42:06.42-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1112792",
+    "ThreadId": "463490",
+    "Html": "Ok, I guess not :) I don't mind doing it myself but I'm struggling for ideas on how to actually draw the lines. \r<br />\n<br />\nI created a LineChart with the following PlotterAreaStyle to test:<br />\n<pre><code>&lt;Style x:Key=&quot;LineChartPlotterAreaStyle&quot; TargetType=&quot;charting:PlotterArea&quot; BasedOn=&quot;{StaticResource BasePlotterAreaStyle}&quot;&gt;\n        &lt;Setter Property=&quot;Template&quot;&gt;\n            &lt;Setter.Value&gt;\n                &lt;ControlTemplate TargetType=&quot;charting:PlotterArea&quot;&gt;\n                    &lt;charting:FadingListView   \n                        x:Name=&quot;itemsPanel&quot; \n                        Style=&quot;{StaticResource FadingListViewStyle}&quot;\n                        ItemsSource=&quot;{Binding Path=ParentChart.DataPointGroups, RelativeSource={RelativeSource Mode=TemplatedParent}}&quot;&gt;\n                        &lt;charting:FadingListView.ItemsPanel&gt;\n                            &lt;ItemsPanelTemplate&gt;\n                                &lt;Canvas Margin=&quot;0,10,0,0&quot; /&gt;\n                            &lt;/ItemsPanelTemplate&gt;\n                        &lt;/charting:FadingListView.ItemsPanel&gt;\n                        &lt;charting:FadingListView.ItemTemplate&gt;\n                            &lt;DataTemplate&gt;\n                                &lt;Polyline Points=&quot;10,100 100,200 200,30 250,200 200,150&quot; Stroke=&quot;Pink&quot; Stretch=&quot;Fill&quot; Width=&quot;Auto&quot; StrokeThickness=&quot;1&quot; /&gt;\n                            &lt;/DataTemplate&gt;\n                        &lt;/charting:FadingListView.ItemTemplate&gt;\n                    &lt;/charting:FadingListView&gt;\n                &lt;/ControlTemplate&gt;\n            &lt;/Setter.Value&gt;\n        &lt;/Setter&gt;\n    &lt;/Style&gt;</code></pre>\n\nThis gives the polyline correctly but I have no idea on how to correspond this to the data for the series. Anyone have ideas?<br />\n",
+    "PostedDate": "2013-10-27T15:42:52.07-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1162491",
+    "ThreadId": "463490",
+    "Html": "I have used these charts in the past and I'm about to start a new project that requires a line chart...<br />\n",
+    "PostedDate": "2014-01-13T13:50:07.333-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1162532",
+    "ThreadId": "463490",
+    "Html": "I ended up using this library for my gauges and bar charts and the wpf toolkit data visualization for my line graphs with styles to make them look like they came from this library. I don't have enough experience with custom controls to take on such a big task.\r<br />\n<br />\nWould be interested to see your implementation if you end up tackling it.<br />\n",
+    "PostedDate": "2014-01-13T14:04:37.343-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1224045",
+    "ThreadId": "463490",
+    "Html": "As would I. How did you get on?<br />\n",
+    "PostedDate": "2014-03-18T09:15:11.587-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

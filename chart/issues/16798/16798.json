@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi All,\n\n\nAs I have seen in the Modern UI chart control sample.\n\nI am looking for gauge indicator control. with an indicator in it.\n\n\nLike a semi circle chart with indicator below jus  like in a car we have a speed indicator control.\n\n\nSo is there anything  like in your chart.\n\nWhat I have seen in the demo sample control is Full circle gauge chart control",
+    "LastUpdatedDate": "2014-04-04T03:06:28.337-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2014-04-04T03:06:28.337-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Mordern UI chart Gauge Indicator control",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16798
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

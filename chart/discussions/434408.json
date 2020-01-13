@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1006299",
+    "ThreadId": "434408",
+    "Html": "Hello. I had some problems running this project, but now it works fine and I really enjoy it. Great work!!!<br />\n<br />\nBut I also get some minor (I hope) problems.<br />\nBecause I can't recompile Your project (at the moment), I'm using debug library provided with source code. And I have problem with styling larger number of series. Everything after sixth series is red.<br />\nIs it posible to manually style further series without recompiling whole project? I just can't track Series styling point.<br />\n<br />\nBest regards.<br />\nKyroPL<br />\n",
+    "PostedDate": "2013-02-25T06:35:24.907-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1039591",
+    "ThreadId": "434408",
+    "Html": "Hi KyroPL,\r<br />\n<br />\nsorry for my very late answer.\r<br />\n<br />\nRegarding your questions: Please try the new version (BETA). A lot has been improved and now you have more options for custom styling. \r<br />\nCheck out the test applications (e.g. the SL version at <a href=\"http://www.tetracon.de/charts\" rel=\"nofollow\">http://www.tetracon.de/charts</a>) and play with the different settings.\r<br />\n<br />\nCheers,\r<br />\nTorsten<br />\n",
+    "PostedDate": "2013-05-05T12:09:47.25-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

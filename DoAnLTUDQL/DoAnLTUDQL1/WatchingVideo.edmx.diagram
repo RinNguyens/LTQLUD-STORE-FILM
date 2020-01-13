@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1d61cb7f2060479d9161d18ccabe4148" Name="Diagram1" ZoomLevel="40">
+        <EntityTypeShape EntityType="DBNewFilmModel.CapDo" Width="1.5" PointX="0.75" PointY="5.25" />
+        <EntityTypeShape EntityType="DBNewFilmModel.LoaiTaiKhoan" Width="1.5" PointX="0.75" PointY="2.375" />
+        <EntityTypeShape EntityType="DBNewFilmModel.Profile_Playlist" Width="1.5" PointX="7.5" PointY="8.25" />
+        <EntityTypeShape EntityType="DBNewFilmModel.Phim" Width="1.5" PointX="8.25" PointY="2.25" />
+        <EntityTypeShape EntityType="DBNewFilmModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DBNewFilmModel.TinhTrangThanhToan" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="DBNewFilmModel.TheLoai" Width="1.5" PointX="10.5" PointY="3.5" />
+        <EntityTypeShape EntityType="DBNewFilmModel.User" Width="1.5" PointX="3" PointY="4.5" />
+        <EntityTypeShape EntityType="DBNewFilmModel.UserProfile" Width="1.5" PointX="5.25" PointY="8.25" />
+        <EntityTypeShape EntityType="DBNewFilmModel.UserThanhToan" Width="1.5" PointX="5.25" PointY="5.25" />
+        <AssociationConnector Association="DBNewFilmModel.FK_TaiKhoan_CapDo" />
+        <AssociationConnector Association="DBNewFilmModel.FK_UserThanhToan_CapDo" />
+        <AssociationConnector Association="DBNewFilmModel.FK_TaiKhoan_LoaiTaiKhoan" />
+        <AssociationConnector Association="DBNewFilmModel.FK_Profile_Playlist_Phim" />
+        <AssociationConnector Association="DBNewFilmModel.FK_Profile_Playlist_UserProfile" />
+        <AssociationConnector Association="DBNewFilmModel.FK_Phim_TheLoai" />
+        <AssociationConnector Association="DBNewFilmModel.FK_User_TinhTrangThanhToan" />
+        <AssociationConnector Association="DBNewFilmModel.FK_UserProfile_User" />
+        <AssociationConnector Association="DBNewFilmModel.FK_UserThanhToan_User" />
+        <AssociationConnector Association="DBNewFilmModel.Phim_TheLoai" />
+        <AssociationConnector Association="DBNewFilmModel.User_Playlist" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

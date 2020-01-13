@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "980265",
+    "ThreadId": "427363",
+    "Html": "\r\n<p>hi tnx for beautiful&nbsp;chart</p>\r\n<p>but it work only in your project</p>\r\n<p>i added dlls in my project but it didn't work</p>\r\n<p>it had a error</p>\r\n<p>COMException: Error HRESULT E_FAIL has been returned from a call to a COM component.</p>\r\n<p>please help me</p>\r\n",
+    "PostedDate": "2012-12-26T21:55:27.05-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "983180",
+    "ThreadId": "427363",
+    "Html": "\r\n<p>Hi,<br>\r\n<br>\r\nSorry for late answer (Christmas Holiday :-)<br>\r\n<br>\r\nCan you describe the error in more detail? Do you have the Exception in WinRT app? Maybe you can send me your project.\r\n<br>\r\n<br>\r\nIn WinRT the error messages are often not very helpful. In most cases&nbsp;they come from missing StaticResources.<br>\r\n<br>\r\nKind regards,<br>\r\n<br>\r\nTorsten</p>\r\n",
+    "PostedDate": "2013-01-04T13:07:26.72-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "991956",
+    "ThreadId": "427363",
+    "Html": "\r\n<p>hi</p>\r\n<p>when add dll of your chart in my project (in add reference)&nbsp;</p>\r\n<p>my solution got error that</p>\r\n<p>Error<span> </span>1<span> </span>Payload file</p>\r\n<p>'E:\\ModernUIChart\\TestApplication.WinRT\\bin\\Debug\\De.TorstenMandelkow.MetroChart\\Themes\\Generic.xaml' does not exist.<span>\r\n</span></p>\r\n<p><span>why?</span></p>\r\n",
+    "PostedDate": "2013-01-25T02:08:21.063-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1227231",
+    "ThreadId": "427363",
+    "Html": "i'm facing same error \r<br />\n<br />\nhi tnx for beautiful chart\r<br />\n<br />\nbut it work only in your project\r<br />\n<br />\ni added dlls in my project but it didn't work\r<br />\n<br />\nit had a error\r<br />\n<br />\nCOMException: Error HRESULT E_FAIL has been returned from a call to a COM component.\r<br />\n<br />\nplease help me\r<br />\n<br />\n'error=E:\\ModernUIChart\\TestApplication.WinRT\\bin\\Debug\\De.TorstenMandelkow.MetroChart\\Themes\\Generic.xaml' does not exist.<br />\n",
+    "PostedDate": "2014-03-27T01:06:11.813-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1227237",
+    "ThreadId": "427363",
+    "Html": "<strong>pratius wrote:</strong><br />\n<blockquote>\ni'm facing same error <br />\n<br />\nhi tnx for beautiful chart<br />\n<br />\nbut it work only in your project<br />\n<br />\ni added dlls in my project but it didn't work<br />\n<br />\nit had a error<br />\n<br />\nCOMException: Error HRESULT E_FAIL has been returned from a call to a COM component.<br />\n<br />\nplease help me<br />\n<br />\n'error=E:\\ModernUIChart\\TestApplication.WinRT\\bin\\Debug\\De.TorstenMandelkow.MetroChart\\Themes\\Generic.xaml' does not exist.<br />\n</blockquote>\n<img src=\"http://example.com/logo.jpg\" alt=\"Image\" /><br />\n",
+    "PostedDate": "2014-03-27T01:26:21.787-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

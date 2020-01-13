@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1456462",
+    "ThreadId": "648960",
+    "Html": "How to add thousand separator in tooltip and value/text inside of the bar column?<br />\n",
+    "PostedDate": "2015-12-18T19:33:39.797-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1456465",
+    "ThreadId": "648960",
+    "Html": "found it. just need to add stringformat in generic.xaml.\r<br />\nNumberStyle for inside column and LeftNumbers for left numbers<br />\n",
+    "PostedDate": "2015-12-18T21:25:02.087-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1460560",
+    "ThreadId": "648960",
+    "Html": "I also am having an issue regarding this matter. Would you please teach me how things are working to edit the numeric format for numbers.\r<br />\n<br />\nThanks,<br />\n",
+    "PostedDate": "2016-01-25T09:16:32.667-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1477896",
+    "ThreadId": "648960",
+    "Html": "Hello there, I'm with the same problem. How I do this? I googled this but can't find any tutorial. Can you put an example only to see. \r<br />\n<br />\nThanks any way.<br />\n",
+    "PostedDate": "2016-07-01T12:14:13.147-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1485863",
+    "ThreadId": "648960",
+    "Html": "Hello all,<br />\n <br />\nI'm having the same issue, can anyone help? <br />\n<br />\nThanks.<br />\n",
+    "PostedDate": "2016-10-12T00:55:09.133-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

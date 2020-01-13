@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Trying to add value 450 in ValueMember or 900 lets suppose chart should be filled 50% in case of 450 and 100% in case of 900. but it's not showing as expected.\n\nI am using RadialGaugeChart.",
+    "LastUpdatedDate": "2017-09-26T03:32:32.243-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2017-09-26T03:32:32.243-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Want to show more than 100 value in ValueMember but chart is not giving expected result",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 17773
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

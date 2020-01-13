@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1144110",
+    "ThreadId": "479134",
+    "Html": "When I adjust the height and width, the size of the viewing container containing the charts is changed cutting off the charts.  Is there a way to reduce the size of Radial Gauge Charts themselves?<br />\n",
+    "PostedDate": "2013-12-30T21:02:01.503-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1155249",
+    "ThreadId": "479134",
+    "Html": "First things first.\r<br />\n<br />\nThis library is AWESOME !\r<br />\n<br />\nsecond. I'd like to know how to resize the RadialGaugeChart as well.\r<br />\n<br />\n@tjm6f4 did you find a solution already?<br />\n",
+    "PostedDate": "2014-01-11T14:34:13.907-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1155836",
+    "ThreadId": "479134",
+    "Html": "Ok, I found that the width/height are actually hard-coded within the &quot;RadialGaugeChartPlotterAreaStyle&quot; style.\r<br />\n<br />\nI tried to make them dynamic with a binding, but that results in measure exceptions. I suppose the developer ran into this too.\r<br />\n<br />\nThe solution is to supply your own style (copy the whole &quot;RadialGaugeChartPlotterAreaStyle&quot; style to a local resource and set it there).\r<br />\n<br />\nWhat I did was copy the whole Generic.xaml over to my project and edit styles from there.<br />\n",
+    "PostedDate": "2014-01-11T18:20:21.313-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": "2014-01-26T14:46:47.21-08:00"
+  },
+  {
+    "Id": "1198378",
+    "ThreadId": "479134",
+    "Html": "Thanks for looking into that @remcoros and sorry for the delayed response.<br />\n\r<br />\nMaybe the developer will see this thread and take some time to implement this.  I wanted to be able to utilize this for a project utilizing a <a href=\"https://mui.codeplex.com/\" rel=\"nofollow\">different UI style</a> than the Windows 8 tile stuff, but things need to be smaller to look correctly for what I'm doing.<br />\n",
+    "PostedDate": "2014-01-26T14:46:44.747-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1325308",
+    "ThreadId": "479134",
+    "Html": "Hi,<br />\n<br />\nHow do I use a new RadialGaugeChartPlotterAreaStyle as a local resource? I have the following code from another thread which looks as though it should work:<br />\n<pre><code>&lt;Style x:Key=&quot;RadialGaugeChartChartAreaStyle&quot; TargetType=&quot;chart:ChartArea&quot;&gt;\n        &lt;Setter Property=&quot;Template&quot;&gt;\n            &lt;Setter.Value&gt;\n                &lt;ControlTemplate TargetType=&quot;chart:ChartArea&quot;&gt;\n                    &lt;Grid&gt;\n                        &lt;Viewbox Height=&quot;Auto&quot; Width=&quot;Auto&quot;&gt;\n                            &lt;ContentControl Content=&quot;{TemplateBinding Content}&quot; VerticalAlignment=&quot;Stretch&quot; HorizontalAlignment=&quot;Stretch&quot; VerticalContentAlignment=&quot;Stretch&quot; HorizontalContentAlignment=&quot;Stretch&quot; /&gt;\n                        &lt;/Viewbox&gt;\n                    &lt;/Grid&gt;\n                &lt;/ControlTemplate&gt;\n            &lt;/Setter.Value&gt;\n        &lt;/Setter&gt;\n    &lt;/Style&gt;</code></pre>\n\nHow can I implement this into my project? Do I need to alter the source code?<br />\n<br />\nMany Thanks<br />\n",
+    "PostedDate": "2014-11-23T12:08:46.467-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

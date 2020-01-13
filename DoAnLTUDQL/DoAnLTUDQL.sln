@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoAnLTUDQL1", "DoAnLTUDQL1\DoAnLTUDQL1.csproj", "{98CAFB2F-7697-41A7-A5D9-79F9AC1D2673}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libaries", "Libaries", "{D6C89D68-5994-40CC-98E4-C78D240B358E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "unirest-net (net40)", "..\unirest-net-master\unirest-net\unirest-net (net40)\unirest-net (net40).csproj", "{BB1927F2-4FC7-4520-8680-49C0245E05E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "De.TorstenMandelkow.MetroChart.WPF", "..\chart\sourceCode\ModernUIChart\De.TorstenMandelkow.MetroChart.WPF\De.TorstenMandelkow.MetroChart.WPF.csproj", "{4AB4B0DB-780C-48B9-A642-8E527353D957}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "De.TorstenMandelkow.MetroChart", "..\chart\sourceCode\ModernUIChart\De.TorstenMandelkow.MetroChart\De.TorstenMandelkow.MetroChart.csproj", "{FA286411-E476-4BD0-ABE9-7AE69226069C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98CAFB2F-7697-41A7-A5D9-79F9AC1D2673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98CAFB2F-7697-41A7-A5D9-79F9AC1D2673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98CAFB2F-7697-41A7-A5D9-79F9AC1D2673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98CAFB2F-7697-41A7-A5D9-79F9AC1D2673}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB1927F2-4FC7-4520-8680-49C0245E05E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB1927F2-4FC7-4520-8680-49C0245E05E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB1927F2-4FC7-4520-8680-49C0245E05E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB1927F2-4FC7-4520-8680-49C0245E05E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AB4B0DB-780C-48B9-A642-8E527353D957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AB4B0DB-780C-48B9-A642-8E527353D957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AB4B0DB-780C-48B9-A642-8E527353D957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AB4B0DB-780C-48B9-A642-8E527353D957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA286411-E476-4BD0-ABE9-7AE69226069C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA286411-E476-4BD0-ABE9-7AE69226069C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA286411-E476-4BD0-ABE9-7AE69226069C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA286411-E476-4BD0-ABE9-7AE69226069C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BB1927F2-4FC7-4520-8680-49C0245E05E0} = {D6C89D68-5994-40CC-98E4-C78D240B358E}
+		{4AB4B0DB-780C-48B9-A642-8E527353D957} = {D6C89D68-5994-40CC-98E4-C78D240B358E}
+		{FA286411-E476-4BD0-ABE9-7AE69226069C} = {D6C89D68-5994-40CC-98E4-C78D240B358E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B61594CE-DBA1-4693-99BC-F2C41CA1AC94}
+	EndGlobalSection
+EndGlobal

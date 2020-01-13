@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1346361",
+    "ThreadId": "578700",
+    "Html": "Hi,\r<br />\n<br />\nIs there any easy way to print the charts?\r<br />\nTried to use RenderTargetBitmap to render the chart control in a ContentControl (or ViewBox),\r<br />\nbut I only get the control with the title not the content (bars) in the image.\r<br />\n<br />\nHere's some code:<br />\n<pre><code>var columnChart = new ClusteredColumnChart();\ncolumnChart.ChartTitle = &quot;My Title&quot;;\ncolumnChart.Width = 600;\ncolumnChart.Height = 400;\n\nvar columnChartSeries = new ChartSeries();\ncolumnChartSeries.SeriesTitle = &quot;My Series Title&quot;;\ncolumnChartSeries.DisplayMember = &quot;Column1&quot;;\ncolumnChartSeries.ValueMember = &quot;Column2&quot;;\ncolumnChartSeries.ItemsSource = chartData;\ncolumnChart.Series.Add(columnChartSeries);\n\nvar contentControl = new ContentControl();\ncontentControl.Content = columnChart;\ncontentControl.Measure(new System.Windows.Size(Double.PositiveInfinity, Double.PositiveInfinity));\ncontentControl.Arrange(new Rect(contentControl.DesiredSize));\n\nvar render = new RenderTargetBitmap(600, 400, 96, 96, PixelFormats.Pbgra32);\nrender.Render(contentControl);\n...</code></pre>\n\nsame code works fine to show the chart in a WPF window.\r<br />\n<br />\nThanks for any help\r<br />\nHarald<br />\n",
+    "PostedDate": "2015-01-27T09:39:00.013-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1429523",
+    "ThreadId": "578700",
+    "Html": "Use the PrintDialog function from WPF itself.<br />\n",
+    "PostedDate": "2015-06-08T04:10:36.227-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

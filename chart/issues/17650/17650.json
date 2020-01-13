@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\n\nI have a small issue here. \nI have a Clustered Columns Chart that displays two Series. \nThe x axis shows time in 10 minutes interval and the y axis the according values at that time.\n\nNow, if the second serie has a value for a time that is earlier than the first value of the first serie, it doesn't show up at the left side of the chart (where it should), but on the right side. \n\nAny hint or suggestion would be much appreciated.\n\nKind Regards",
+    "LastUpdatedDate": "2016-04-26T00:04:56.88-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2016-04-26T00:04:56.88-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Clustered Columns Multiple series show in wrong order",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 17650
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

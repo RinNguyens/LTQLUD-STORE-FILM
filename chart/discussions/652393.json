@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1466410",
+    "ThreadId": "652393",
+    "Html": "Hello,\r<br />\n<br />\nI wonder how to change column orientation (vertical instead of horizontal) in a column chart.\r<br />\nI never managed to find the way to do it in the provided examples.\r<br />\n<br />\nthanks for the help<br />\n",
+    "PostedDate": "2016-03-10T08:10:46-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1466702",
+    "ThreadId": "652393",
+    "Html": "OK, found solution by myself :) Column chart and bar chart define the orientation.<br />\n",
+    "PostedDate": "2016-03-14T02:40:14.243-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": "2016-03-14T02:40:23.307-07:00"
+  }
+]

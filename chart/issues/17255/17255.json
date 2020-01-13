@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "<metroChart:ClusteredColumnChart x:Name=\"Chart\"\n          MinHeight=\"200\"\n          MinWidth=\"200\"\n          MaxWidth=\"300\"\n          MaxHeight=\"400\"\n                    ChartTitle=\"Population Chart\"\n                    ChartSubTitle=\"\"\n                    FontSize=\"{Binding SelectedFontSize}\"\n                    IsRowColumnSwitched=\"False\"\n                    ChartTitleVisibility=\"Visible\"\n                    ChartLegendVisibility=\"Visible\"\n                    ToolTipFormat=\"{Binding ToolTipFormat}\"\n            \n                    Foreground=\"{Binding Foreground}\"\n                    Background=\"{Binding Background}\"\n                    SelectedItem=\"{Binding SelectedItem}\"\n                    SelectedBrush=\"{Binding SelectedBrush, Converter={StaticResource StringToBrushConverter}}\" \n                    SeriesSource=\"{Binding ChartSeries, Mode=TwoWay}\" />\n\nThis is showing empty chart.",
+    "LastUpdatedDate": "2015-06-01T06:15:08.953-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2014-12-13T11:02:11.393-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Binding SeriesSource property shows nothing, even after getting more than zero records in the getter",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 17255
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Maybe you should post the Code behind too ;)",
+      "PostedDate": "2015-06-01T06:15:08.953-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

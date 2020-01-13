@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "1112433",
+    "ThreadId": "463651",
+    "Html": "<pre><code>public class Part\n{\n    public Part() { }\n\n    public int Id { get; set; }\n    public string Name { get; set; }\n    public string Color { get; set; }\n    public float Value { get; set; }\n    public string Type { get; set; }\n}\n\n    &lt;chart:PieChart Grid.Column=&quot;0&quot; ChartTitle=&quot;Chart Title&quot; ChartSubTitle=&quot;Chart Sub Title&quot; SelectedItem=&quot;{Binding SelectedItem, Mode=TwoWay}&quot; Background=&quot;Transparent&quot;&gt;\n        &lt;chart:PieChart.Series&gt;\n            &lt;chart:ChartSeries SeriesTitle=&quot;Series Title&quot; ItemsSource=&quot;{Binding Parts}&quot; DisplayMember=&quot;Name&quot; ValueMember=&quot;Value&quot; Background=&quot;Color ????????????????&quot;/&gt;\n        &lt;/chart:PieChart.Series&gt;\n    &lt;/chart:PieChart&gt;</code></pre>\n\n",
+    "PostedDate": "2013-10-26T08:50:40.073-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1120481",
+    "ThreadId": "463651",
+    "Html": "I have also been trying to figure out how to do this, it would be a very useful way of making the colours consistent over a number of different graphs.<br />\n",
+    "PostedDate": "2013-11-08T07:09:14.72-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1122410",
+    "ThreadId": "463651",
+    "Html": "Really? Have you guys even looked at the sample application?\r<br />\n<br />\nWhy aren't you setting the Palette property on the Chart, like in :<br />\n<pre><code>&lt;chart:RadialGaugeChart Style=&quot;{StaticResource MinimalChartStyle}&quot;\n                                            Grid.Column=&quot;0&quot;                                           \n                                            Palette=&quot;{StaticResource OverallChartColors}&quot;                                            \n                                            SelectedBrush=&quot;Transparent&quot;&gt;\n</code></pre>\n\nYou define color palettes and you set them to the charts that you want. This absolutely makes the colors consistent over a number of different graphs. You guys need to look at the source of the sample application.<br />\n",
+    "PostedDate": "2013-11-12T08:29:45.553-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1122437",
+    "ThreadId": "463651",
+    "Html": "I need a color definition by the user, not Palette.<br />\nI have a class:<br />\n<pre><code>public class Part\n{\n    public Part() { }\n\n    public string Name { get; set; }\n    public float Value { get; set; }\n    public string Color { get; set; }\n}\n</code></pre>\n\nI solved this problem. Thank you.<br />\n",
+    "PostedDate": "2013-11-12T09:28:46.327-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1122534",
+    "ThreadId": "463651",
+    "Html": "so what was your solution?<br />\n",
+    "PostedDate": "2013-11-12T13:25:05.653-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1132788",
+    "ThreadId": "463651",
+    "Html": "After a lot of pain, I solved in this way:<br />\n<pre><code>&lt;UserControl.Resources&gt;\n    &lt;conv:ColorConverter x:Key=&quot;colorconverter&quot; /&gt;\n    &lt;!-- colorconverter is a class mean to convert color from string, the converterparam is the default color if NoneColor is null --&gt;\n    &lt;SolidColorBrush x:Key=&quot;br1&quot; Color=&quot;{Binding Source={StaticResource colorsettings}, Path=NoneColor, Converter={StaticResource colorconverter}, ConverterParameter={StaticResource NONE_COLOR} }&quot; /&gt;\n    &lt;chart:ResourceDictionaryCollection x:Key=&quot;colorPalette&quot;&gt;            \n        &lt;ResourceDictionary&gt;\n            &lt;SolidColorBrush x:Key=&quot;Brush1&quot; Color=&quot;{Binding Source={StaticResource br1}, Path=Color}&quot; /&gt;\n        &lt;/ResourceDictionary&gt;\n    &lt;/chart:ResourceDictionaryCollection&gt;\n&lt;/UserControl.Resources&gt;\n</code></pre>\n\nHowever I can't figure out why the leading 0 appears :-/<br />\n",
+    "PostedDate": "2013-12-07T09:14:17.04-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1133447",
+    "ThreadId": "463651",
+    "Html": "<strong>flyte wrote:</strong><br />\n<blockquote>\nso what was your solution?<br />\n</blockquote>\nI did something. For me it works. Look..<br />\n<pre><code> \n======================================\n \nonly for PieChart\n \n&lt;chart:PieChart x:Name=&quot;dpPieChart&quot; Grid.Column=&quot;0&quot; Grid.Row=&quot;1&quot; ChartTitle=&quot;{Binding Title}&quot; ChartSubTitle=&quot;{Binding SubTitle}&quot; SelectedItem=&quot;{Binding SelectedItem, Mode=TwoWay}&quot; SelectedBrush=&quot;#33ffffff&quot; Background=&quot;Transparent&quot;&gt;\n&lt;chart:PieChart.Series&gt;\n&lt;chart:ChartSeries SeriesTitle=&quot;Series Title&quot; ItemsSource=&quot;{Binding Source={StaticResource PartsCollection}}&quot; DisplayMember=&quot;Name&quot; ValueMember=&quot;ValueIn&quot; \n\n    ColorMember=&quot;ColorBrush&quot;/&gt;\n\n&lt;/chart:PieChart.Series&gt;\n&lt;/chart:PieChart&gt;\n \n============================================\n \npublic class PartViewModel : ViewModelBase\n{\npublic string Color\n{\nget\n{\nreturn _part.Color;\n}\nset\n{\nif (_part.Color != value)\n{\n_part.Color = value;\nRaisePropertyChanged(&quot;Color&quot;);\nRaisePropertyChanged(&quot;ColorBrush&quot;);\n}\n}\n}\n\npublic Brush ColorBrush\n{\nget\n{\nreturn StaticFunctions.ColorToBrush(_part.Color);\n}\n}\n \n \n================================================\n \npublic static class StaticFunctions\n{\npublic static Brush ColorToBrush(string color)\n{\ncolor = color.Replace(&quot;#&quot;, &quot;&quot;);\nif (color.Length == 8)\n{\ncolor = color.Substring(2, 6);\n}\nif (color.Length == 6)\n{\nreturn new SolidColorBrush(ColorHelper.FromArgb(255,\nbyte.Parse(color.Substring(0, 2), System.Globalization.NumberStyles.HexNumber),\nbyte.Parse(color.Substring(2, 2), System.Globalization.NumberStyles.HexNumber),\nbyte.Parse(color.Substring(4, 2), System.Globalization.NumberStyles.HexNumber)));\n}\nelse\n{\nreturn null;\n}\n}\n}</code></pre>\n\ndll project in the ZIP:<br />\n<a href=\"http://www.sendspace.com/file/bvvspm\" rel=\"nofollow\">De.TorstenMandelkow.MetroChart.WinRT.zip - link 1</a> <br />\n<a href=\"http://www49.zippyshare.com/v/7973202/file.html\" rel=\"nofollow\">De.TorstenMandelkow.MetroChart.WinRT.zip - link 2</a> <br />\n",
+    "PostedDate": "2013-12-09T23:33:33.14-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1255463",
+    "ThreadId": "463651",
+    "Html": "Hello Everyone\r<br />\n<br />\nI m Facing Same Problem in modern ui Chart So can you provide me Some other Example For that issue in Detail.\r<br />\n<br />\n<br />\n<br />\nThanks in Advanced<br />\n",
+    "PostedDate": "2014-06-11T22:58:48.793-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

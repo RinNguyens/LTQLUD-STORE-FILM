@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1228192",
+    "ThreadId": "540578",
+    "Html": "Hello,\r<br />\nI'm having some problems referencing this library to a WP8 project.\r<br />\nIf I download binaries and I pick the one targeted for Silverlight 5, I'm able to reference it successfully to my project. But if I download the source project (thing that I need since I wanted to fix a layout problem) and I compile it on my own, I'm not able to reference the library to my WP8 project. In fact Visual Studio 2013 says that probably this assembly version is higher or targets a different platform.<br />\n",
+    "PostedDate": "2014-03-29T10:21:09.17-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

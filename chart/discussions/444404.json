@@ -1,0 +1,130 @@
+[
+  {
+    "Id": "1046435",
+    "ThreadId": "444404",
+    "Html": "Hi all,\r<br />\n<br />\nas you all know the chart library is now in BETA status. And I see the great interest in this library (&gt;1000 downloads and &gt;100 new followers in 2 weeks).\r<br />\nOn the other hand I only see one 4-star rating with &quot;good demonstration&quot; and some &quot;minor&quot; issues in the issue tracker.\r<br />\n<br />\nTo finish the library and include line charts, WP8 support etc. I need more feedback (and motivation :-).\r<br />\n \r<br />\nI want to initiate the dialog with you to be able to finish the version 1.0 in the next weeks:<br />\n<ul>\n<li>Do you have any issues with this library (except the known issues)?</li>\n<li>Is there anybody which uses them successfully in a project? </li>\n<li>What should be improved for the final version?</li>\n<li>\nAre you missing properties and functions in the charts?<br />\n</li>\n</ul>\nThanks in advance for your support.\r<br />\n<br />\nCheers,\r<br />\nTorsten<br />\n",
+    "PostedDate": "2013-05-21T03:52:46.853-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1051433",
+    "ThreadId": "444404",
+    "Html": "Hi Torsten, I'm looking for a chart library for a would-be project (desktop, so wpf) related to furnace industry. In these last weeks I'm still collecting some pieces together (chart, report, schedule) to valuate them and then make my last decisions. I found your chart library very interesting, I think the gauge chart would be very good to show the progression of the furnace job using the dynamics of filling and colors (I downloaded the demo), and judging by the results it really seems you're doing a hard and good work. But it happens that most if not almost the whole job of the charts will be made by showing points and lines (three axes: x-time, y-temperature, y-nitrogen). So, missing this piece, as now, I can't (yet) make the final decision oriented toward the choosing of your library. Add this to the hurry to show a demo to the possible customer (needless to say, with no-no funding). So in the hope you fulfill all my necessities... :) keep up with the good work.\r<br />\nRegards\r<br />\nMaurizio<br />\n",
+    "PostedDate": "2013-05-31T18:15:28.16-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1053139",
+    "ThreadId": "444404",
+    "Html": "Have you considered creating a gauge chart which is only 180 degrees rather than a full circle? Similar to this:\r<br />\n<br />\n<a href=\"http://www.telerik.com/products/wpf/sample-applications.aspx\" rel=\"nofollow\">http://www.telerik.com/products/wpf/sample-applications.aspx</a>\r<br />\n<br />\nThey take up less real estate so quite appealing for an app I'm working on!\r<br />\n<br />\nGreat work on this library. Nice to see things happening in WPF land!<br />\n",
+    "PostedDate": "2013-06-05T08:21:26.91-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1053519",
+    "ThreadId": "444404",
+    "Html": "Yes, the 180-degree gauge chart is on the list. It should be easy to implement based on the radial gauge chart.\r<br />\nI will add it to the final version.\r<br />\n<br />\nTorsten<br />\n",
+    "PostedDate": "2013-06-06T04:39:49.23-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1054586",
+    "ThreadId": "444404",
+    "Html": "Hello,\r<br />\n<br />\nYour library is really nice but I did find an issue. If a series has negative values, then the columns corresponding to the negative values are not drawn (they have height 0). Do you plan to support negative numbers on the series? I believe that this is a very natural use case!\r<br />\n<br />\nThank you for your great work.\r<br />\n<br />\nBest wishes,\r<br />\n<br />\nDomingos.<br />\n",
+    "PostedDate": "2013-06-09T11:09:47.433-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1056313",
+    "ThreadId": "444404",
+    "Html": "Hey,\r<br />\n<br />\nvery nice work, thank you so much! I really like the look and feel of those charts.\r<br />\n<br />\nXenolith<br />\n",
+    "PostedDate": "2013-06-13T04:01:39.09-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1058830",
+    "ThreadId": "444404",
+    "Html": "The charts look great. I'm really looking forward to the charts targeting WIndows Phone. This will be a huge win. I hope you post them very soon for WIndows Phone. <strong>GREAT WORK!</strong><br />\n",
+    "PostedDate": "2013-06-19T12:46:35.437-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1061152",
+    "ThreadId": "444404",
+    "Html": "I like what I see, but we use a lot of LINE charts at the moment (about 11 pages/tabs with 10-20 charts each). I would definitely test your library from performance perspective once you add LINE charts...Do you need some help, as I could contribute?<br />\n",
+    "PostedDate": "2013-06-25T17:45:44.853-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1061664",
+    "ThreadId": "444404",
+    "Html": "Like most people i really love this work and like most people id really love to see a line chart. fantastic job.<br />\n",
+    "PostedDate": "2013-06-26T13:53:24.073-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1061828",
+    "ThreadId": "444404",
+    "Html": "Regarding Improvements, Id like to see more documentation and perhaps examples. e.g. binding data from an SQL database or creating a trend using a line graph and some live changing data<br />\n",
+    "PostedDate": "2013-06-27T01:04:49.767-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1062913",
+    "ThreadId": "444404",
+    "Html": "The improvements alindsay81 has mentioned are nice. However, I don't think they're necessary for a v1 release. Personally, WinPhone support is the most important thing to me. I have a project that I want to use them in. Please release v1 with Windows Phone support soon. Thank you for your hard work.<br />\n",
+    "PostedDate": "2013-06-30T05:09:37.57-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1076874",
+    "ThreadId": "444404",
+    "Html": "First of all fantastic job! I have not as of yet found any issues implementing it into my project. I do however have maybe a suggestion if possible to have this also be an addon to MUI (<a href=\"http://mui.codeplex.com/\" rel=\"nofollow\">http://mui.codeplex.com/</a>). I am currently working with that as a base layout and incorporating modernuicharts into it and trying to tie most of the components together.\r<br />\n<br />\nIll be sure to give you a rating :)<br />\n",
+    "PostedDate": "2013-08-05T10:29:22.12-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1077281",
+    "ThreadId": "444404",
+    "Html": "<strong>Lebowsker wrote:</strong><br />\n<blockquote>\nFirst of all fantastic job! I have not as of yet found any issues implementing it into my project. I do however have maybe a suggestion if possible to have this also be an addon to MUI (<a href=\"http://mui.codeplex.com/\" rel=\"nofollow\">http://mui.codeplex.com/</a>). I am currently working with that as a base layout and incorporating modernuicharts into it and trying to tie most of the components together.<br />\n<br />\nIll be sure to give you a rating :)<br />\n</blockquote>\nI don't quite understand this suggestion; if you want to use it with a MUI based application, simply use it. I have done this and I had nothing to do/change to &quot;integrate&quot; or &quot;tie most of the components together&quot;.\r<br />\n<br />\nWhat specifically are you having problems with in having these charts in your MUI application? All I did was use some of the colors/brushes defined in the MUI theme for some of the colors for the charts. For example:<br />\n<pre><code>&lt;chart:ClusteredBarChart x:Name=&quot;bar&quot;                                             \n                         Style=&quot;{StaticResource MinimalChartStyle}&quot;\n                         ChartTitle=&quot;{Binding IsoProgressChartData.ChartTitle}&quot;\n                         ChartSubTitle=&quot;{Binding IsoProgressChartData.ChartSubTitle}&quot;\n                         Foreground=&quot;{DynamicResource ItemText}&quot;\n                         Background=&quot;{DynamicResource WindowBackground}&quot;\n                         SelectedBrush=&quot;{DynamicResource MenuTextHover}&quot;\n                         ChartTitleVisibility=&quot;{Binding ChartTitleVisible, Converter={StaticResource boolToVis}}&quot;\n                         ChartLegendVisibility=&quot;{Binding ChartLegendVisible, Converter={StaticResource boolToVis}}&quot;\n                         FontFamily=&quot;Segoe UI&quot;\n                         FontSize=&quot;13&quot;                                             \n                         Visibility=&quot;{Binding IsBarChartVisible, Converter={StaticResource boolToVis}}&quot;\n                         SelectedItem=&quot;{Binding Path=SelectedChartItem, Mode=TwoWay}&quot;&gt;                   \n                            \n        &lt;chart:ClusteredBarChart.Series&gt;\n        &lt;chart:ChartSeries SeriesTitle=&quot;progress&quot;\n                           DisplayMember=&quot;Key&quot;\n                           ValueMember=&quot;Value&quot;\n                           FontFamily=&quot;Segoe UI&quot;\n                           ItemsSource=&quot;{Binding IsoProgressChartData.ValueList}&quot; /&gt;\n    &lt;/chart:ClusteredBarChart.Series&gt;\n&lt;/chart:ClusteredBarChart&gt;</code></pre>\n\nNote the {DynamicResource} bindings...<br />\n",
+    "PostedDate": "2013-08-06T07:52:10.747-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1090375",
+    "ThreadId": "444404",
+    "Html": "The first implementation with PieceBase was more flexible for implementing events on chart elements. Like mousedown mouse over and more.<br />\nIt should be bindable to a set of commands for every item in the collection.<br />\n",
+    "PostedDate": "2013-09-09T15:02:39.517-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1103131",
+    "ThreadId": "444404",
+    "Html": "Fantastic library , I would prefer to use this my current project but i really need a line chart, <br />\nis there any hope for a beta release of the line chart anytime soon ?<br />\n",
+    "PostedDate": "2013-10-03T04:35:53.15-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1103165",
+    "ThreadId": "444404",
+    "Html": "Very interesting and beautiful library. \r<br />\n<br />\nSome remarks:<br />\n<ul>\n<li>Black layout didn't immediatly work for me, can you make it easier to implement? </li>\n<li>Working in WPF Designer, making control bigger or smaller, title alignment tends to move erratically. </li>\n<li>\nCould use a line chart too<br />\n</li>\n</ul>\nFirst use: \r<br />\n<img src=\"http://frost-design.be/downloads/WirelessSmartHome2.png\" alt=\"Image\" />\r<br />\n<br />\nBut really, awesome work on this! Keep it up!<br />\n",
+    "PostedDate": "2013-10-03T06:21:01.377-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

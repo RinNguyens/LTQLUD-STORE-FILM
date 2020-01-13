@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1425760",
+    "ThreadId": "638062",
+    "Html": "Is there a way to make personal changes to the source code ?\r<br />\nevery time I try to edit I get the following error:\r<br />\n&quot;This file has been modified outside of the source editor&quot;...<br />\n",
+    "PostedDate": "2015-05-16T12:20:35.11-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1427704",
+    "ThreadId": "638062",
+    "Html": "Does it at least ask you to reload the project? How are you downloading and opening it?<br />\n",
+    "PostedDate": "2015-05-26T15:24:48.927-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

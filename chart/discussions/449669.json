@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1066981",
+    "ThreadId": "449669",
+    "Html": "I'd like to use the gauge chart to display a dynamic value. My event updates the datacontext roughly 30 times a second. The problem is the animation of the controls. Since they fade in and &quot;fill up&quot;, they start flashing.\r<br />\n<br />\nHow Do I disable the animation or update the value without triggering the &quot;start&quot; animation?<br />\n",
+    "PostedDate": "2013-07-11T04:26:59.253-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1244826",
+    "ThreadId": "449669",
+    "Html": "I know this is an older issue, but I'd recommend throttling your data updates to the UI. That's not to say you can't have the data changing that much in the model, but the ViewModel probably doesn't benefit from data changing that fast.\r<br />\n<br />\nReactive Extensions (RX for short) has a mechanism by which you can 'throttle' your data to prevent this sort of a scenario: <a href=\"http://rxwiki.wikidot.com/101samples\" rel=\"nofollow\">http://rxwiki.wikidot.com/101samples</a><br />\n",
+    "PostedDate": "2014-05-13T06:56:59.03-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

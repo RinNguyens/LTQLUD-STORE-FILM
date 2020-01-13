@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "1105794",
+    "ThreadId": "461721",
+    "Html": "Is it possible to change the tooltip for a chart item on mouse over. I want to have something else besides the tooltip just repeating what the chart legend says...<br />\n",
+    "PostedDate": "2013-10-09T19:19:36.82-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1105915",
+    "ThreadId": "461721",
+    "Html": "Yes, you can influence the tooltip.<br />\n<br />\nThere is a property &quot;ToolTipFormat&quot;. The value can be like shown below:<br />\n<pre><code>&lt;chart:PieChart        \n        ToolTipFormat=&quot;{0} in Category {2} has Value {1}&quot;\n        &gt;\n&lt;/chart:PieChart&gt;</code></pre>\n\nYou need to try out which values are interesting for you. Currently the following 6 values can be used, in the following order:<br />\n<ul>\n<li>Caption</li>\n<li>Value</li>\n<li>SeriesCaption</li>\n<li>PercentageFromMaxDataPointGroupSum</li>\n<li>PercentageFromMaxDataPointValue</li>\n<li>\nPercentageFromSumOfDataPointGroup<br />\n</li>\n</ul>\nIf you are missing a value in this list please let me know.<br />\n<br />\nHope it helps.<br />\n<br />\nTorsten<br />\n",
+    "PostedDate": "2013-10-10T03:25:12.233-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1246024",
+    "ThreadId": "461721",
+    "Html": "First off thank you so much for releasing this OS Torsten - it's awesome ! \r<br />\n<br />\nBut also for others out there coming across this post, you need to escape the curly braces to get this to work i.e <br />\n<pre><code>&lt;chart:PieChart        \n        ToolTipFormat=&quot;{}{0} in Category {2} has Value {1}&quot;\n        &gt;\n&lt;/chart:PieChart&gt;\n</code></pre>\n\nNotice those open and closing curly braces at the beginning there i.e. ToolTipFormat=&quot;<strong>{}</strong>...&quot;\r<br />\n<br />\nHope that helps someone else. Thanks. \r<br />\n<br />\nBen <br />\n",
+    "PostedDate": "2014-05-16T00:57:27.067-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1426721",
+    "ThreadId": "461721",
+    "Html": "First, thanks a lot for a wonferful library of charting controls. I have a little annoying problem about this ToolTipFormat property. I cant seem to find it!!! What am I missing here. I have looked everywhere but it just does not exist! Chart:PieChart has a ToolTip property (like every framework element) which is object and outputs the same string without any information on the bound values. same is the case for Chart:PieChart.Series... Please I would be grateful for any help. <br />\nIf it matters I just downloaded the nuget package for .NET WPF.<br />\n<br />\nEDIT 1: Also, I would like to mention that  by default the pie pieces are showing &quot;number&quot; as tooltip and I cant seem to override that at all even if I set the tooltip property in xaml or in code.<br />\n<br />\nWaqas<br />\n",
+    "PostedDate": "2015-05-20T14:32:05.017-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

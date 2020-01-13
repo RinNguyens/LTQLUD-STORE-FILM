@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1317516",
+    "ThreadId": "570866",
+    "Html": "I read the Documentation about &quot;How to use a custom color palette&quot;, but I'm having problems with this.<br />\n<br />\nMy code is like this:<br />\n<br />\nOn MainPage.xaml:<br />\n<pre><code>&lt;chart:DoughnutChart\n                        ...\n                       Palette=&quot;{StaticResource CustomColors}&quot;\n                        ... &gt;\n\n                        &lt;chart:DoughnutChart.Series&gt;\n                        ...\n                        &lt;/chart:DoughnutChart.Series&gt;\n&lt;/chart:DoughnutChart&gt;</code></pre>\n\nOn Generic.xaml:<br />\n<pre><code>&lt;ResourceDictionary\n    xmlns=&quot;http://schemas.microsoft.com/winfx/2006/xaml/presentation&quot; \n    xmlns:x=&quot;http://schemas.microsoft.com/winfx/2006/xaml&quot;\n    xmlns:chart=&quot;clr-namespace:De.TorstenMandelkow.MetroChart&quot;&gt;\n\n    &lt;chart:ResourceDictionaryCollection x:Key=&quot;CustomColors&quot;&gt;\n        &lt;ResourceDictionary&gt;\n            &lt;SolidColorBrush x:Key=&quot;Brush1&quot; Color=&quot;#FF5B9BD5&quot; /&gt;\n        &lt;/ResourceDictionary&gt;\n        &lt;ResourceDictionary&gt;\n            &lt;SolidColorBrush x:Key=&quot;Brush2&quot; Color=&quot;#FFED7D31&quot; /&gt;\n        &lt;/ResourceDictionary&gt;\n        &lt;ResourceDictionary&gt;\n            &lt;SolidColorBrush x:Key=&quot;Brush3&quot; Color=&quot;#FFA5A5A5&quot; /&gt;\n        &lt;/ResourceDictionary&gt;\n        &lt;ResourceDictionary&gt;\n            &lt;SolidColorBrush x:Key=&quot;Brush4&quot; Color=&quot;#FFFFC000&quot; /&gt;\n        &lt;/ResourceDictionary&gt;\n    &lt;/chart:ResourceDictionaryCollection&gt;\n&lt;/ResourceDictionary&gt;</code></pre>\n\nBut &quot;Palette=&quot;{StaticResource CustomColors}&quot; is not recognized.<br />\nThe phrase &quot;The resource 'CustomColors' could not be resolver&quot; appears.<br />\n<br />\nHas anyone had this problem? There is another way to change the colors?<br />\n",
+    "PostedDate": "2014-10-29T17:20:13.533-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

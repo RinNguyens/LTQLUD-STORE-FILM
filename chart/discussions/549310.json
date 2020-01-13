@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "1258510",
+    "ThreadId": "549310",
+    "Html": "Hi there,\r<br />\nI was playing around with the ClusteredColumnCharts and had no issues so far.\r<br />\n<br />\nThere's only one question that came to my mind:\r<br />\nIs it possible to hide zero (0) values / categories from ClusteredColumnChart ?\r<br />\n<br />\nWhat I was thinking about was something like this:\r<br />\n<br />\nDefining the number value for each column as a <strong>nullable</strong> double:<br />\n<pre><code>public class ClusteredColumnClass\n{\n    public string Category { get; set; }\n\n    public double? Number { get; set; }\n}\n</code></pre>\n\nWhenever a Category Number equals null, the column shouldn't be rendered.\r<br />\n<br />\nActually I have no idea how to modify the library Sourcecode to achieve the above mentioned approach. Any help will be appreciate.<br />\n",
+    "PostedDate": "2014-06-21T05:11:15.31-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1321814",
+    "ThreadId": "549310",
+    "Html": "Did you make any progress on this?  I am looking into the same thing right now.  I'll let you know if I make any progress.<br />\n",
+    "PostedDate": "2014-11-13T08:07:38.033-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1321840",
+    "ThreadId": "549310",
+    "Html": "I most definitely will.  However, I will give Sparrow Toolkit a try first and see if I can style it to look like the modern ui chart controls (<a href=\"https://sparrowtoolkit.codeplex.com/\" rel=\"nofollow\">https://sparrowtoolkit.codeplex.com/</a>).<br />\n",
+    "PostedDate": "2014-11-13T09:04:59.717-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1321994",
+    "ThreadId": "549310",
+    "Html": "Thank you for that.  I am going to give the Sparrow Toolkit a look.  It looks like what I was looking for to begin with when I found this project.\r<br />\n<br />\nWith regard to the original issue, I was able to get the zero values to hide pretty easily with a data trigger in Generic.xaml (I don't need to differentiate between null and zero for my project), but the width of the remaining bars in the series aren't adjusted to fill the empty space.  I'm working on that now.<br />\n",
+    "PostedDate": "2014-11-13T19:22:20.103-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

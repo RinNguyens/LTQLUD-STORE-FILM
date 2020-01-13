@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Use the demo showing on the home page for an example: http://www.tetracon.de/charts/:\n\nStep to reproduce:\n1. Select any pie-piece from the Pie chart on ALL tab.\n2. Select another tab (Bar, for example).\n3. Go back to the All tab.\n\nIssue/Result: \nThe pie-piece which get selected before is not showing as selected, and you can not select it again (won't changed to Orange.)",
+    "LastUpdatedDate": "2014-09-18T09:39:54.693-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2014-09-18T09:39:54.693-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "SelectedItem not showing correctly",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16983
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

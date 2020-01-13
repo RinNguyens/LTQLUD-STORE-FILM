@@ -1,0 +1,51 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi i m using DoughnutChart but i m facing the overlapping of labels in DoughnutChart. plz help me how to remove this issue. for further understanding i  attach image file. I did not want to reduce font size or increase chart size. Thanks",
+    "LastUpdatedDate": "2014-02-04T00:58:18.263-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2014-02-03T01:25:40.31-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "How to prevent overlapping of labels in DoughnutChart",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16691
+  },
+  "FileAttachments": [
+    {
+      "FileId": 4853,
+      "FileName": "screenshot_02032014_133852.png",
+      "DownloadUrl": ".\\4853"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Hi\nad hoc I have no idea to prevent overlapping of the labels. The chart contains no logic to analyze the position of the labels. Sorry. Maybe it helps to change the order of the data to prevent the situation.\nBest regards,\nTorsten",
+      "PostedDate": "2014-02-04T00:58:18.263-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

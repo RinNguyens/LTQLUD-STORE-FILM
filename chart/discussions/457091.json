@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1093243",
+    "ThreadId": "457091",
+    "Html": "Is it possible to not have the selected chart item change color when it is selected?<br />\n",
+    "PostedDate": "2013-09-16T11:09:21.363-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1093413",
+    "ThreadId": "457091",
+    "Html": "Hi,<br />\nThis should be possible if you set the chart attribute &quot;SelectedBrush&quot; to &quot;Transparent&quot;.<br />\n<pre><code>&lt;chart:ClusteredColumnChart  \n        ChartTitle=&quot;Column Chart&quot;\n        ChartSubTitle=&quot;Chart with fixed width and height&quot; \n        ...\n        SelectedBrush=&quot;Transparent&quot; &gt;\n        &lt;chart:ClusteredColumnChart.Series&gt;\n            ...\n        &lt;/chart:ClusteredColumnChart.Series&gt;\n    &lt;/chart:ClusteredColumnChart&gt;\n</code></pre>\n\nCheers,<br />\nTorsten<br />\n",
+    "PostedDate": "2013-09-17T00:52:29.287-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1093554",
+    "ThreadId": "457091",
+    "Html": "Thanks! That worked perfectly!<br />\n",
+    "PostedDate": "2013-09-17T07:24:40.183-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

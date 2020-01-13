@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "1141065",
+    "ThreadId": "476979",
+    "Html": "When I Use This Dll On My Appication Like......................<br />\n  &lt;MetroChart:PieChart HorizontalAlignment=&quot;Left&quot; Margin=&quot;31,16,0,0&quot; x:Name=&quot;PieChart&quot; SelectedItem=&quot;{Binding Path=SelectedItem,Mode=TwoWay}&quot;  VerticalAlignment=&quot;Top&quot; Height=&quot;365&quot; Width=&quot;647&quot; RenderTransformOrigin=&quot;0.5,0.5&quot;&gt;<br />\n<pre><code>        &lt;MetroChart:PieChart.Series&gt;\n            &lt;MetroChart:ChartSeries DisplayMember=&quot;Display&quot; ToolTip=&quot;Uday&quot; ValueMember=&quot;Value&quot; ItemsSource=&quot;{Binding Path=Errors}&quot;/&gt;\n\n        &lt;/MetroChart:PieChart.Series&gt;\n\n    &lt;/MetroChart:PieChart&gt;\n</code></pre>\n\nThen This Show Error<br />\n<br />\nThe tag 'PieChart' does not exist in XML namespace 'clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart'. <br />\n<br />\nHow To Solve This Error ?<br />\n",
+    "PostedDate": "2013-12-23T22:27:17.73-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1144667",
+    "ThreadId": "476979",
+    "Html": "did you include the namespace in the xaml?<br />\n<pre><code>xmlns:chart=&quot;clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart&quot;</code></pre>\n\nand then you can use it like:<br />\n<pre><code>&lt;chart:PieChart x:Name=&quot;pie&quot;/&gt;</code></pre>\n\n",
+    "PostedDate": "2014-01-02T08:34:29.087-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1151056",
+    "ThreadId": "476979",
+    "Html": "Even I got the same error when I tried to use it with framework 4.0!!\r<br />\nThe error disappears though and the chart works great if it is used with framework 4.5. <br />\n",
+    "PostedDate": "2014-01-08T12:53:57.77-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1216430",
+    "ThreadId": "476979",
+    "Html": "Download source of lib and compile it against .NET 4, then reference compiled lib in your project.<br />\n",
+    "PostedDate": "2014-03-01T03:52:06.65-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1216465",
+    "ThreadId": "476979",
+    "Html": "Thanks ma Frnd For helping in this Error.\r<br />\nits a  Framework Error . I Have Change My Framework 4.0 to 4.5 And ma Problem is Solve.\r<br />\n<br />\nThnx bigN13<br />\n",
+    "PostedDate": "2014-03-01T07:42:50.207-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

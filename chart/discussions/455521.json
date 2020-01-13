@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1088410",
+    "ThreadId": "455521",
+    "Html": "Hi, before all thanks for this great set of controls, they look awesome.\r<br />\nDoes this controls are compatible with windows 7 and visual studio 2010?<br />\n",
+    "PostedDate": "2013-09-04T12:44:00.26-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1088662",
+    "ThreadId": "455521",
+    "Html": "Hi,\r<br />\nthe controls also work on Windows 7 but only in a WPF application. They will not work in a WinForms application.\r<br />\nAnd you should also be able to reference the charts assembly in your VS 2010 project. This assembly should be available in the source code zip file.\r<br />\nCheers,\r<br />\nTorsten<br />\n",
+    "PostedDate": "2013-09-05T02:09:49.387-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1088743",
+    "ThreadId": "455521",
+    "Html": "i tried to do that: create a wpf project and add the reference but Visual trows the following error that says something like &quot;unknown compilation error: can not load  the type  'system.runtime.compilerservices,extensionattribute' from the mscorlib assembly.  Im currently visual studio 2010,win 7 and net 4.0<br />\n",
+    "PostedDate": "2013-09-05T06:24:35.043-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

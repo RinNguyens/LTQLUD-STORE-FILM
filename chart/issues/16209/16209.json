@@ -1,0 +1,91 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I have a requirement where I have to bind around 40 series to a column chart. When I tried binding the application breaks with a message \"Layout Cycle detected. Layout Couldn't complete\"\n\nThanks",
+    "LastUpdatedDate": "2017-12-18T15:14:39.35-08:00",
+    "PlannedForRelease": "Source Code and Test Applications BETA",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2013-05-22T06:15:35.057-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Application Crashed when I try to bind around 40 series to a chart",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 16209
+  },
+  "FileAttachments": [
+    {
+      "FileId": 4749,
+      "FileName": "TestModernUIChart.zip",
+      "DownloadUrl": ".\\4749"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "I have the same problem with 30 series to a column chart",
+      "PostedDate": "2013-05-22T07:56:57.487-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Thank you for reporting this issue. \r\n\r\nCould you provide more details (e.g. stack trace)? I assume that the issue appears in one of the custom controls and I need to know which control throws the exception. \nIf you have a sample project I would be happy if you can send it to me.",
+      "PostedDate": "2013-05-22T22:38:34.343-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-22T22:39:37.723-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-22T23:18:12.797-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Here it is..",
+      "PostedDate": "2013-05-22T23:18:13.82-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-22T23:36:40.273-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Thank you for the sample project. I got the exception.\nI will try to fix it asap.",
+      "PostedDate": "2013-05-23T00:34:57.337-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-06-17T08:03:10.613-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2017-12-18T15:14:39.35-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

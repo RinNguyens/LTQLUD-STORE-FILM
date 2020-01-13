@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1308372",
+    "ThreadId": "568439",
+    "Html": "I was wondering how to hide the Axis lines or labels. I figured it'd be something simple like using a setter and then setting the value as Transparent or 0 or something along the lines. I'm just not sure what exact value I'd be doing it on though. I can't seem to find it in the source. \r<br />\n<br />\nThanks! <br />\n",
+    "PostedDate": "2014-09-26T06:23:54.633-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1321332",
+    "ThreadId": "568439",
+    "Html": "I am looking for this solution as well.  I would like to be able to hide the numbering on the vertical axis of a column chart.<br />\n",
+    "PostedDate": "2014-11-12T09:20:25.937-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1321447",
+    "ThreadId": "568439",
+    "Html": "I'm not certain if you were referring to the left numbers on the axis, but that's what I was going for.  If not, you may be able to modify my solution to achieve your goal.\r<br />\n<br />\nFirst, I added a dependency property to ChartBase.cs:<br />\n<pre><code>        public static readonly DependencyProperty ChartLeftNumbersVisibilityProperty =\n            DependencyProperty.Register(&quot;ChartLeftNumbersVisibility&quot;, typeof(Visibility), typeof(ChartBase), new PropertyMetadata(Visibility.Visible));\n\n        public Visibility ChartLeftNumbersVisibility\n        {\n            get { return (Visibility)GetValue(ChartLeftNumbersVisibilityProperty); }\n            set { SetValue(ChartLeftNumbersVisibilityProperty, value); }\n        }</code></pre>\n\nThen, I added a visibility binding in Generic.xaml for the &quot;LeftLines&quot; grid in the &quot;ColumnChartAreaStyle&quot;:<br />\n<pre><code>    &lt;Style x:Key=&quot;ColumnChartChartAreaStyle&quot; TargetType=&quot;local:ChartArea&quot;&gt;\n        &lt;Setter Property=&quot;Template&quot;&gt;\n            &lt;Setter.Value&gt;\n                &lt;ControlTemplate TargetType=&quot;local:ChartArea&quot;&gt;\n                    &lt;Grid&gt;\n                        ...\n                        &lt;Grid x:Name=&quot;LeftLines&quot; Grid.Column=&quot;0&quot; Grid.Row=&quot;0&quot; Visibility=&quot;{Binding Path=ParentChart.ChartLeftNumbersVisibility, RelativeSource={RelativeSource Mode=TemplatedParent}}&quot;&gt;\n                            ...\n                         &lt;/Grid&gt;\n                         ...\n                    &lt;/Grid&gt;\n                &lt;/ControlTemplate&gt;\n            &lt;/Setter.Value&gt;\n        &lt;/Setter&gt;\n    &lt;/Style&gt;</code></pre>\n\nWhen you change Generic.xaml, make sure you change the one contained in De.TorstenMandelKow.MetroChart.  If you change it in one of the sub-projects (e.g. &quot;.WPF&quot;) I found that it will overwrite your changes with the base Generic.xaml before compiling.\r<br />\n<br />\nThen, in my project xaml:<br />\n<pre><code>        &lt;chart:ClusteredColumnChart \n                ... \n                ChartLeftNumbersVisibility=&quot;Collapsed&quot;&gt;</code></pre>\n\nHope that helps.<br />\n",
+    "PostedDate": "2014-11-12T13:28:34.767-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

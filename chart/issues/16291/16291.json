@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I don't know if this is the right place, but here we go.\n\nI simply cannot install this from Nuget. I allways receive the error \"Could not install package 'ModernChart 1.0.0'. You are trying to install this package into a project that targets '.NETFramework,Version=v3.0', but the package does not contain any assembly references that are compatible with that framework. For\n more information, contact the package author\".\n\nYes, I tryed with all target framework version, starting 4.5 down to 3.0 (not tested 2.0).\n\nIs it a old package? Am I missing something?\nCan anybody please help?\n\nThanks in advance!",
+    "LastUpdatedDate": "2015-07-03T08:14:01.153-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2013-06-29T11:39:02.643-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Can install from Nuget",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 6,
+    "Id": 16291
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Same here, i cant to install this Modern UI from nuget",
+      "PostedDate": "2014-02-10T11:37:36.48-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2014-05-06T11:34:46.81-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I noticed that the nuget package is not maintained by the author of this project. Ugh. \r\n\r\nSo... either we can create a new package for it, or better yet, hopefully @torman119 will start releasing it as a nuget package for us.",
+      "PostedDate": "2014-05-06T11:35:59.233-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2014-05-20T01:37:54.62-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2015-07-03T08:14:01.153-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

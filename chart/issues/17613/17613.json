@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "The pie chart works like a charm excepts with a single 100% value ... The legend display, the percentage of '100' as wel, but no chart.\n\nLike my previous comment, I use the nuget package in my project, not the source directly.\n\nThanks for the help.",
+    "LastUpdatedDate": "2016-02-22T16:33:40.23-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2016-02-22T16:33:40.23-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "PieChart with a single value of 100% doesn't display the chart",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 17613
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

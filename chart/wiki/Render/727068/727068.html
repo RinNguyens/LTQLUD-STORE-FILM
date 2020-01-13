@@ -1,0 +1,57 @@
+<div class="wikidoc">
+<p>This project provides a small library to display charts in <strong>Modern UI Style</strong> (formerly known as Metro) in
+<strong>WPF, Silverlight and Windows 8</strong> applications. You can check the charts with the Silverlight test application here:
+<a href="http://www.tetracon.de/charts" target="_blank">http://www.tetracon.de/charts</a></p>
+<p><strong>Available Charts</strong></p>
+<ul>
+<li>ColumnChart (ClusteredColumnChart, StackedColumnChart, StackedColumnChart100Percent)
+</li><li>PieChart (PieChart and Dognut) </li><li>BarChart (ClusteredBarChart, StackedBarChart, StackedBarChart100Percent) </li><li>Doughnut Chart </li><li>Radial Gauge Chart </li></ul>
+<p><strong>News</strong></p>
+<ul>
+<li>2013-05-05: Release of BETA version with several bug fixes and new charts (Doughnut, Radial Gauge, improved test applications and many more)
+</li><li>2013-05-04: Availability of Silverlight test application via <a href="http://www.tetracon.de/charts" target="_blank">
+http://www.tetracon.de/charts</a> </li></ul>
+<p><strong>Screenshots</strong></p>
+<p>Default Layout</p>
+<p><a href="http://download-codeplex.sec.s-msft.com/Download?ProjectName=modernuicharts&DownloadId=674650" target="_blank"><img src="http://download-codeplex.sec.s-msft.com/Download?ProjectName=modernuicharts&DownloadId=674649" style=""></a></p>
+<p>Dark Layout</p>
+<p><strong><a href="http://download-codeplex.sec.s-msft.com/Download?ProjectName=modernuicharts&DownloadId=674652" target="_blank"><img src="http://download-codeplex.sec.s-msft.com/Download?ProjectName=modernuicharts&DownloadId=674651"></a></strong></p>
+<p>Custom Palette (e.g.. with gradients or mono chrome)</p>
+<p><strong><a href="http://download-codeplex.sec.s-msft.com/Download?ProjectName=modernuicharts&DownloadId=674656" target="_blank"><img src="http://download-codeplex.sec.s-msft.com/Download?ProjectName=modernuicharts&DownloadId=674655"></a></strong></p>
+<p>Easy Switch of Axes (same data, switched axes)</p>
+<p><a href="http://download-codeplex.sec.s-msft.com/Download?ProjectName=modernuicharts&DownloadId=674669" target="_blank"><img src="http://download-codeplex.sec.s-msft.com/Download?ProjectName=modernuicharts&DownloadId=674668"></a></p>
+<p><strong>Intention 1</strong><br>
+I needed Modern UI Charts for my own application which should run on Desktop (WPF), Web (Silverlight) and Windows 8 devices and I didn't want to use 3 different third party charting components. That’s why I created the charts from scratch and used them in the
+ tool “SharePoint Code Analysis Framework (SPCAF)” (<a href="http://go.spcaf.com/VSGallery">http://go.spcaf.com/VSGallery</a>) which I have developed with
+<a href="https://www.codeplex.com/site/users/view/matein78" target="_blank">Matthias Einig</a>.</p>
+<p><strong>Intention 2<br>
+</strong>I think that XAML is the greatest way to &quot;describe” the UI of an application via a markup language. I don’t want to miss things like data binding, styling of controls, data templates, animation of state changes, easy re-use of custom controls, design
+ support with Blend and many more. I don’t hope that HTML5 and JavaScript are the only future for our UIs. That’s why I wanted to discover how the same XAML could be used “cross-plattform” in WPF, Silverlight and Windows 8. For the charts I wanted to use as
+ much as possible of the same XAML code which is available on all these plattforms. So finally the code for the charts uses the lowest common XAML subset of all three worlds. Check out the sample application in this project and see how it works.</p>
+<p><strong>Features</strong><br>
+The charts have been developed from scratch with keeping in mind to fully support
+<strong>MVVM data binding, styling, retemplating, animation, dynamic series</strong> etc.</p>
+<ul>
+<li>Dynamic binding of data </li><li>Animation after loading and after changes to underlying data </li><li>Custom Color Palette </li><li>Hidable Title and Legend </li><li>Switchable series </li><li>Light and dark layout support </li><li>Configurable font size </li><li>…</li></ul>
+<p><strong>Try it out</strong><br>
+The download contains the binaries, source code and test applications for WPF, Windows 8 and Silverlight. Download the release and try it out.</p>
+<p><strong>Important</strong><br>
+This code is intended to be a sample how code can be created for WPF, Silverlight and Windows8. The code is an BETA release and still may have some bugs!<br>
+<br>
+<strong>Screenshot Windows 8</strong><br>
+<a href="http://download-codeplex.sec.s-msft.com/Download?ProjectName=modernuicharts&DownloadId=674664" target="_blank"><img src="http://download-codeplex.sec.s-msft.com/Download?ProjectName=modernuicharts&DownloadId=674661"></a><br>
+&nbsp;<br>
+<strong>Screenshot WPF</strong><br>
+<a href="http://download-codeplex.sec.s-msft.com/Download?ProjectName=modernuicharts&DownloadId=674658" target="_blank"><img src="http://download-codeplex.sec.s-msft.com/Download?ProjectName=modernuicharts&DownloadId=674657"></a><br>
+<br>
+<strong>Screenshot Silverlight</strong><br>
+<a href="http://download-codeplex.sec.s-msft.com/Download?ProjectName=modernuicharts&DownloadId=674664" target="_blank"><img src="http://download-codeplex.sec.s-msft.com/Download?ProjectName=modernuicharts&DownloadId=674659"></a></p>
+<p>&nbsp;</p>
+<p><strong>About the Author</strong></p>
+<p><strong><img align="left" src="http://www.spcaf.de/images/torsten.png" style="float:left; margin:0px 10px 26px 0px; display:inline">Torsten Mandelkow</strong><br>
+The charts have been developed by Torsten Mandelkow as part of a larger application. Torsten works for Microsoft in Germany and has a long experience in .NET development, especially for SharePoint. With components like the charts he wants to explore how 'hybrid'
+ applications with XAML can be created which run on desktop (WPF), on Windows 8 and in the web (Silverlight).<br>
+Blog:&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://blogs.msdn.com/b/torstenmandelkow/">
+blogs.msdn.com/b/torstenmandelkow/</a><br>
+Twitter: <a href="https://twitter.com/TMandelkow">@tmandelkow</a></p>
+</div><div class="ClearBoth"></div>

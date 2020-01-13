@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1107570",
+    "ThreadId": "462194",
+    "Html": "I need to handle the click event on the chart, upon click it could just return me the associated object. I am following the code from the documentation section and it has a &quot;SelectedItem&quot; property in it, but is not working. <br />\n<br />\nUpon click on the pie, item got selected and thus change the background of the pie piece which makes me sure there is a way to get it done.<br />\n",
+    "PostedDate": "2013-10-15T04:12:38.733-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1317248",
+    "ThreadId": "462194",
+    "Html": "selected item works , you need to implement the INotifyPropertyChanged on the viewModel and handle the PropertyChanged event , then when it changes you can get the value of the current series point selected.<br />\n<br />\n<br />\n<strong>first create the BaseViewModel so you dont need to define it in every viewModel</strong><br />\n<pre><code>public class BaseViewModel : INotifyPropertyChanged\n    {\n\n        #region INotifyPropertyChanged\n\n        public event PropertyChangedEventHandler PropertyChanged;\n\n        public void onPropertyChanged(string name)\n        {\n            var handler = PropertyChanged;\n\n            if (handler != null)\n            {\n                PropertyChanged(this, new PropertyChangedEventArgs(name));\n            }\n        }\n\n        #endregion\n\n    }</code></pre>\n\n<strong>then inherit your VMs from baseViewModel</strong><br />\n<pre><code>public class ReportViewModel :BaseViewModel\n    {\n        public ObservableCollection&lt;TestClass&gt; Errors { get; private set; }\n\n        private object selectedItem = null;\n        public object SelectedItem\n        {\n            get\n            {\n                return selectedItem;\n            }\n            set\n            {\n                if (value != selectedItem)\n                {\n                    selectedItem = value;\n                    onPropertyChanged(&quot;SelectedItem&quot;);\n\n                    selectedItemChangeHandler();\n                } \n\n            }\n        }\n\n        public ReportViewModel()\n        {\n            Errors = new ObservableCollection&lt;TestClass&gt;();\n            Errors.Add(new TestClass() { Category = &quot;Globalization&quot;, Number = 75 });\n            Errors.Add(new TestClass() { Category = &quot;Features&quot;, Number = 2 });\n            Errors.Add(new TestClass() { Category = &quot;ContentTypes&quot;, Number = 12 });\n            Errors.Add(new TestClass() { Category = &quot;Correctness&quot;, Number = 83 });\n            Errors.Add(new TestClass() { Category = &quot;Best Practices&quot;, Number = 29 });\n        }\n\n        private void selectedItemChangeHandler()\n        {\n                  //HERE YOU CAN GET THE SELECTED POINT AND HANDLE IT\n        }\n    }\n\n    public class TestClass\n    {\n        public string Category { get; set; }\n\n        public int Number { get; set; }\n    }</code></pre>\n\n<strong>finally add the datacontext to view , i think you already done that</strong><br />\n<pre><code>public partial class BestRoute : UserControl\n    {\n        \n        public BestRoute()\n        {\n            InitializeComponent();\n\n            this.DataContext = new ReportViewModel();\n        }\n\n\n    }</code></pre>\n\n<strong>bestRouteView</strong><br />\n<pre><code>&lt;chart:PieChart Grid.Row=&quot;1&quot; Width=&quot;500&quot; Height=&quot;500&quot;\n                                    ChartTitle=&quot;Minimal Pie Chart&quot;\n                                    ChartSubTitle=&quot;Chart with fixed width and height&quot;\n                                    SelectedItem=&quot;{Binding Path=SelectedItem, Mode=TwoWay}&quot; &gt;\n                        &lt;chart:PieChart.Series&gt;\n                            &lt;chart:ChartSeries\n                                SeriesTitle=&quot;Errors&quot;\n                                DisplayMember=&quot;Category&quot;\n                                ValueMember=&quot;Number&quot;\n                                ItemsSource=&quot;{Binding Path=Errors}&quot;  /&gt;\n                        &lt;/chart:PieChart.Series&gt;\n                    &lt;/chart:PieChart&gt;</code></pre>\n\n",
+    "PostedDate": "2014-10-29T00:36:23.85-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1427057",
+    "ThreadId": "462194",
+    "Html": "I need to handle which item we click on using selected item in pie chart can you help me on this..........?\r<br />\n<br />\nHow to detect which item is clicked in pie chart? help me please<br />\n",
+    "PostedDate": "2015-05-22T03:46:08.16-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1075943",
+    "ThreadId": "452216",
+    "Html": "Hello, I have been following this project for a while now and am now trying to create a single series chart and fill it with data from MySQL database - My database connection etc works and my app can fill text boxes with the data. I need some help with the chart. can anyone provide some pointers or maybe even an example if you have done this already<br />\n",
+    "PostedDate": "2013-08-02T04:08:00.557-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1076157",
+    "ThreadId": "452216",
+    "Html": "really? \r<br />\n<br />\ndownload the sample source. it is all you will need.<br />\n",
+    "PostedDate": "2013-08-02T13:57:46.623-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1076802",
+    "ThreadId": "452216",
+    "Html": "Well i have resolved my problem, turns out it was my lack of MVVM knowledge<br />\n",
+    "PostedDate": "2013-08-05T07:28:26.597-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1046861",
+    "ThreadId": "444529",
+    "Html": "Hi\r<br />\nI want to customize the bar size in bar chart...\r<br />\nFor instance, in vertical bar chart, I want to change the width of each bar and also want to give a padding between two bars\r<br />\n<br />\ncan anyone please help!\r<br />\n<br />\nThanks<br />\n",
+    "PostedDate": "2013-05-21T22:49:43.493-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1047515",
+    "ThreadId": "444529",
+    "Html": "Currently it would not be easy to customize the bar size and the padding. You could do it with custom templates but I have no sample right now.\r<br />\n<br />\nI will check if I could implement your requirement in the next release. I could provide a Style property for the bars in the chart to allow customizing of size, border, padding etc.\r<br />\n<br />\nCheers,\r<br />\nTorsten<br />\n",
+    "PostedDate": "2013-05-22T22:42:59.437-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1047529",
+    "ThreadId": "444529",
+    "Html": "Thanks a lot for your quick response... !!! Waiting eagerly for your next release...!!!<br />\n",
+    "PostedDate": "2013-05-22T23:17:17.87-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

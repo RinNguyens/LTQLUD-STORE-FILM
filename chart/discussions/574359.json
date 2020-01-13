@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1329863",
+    "ThreadId": "574359",
+    "Html": "Hi,<br />\n<br />\nI've added Metro Charts to my VS2012 C# project.<br />\nAfter creating a reference to the De.TorstenMandelkow.MetroChart DLL, coping the xaml code from the demoproject to my window, I've copied the c# code from the demoproject to my window.<br />\nI've also copied the MainSkin.xaml and Generic.xaml from the demoproject to my project.<br />\n<br />\nI can compile and run my application but when i open the chartwindow, the window only shows the chart title and subtitle . The graph itself isn't displayed.<br />\n<br />\nDoes anyone know what I can do to solve this problem?<br />\n",
+    "PostedDate": "2014-12-08T10:44:38.663-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

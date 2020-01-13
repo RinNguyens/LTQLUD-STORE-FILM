@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Dear Torsten\n\nFirst thanks for the great libary.\n\nI am using you doughnut chart in a simple app and I get the following error in the Output Window.\n\nI have search my Solution for ChartLegendItemStyle, and it is indeed not present, neither in code nor in a binding expression.\n\nError: BindingExpression path error: 'ChartLegendItemStyle' property not found on 'Windows.UI.Xaml.Controls.ContentPresenter'. BindingExpression: Path='ChartLegendItemStyle' DataItem='Windows.UI.Xaml.Controls.ContentPresenter'; target element is 'De.TorstenMandelkow.MetroChart.ChartLegendItem' (Name='null'); target property is 'Style' (type 'Style')\n\nWhat causes this problem?\n\nKind Regards\nGraham",
+    "LastUpdatedDate": "2015-06-18T01:36:39.597-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2013-05-23T01:40:22.423-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Error ChartLegendItemStyle",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 3,
+    "Id": 16214
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

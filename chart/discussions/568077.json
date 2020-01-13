@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1307066",
+    "ThreadId": "568077",
+    "Html": "I'm trying to use this library in a Windows Phone 8 project, because I read that the Silverlight binaries are compatibles. I tried reference the binaries and import the source, but for both of them it says that I can't do it because it's incompatible with my project. How can I use tis library then?<br />\n",
+    "PostedDate": "2014-09-22T09:31:50.573-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1325396",
+    "ThreadId": "568077",
+    "Html": "I am facing the same issue as well. I am using VS 2013 and .Net framework 4.5 (tried 4.5.1 too) for my project. I get this error when I try to add the reference to the Silverlight MetroChart.dll<br />\n<br />\nImage  link: <a href=\"http://1drv.ms/1rgQHaq\" rel=\"nofollow\">http://1drv.ms/1rgQHaq</a> <br />\n<br />\nIt seems from the other posts on the topic that it is possible to add Silverlight binaries to the WP8 project. Some guidance or sample project would be highly appreciated.<br />\n",
+    "PostedDate": "2014-11-23T22:23:47.71-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1326796",
+    "ThreadId": "568077",
+    "Html": "autor say:\r<br />\nTorsten Mandelkow 10 May 2013 1:46 AM # \r<br />\nWP8 is in the works for next release<br />\n",
+    "PostedDate": "2014-11-27T06:23:37.573-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

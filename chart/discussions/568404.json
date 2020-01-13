@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1308266",
+    "ThreadId": "568404",
+    "Html": "I noticed that the RadialGaugeChart uses the actual value of the series' item to display percentage instead of calculating the percentage like the Pie Chart. Is there any way to change the behavior so that the displayed values are calculated in the same manor as the Pie Chart's values?<br />\n",
+    "PostedDate": "2014-09-25T23:22:56.763-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

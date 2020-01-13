@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1066057",
+    "ThreadId": "449429",
+    "Html": "Can you explain once how to make the SeriesTitle dynamic by binding it in clustered charts? \r<br />\nI tried doing it the way it was given in the demo app, but I got an error in the chart showing that series title cannot be blank.<br />\n",
+    "PostedDate": "2013-07-09T04:24:35.447-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

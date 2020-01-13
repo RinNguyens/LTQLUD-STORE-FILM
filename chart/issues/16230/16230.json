@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I've found a possibile issue with nullable value in case of bindings, so i changed _Datapoint.cs_ code in thsi way.\n\n```\n        public double Value\n        {\n            get\n            {\n                if (_ReferencedObject == null)\n                {\n                    return 0.0d;\n                }\n\n                var ret = GetItemValue(_ReferencedObject, ValueMember);\n\n                return ret == null ? 0 : double.Parse(ret.ToString());\n            }\n        }\n\n        private string GetItemValue(object item, string propertyName)\n        {\n            if (item != null)\n            {\n                foreach (PropertyInfo info in item.GetType().GetAllProperties())\n                {\n                    if (info.Name == propertyName)\n                    {\n                        object v = info.GetValue(item, null);\n                        return v == null ? null : v.ToString();\n                    }\n                }\n                throw new Exception(string.Format(\"Property '{0}' not found on item of type '{1}'\", propertyName, item.GetType().ToString()));\n            }\n            return null;\n        }\n```",
+    "LastUpdatedDate": "2017-12-18T15:14:39.62-08:00",
+    "PlannedForRelease": "Source Code and Test Applications BETA",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2013-05-31T08:32:10.213-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Nullable values",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 16230
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

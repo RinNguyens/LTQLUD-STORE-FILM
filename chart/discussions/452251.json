@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1076091",
+    "ThreadId": "452251",
+    "Html": "I love the look and feel of the charts, but my project requires a line chart.  Any plans for one?<br />\n",
+    "PostedDate": "2013-08-02T09:43:12.483-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1076490",
+    "ThreadId": "452251",
+    "Html": "Line chart is top of the todo list according to this post <a href=\"https://modernuicharts.codeplex.com/discussions/439900\" rel=\"nofollow\">https://modernuicharts.codeplex.com/discussions/439900</a><br />\n",
+    "PostedDate": "2013-08-04T09:29:59.35-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1232275",
+    "ThreadId": "452251",
+    "Html": "Is there any update on this??\r<br />\n<br />\n<br />\nI need line chart in one of my controls<br />\n",
+    "PostedDate": "2014-04-09T05:28:15.99-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

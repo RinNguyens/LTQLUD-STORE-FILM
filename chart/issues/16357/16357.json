@@ -1,0 +1,56 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "![Image](http://social.msdn.microsoft.com/Forums/getfile/319594)\n\nIn the above Image Note RED AND VIOLET MARKING AS 1 AND 2 RESPECTIVELY\n\n1[RED]) PROBLEM IS IF THE VALUE GOES BEYOND SIX DIGITS TOOLTIP COMES PERFECT BUT VALUE SHOWS AS ERROR NOTE RED MARKINGS\n\n2[VIOLET]) PROBLEM GAUGE SEE COLOUR GETS LOADED TILL 900 VALUE ABOVE THAT NO TOOLTIP AS WELL AS NO COLOUR AND SHOWS ONLY PERCENTAGE.\n\nTHE VALUE ITSELF IS SHOWN AS PERCENTAGE OR IN VALUE HOW TO REMOVE PERCENTAGE AND ADD COLOUR HOW SHOWN IN MAR AND FEB PLEASE HELP",
+    "LastUpdatedDate": "2013-08-14T00:06:32.99-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2013-08-13T05:15:23.483-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "METRO UI CHART VALUE ERROR",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16357
+  },
+  "FileAttachments": [
+    {
+      "FileId": 4789,
+      "FileName": "1.png",
+      "DownloadUrl": ".\\4789"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "https://docs.google.com/file/d/0B75nbNO58O7dUnNFZFZYOHcxMkk/edit?usp=sharing",
+      "PostedDate": "2013-08-14T00:02:56.36-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "download the above commented project and see for yourself about the gauge report error as well as all cahrts value beyond lakhs goes error please help me out to rectify this",
+      "PostedDate": "2013-08-14T00:06:32.99-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

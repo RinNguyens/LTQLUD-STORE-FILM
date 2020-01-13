@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1362163",
+    "ThreadId": "585915",
+    "Html": "So I'm feeling like the documentation is tremendously light and the samples are tremendously overwhelming.\r<br />\n<br />\nI saw another post where someone asked about MySql integration and the only reply was a flippant one about &quot;just look at the samples/source code.&quot;<br />\n\r<br />\nI've messed around with binding ItemSource and other properties to datatables in my dataset but to no avail.\r<br />\n<br />\nMay I please get a very elementary example of binding a datatable to a chart?\r<br />\n<br />\nthanks!<br />\n",
+    "PostedDate": "2015-03-10T07:13:11.673-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

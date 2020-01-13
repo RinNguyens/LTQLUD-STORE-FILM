@@ -1,0 +1,24 @@
+<div class="wikidoc">
+<h4>How to configure the appearance </h4>
+The charts provide several properties to adjust the appearance. The following properties can be changed:
+<ul>
+<li>ChartTitle: type of String, title of chart </li><li>ChartSubTitle: type of String, subtitle of chart </li><li>IsRowColumnSwitched: type of Boolean, to switch the axes </li><li>ChartTitleVisibility: type of Visibility, show or hide the title </li><li>ChartLegendVisibility: type of Visibility, show or hide the legend </li><li>ToolTipFormat: type of String, format of tooltip e.g. 'Caption: {0}, Value: '{1}', Series: '{2}', Percentage: {3:P2}'
+</li></ul>
+<pre class="csharpcode">&lt;chart:ClusteredBarChart  
+    ...
+    <b>ChartTitle=<span class="str">&quot;Bar Chart&quot;</span>
+    ChartSubTitle=<span class="str">&quot;Chart with fixed width and height&quot;</span>     
+    IsRowColumnSwitched=<span class="str">&quot;True&quot;</span>
+    ChartTitleVisibility=<span class="str">&quot;Collapsed&quot;</span>
+    ChartLegendVisibility=<span class="str">&quot;Collapsed&quot;</span>
+    ToolTipFormat=<span class="str">&quot;{}Caption: {0}, Value: '{1}', Series: '{2}', Percentage: {3:P2}&quot;</span></b>
+    ...
+    SelectedItem=<span class="str">&quot;{Binding Path=SelectedItem, Mode=TwoWay}&quot;</span> 
+    Width=<span class="str">&quot;600&quot;</span>
+    Height=<span class="str">&quot;400&quot;</span> &gt;
+    &lt;chart:ClusteredBarChart.Series&gt;
+    ...
+    &lt;/chart:ClusteredBarChart.Series&gt;
+&lt;/chart:ClusteredBarChart&gt;</pre>
+<p>Result with hidden title and legend and custom tooltip format</p>
+<img src="http://download-codeplex.sec.s-msft.com/Download?ProjectName=modernuicharts&DownloadId=675009"></div><div class="ClearBoth"></div>

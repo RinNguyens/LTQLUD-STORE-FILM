@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "there is an error when i click on the pieces of a PieChart it be as selected Piece but when i click again at another Piece it become second selected Piece in the same time.\nDo not worry am working to fix this Problem.\nsorry about my bad English.",
+    "LastUpdatedDate": "2013-06-14T00:32:33.337-07:00",
+    "PlannedForRelease": "Source Code and Test Applications BETA",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2013-05-01T00:15:02.89-07:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "PieChart When User Piece Click",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 16186
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

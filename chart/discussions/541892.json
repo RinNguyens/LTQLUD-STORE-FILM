@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1232879",
+    "ThreadId": "541892",
+    "Html": "Hi! Thanks for great controls!<br />\nI need to have a doughnut chart like in “Data Sense” app in WP8<br />\nFor this I’m looking how to remove white borders from chart<br />\nPlease tell me how to do this.<br />\nSetting BorderBrush to transparent doesn’t gives necessary effect, because data series has small gapes by sides.  \n<br />\n",
+    "PostedDate": "2014-04-10T09:48:43.25-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1253464",
+    "ThreadId": "541892",
+    "Html": "Use this piece of code inside     &lt;Application.Resources&gt;      \n<br />\n<pre><code>    &lt;Style TargetType=&quot;chart:PiePiece&quot;&gt;\n        &lt;Setter Property=&quot;BorderBrush&quot; Value=&quot;Transparent&quot; /&gt;\n    &lt;/Style&gt;\n\n</code></pre>\n\nYou can set more styles of the chart when you use intellisense and type TargetType=&quot;chart: ... And wait until the options appear!<br />\n",
+    "PostedDate": "2014-06-05T13:11:38.13-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

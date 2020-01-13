@@ -1,0 +1,51 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi All,\n\nI want to customize lines displayed in bar and column chart the grid lines\n\nOn every point there is a line showing to it I want to customize it.\n\nPlease see the image attached. I have marked Black. on that line I would like to customize\n\n![Image](http://i.stack.imgur.com/oT3z9.jpg)",
+    "LastUpdatedDate": "2014-05-26T21:43:00.073-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2014-05-22T23:48:40.52-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Modern UI chart Bar or column chart lines",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16848
+  },
+  "FileAttachments": [
+    {
+      "FileId": 4883,
+      "FileName": "oT3z9.jpg",
+      "DownloadUrl": ".\\4883"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Done Got the gridline in Generic.XAML File ",
+      "PostedDate": "2014-05-26T21:43:00.073-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1236658",
+    "ThreadId": "542958",
+    "Html": "Is it possible to hide display numbers on Pie/Doughnut charts and the lines connecting the numbers with chart?<br />\n",
+    "PostedDate": "2014-04-22T09:14:44.667-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1253437",
+    "ThreadId": "542958",
+    "Html": "Just set\r<br />\n<br />\nForeground = &quot;Transparent&quot;\r<br />\n<br />\nin the xaml\r<br />\n<br />\nThis will make the numbers invisible.<br />\n",
+    "PostedDate": "2014-06-05T12:17:10.483-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1253612",
+    "ThreadId": "542958",
+    "Html": "Yes I've figured that out already, but thank you anyway  <br />\n",
+    "PostedDate": "2014-06-06T01:11:51.95-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

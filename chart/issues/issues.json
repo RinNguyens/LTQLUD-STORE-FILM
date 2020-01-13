@@ -1,0 +1,190 @@
+[
+  {
+    "Id": 16128,
+    "Title": "PieChart indication error with only one value"
+  },
+  {
+    "Id": 16186,
+    "Title": "PieChart When User Piece Click"
+  },
+  {
+    "Id": 16193,
+    "Title": "Please support WP8"
+  },
+  {
+    "Id": 16195,
+    "Title": "Add line chart"
+  },
+  {
+    "Id": 16197,
+    "Title": "Can't get the how-to to work"
+  },
+  {
+    "Id": 16209,
+    "Title": "Application Crashed when I try to bind around 40 series to a chart"
+  },
+  {
+    "Id": 16214,
+    "Title": "Error ChartLegendItemStyle"
+  },
+  {
+    "Id": 16215,
+    "Title": "FatalExecutionEngineError was detected"
+  },
+  {
+    "Id": 16219,
+    "Title": "Series does not support nested or indexed properties"
+  },
+  {
+    "Id": 16230,
+    "Title": "Nullable values"
+  },
+  {
+    "Id": 16247,
+    "Title": "Binding ChartSeries propertis not works"
+  },
+  {
+    "Id": 16249,
+    "Title": "Negative values on series"
+  },
+  {
+    "Id": 16264,
+    "Title": "Du to Any NULL DisplayMember complete series is not to populating on Chart"
+  },
+  {
+    "Id": 16277,
+    "Title": "Add area chart"
+  },
+  {
+    "Id": 16291,
+    "Title": "Can install from Nuget"
+  },
+  {
+    "Id": 16357,
+    "Title": "METRO UI CHART VALUE ERROR"
+  },
+  {
+    "Id": 16385,
+    "Title": "Multiple Series in ClusteredColumnChart all show value of first series"
+  },
+  {
+    "Id": 16405,
+    "Title": "Aggregation of TimeSpan"
+  },
+  {
+    "Id": 16409,
+    "Title": "StackedColumnChart dos not support negative numbers"
+  },
+  {
+    "Id": 16475,
+    "Title": "Single item in the collection does not draw pie chart"
+  },
+  {
+    "Id": 16476,
+    "Title": "Add interactivity to Chart(Click event)"
+  },
+  {
+    "Id": 16691,
+    "Title": "How to prevent overlapping of labels in DoughnutChart"
+  },
+  {
+    "Id": 16705,
+    "Title": "negative or values larger than 100% are not rendered correctly"
+  },
+  {
+    "Id": 16706,
+    "Title": "XamlParseException: The property 'Caption' was not found in type 'ChartSeries'. [Line: 317 Position: 44]"
+  },
+  {
+    "Id": 16792,
+    "Title": "Modern UI Chart Controls Not Used in Another Solution"
+  },
+  {
+    "Id": 16798,
+    "Title": "Mordern UI chart Gauge Indicator control"
+  },
+  {
+    "Id": 16844,
+    "Title": "Binding Chart and DataGrid to same ObservableCollection"
+  },
+  {
+    "Id": 16848,
+    "Title": "Modern UI chart Bar or column chart lines"
+  },
+  {
+    "Id": 16886,
+    "Title": "Request for WPF DLL targeted to framework 4.0"
+  },
+  {
+    "Id": 16983,
+    "Title": "SelectedItem not showing correctly"
+  },
+  {
+    "Id": 17011,
+    "Title": "RadialGuageChart Value not calculated"
+  },
+  {
+    "Id": 17204,
+    "Title": "Problem with pie charts and extrem values"
+  },
+  {
+    "Id": 17206,
+    "Title": "Pie charts and corner cases"
+  },
+  {
+    "Id": 17247,
+    "Title": "Failed to assign to property 'Windows.UI.Xaml.Shapes.Path.Data'. [Line: 1105 Position: 51]"
+  },
+  {
+    "Id": 17248,
+    "Title": "The runtime has encountered a fatal error. The address of the error was at 0xb022d028, on thread 0x297c. The error code is 0xc0000005. This error may be a bug in the CLR or in the unsafe or non-verifiable portions of user code. Common sources of this bug"
+  },
+  {
+    "Id": 17255,
+    "Title": "Binding SeriesSource property shows nothing, even after getting more than zero records in the getter"
+  },
+  {
+    "Id": 17256,
+    "Title": "Binding Source property throwing error inside ModernChart library"
+  },
+  {
+    "Id": 17286,
+    "Title": "Failure with column charts that have only two grid lines"
+  },
+  {
+    "Id": 17492,
+    "Title": "The name \"PieChart\" does not exist in the namespace \"clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart\"."
+  },
+  {
+    "Id": 17495,
+    "Title": "Radial gauge not available"
+  },
+  {
+    "Id": 17612,
+    "Title": "\"WpfSimpleChart\" legend label is displayed"
+  },
+  {
+    "Id": 17613,
+    "Title": "PieChart with a single value of 100% doesn't display the chart"
+  },
+  {
+    "Id": 17650,
+    "Title": "Clustered Columns Multiple series show in wrong order"
+  },
+  {
+    "Id": 17726,
+    "Title": "SeriesTemplate assigned AFTER SeriesSource"
+  },
+  {
+    "Id": 17740,
+    "Title": "NuGet package is not the same as the binary found here"
+  },
+  {
+    "Id": 17771,
+    "Title": "Is it possible to export the charts to an Image?"
+  },
+  {
+    "Id": 17773,
+    "Title": "Want to show more than 100 value in ValueMember but chart is not giving expected result"
+  }
+]

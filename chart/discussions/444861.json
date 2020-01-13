@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1048144",
+    "ThreadId": "444861",
+    "Html": "How about duplicates items?\r<br />\nCurrently, when values duplicates in ValueMember of ChartSeries item, control display only last item. Can you add a some setter like a &quot;IsGrouping&quot; on control?\r<br />\nit would be nice :-)\r<br />\n<br />\nThanks.<br />\n",
+    "PostedDate": "2013-05-24T02:46:04.887-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "REPOSTING AS ISSUE (ACCIDENTALLY POSTED AS DISCUSSION):\nI am trying to bind a DataGrid and a PieChart to the same ObservableCollection, however when I view the chart all it shows is a \"0\", the legend shows correctly (see image)\n\n![Image](http://i.imgur.com/V2YJbCJ.png)\n\nThe DataGrid shows correctly, when I remove the ItemSource binding from the DataGrid the graph will show properly. Any idea what is causing this? Below is the relevant code:\n\n```\n<DataGrid ItemsSource=\"{Binding Path=Errors}\" AutoGenerateColumns=\"True\">\n```\n\n```\n<Chart:PieChart.Series>\n         <Chart:ChartSeries \n                   SeriesTitle=\"Populations\"\n                   DisplayMember=\"Category\"\n                   ValueMember=\"Number\"\n                   ItemsSource=\"{Binding Path=Errors}\"/>\n          </Chart:PieChart.Series>\n```\n\n```\npublic class MainViewModel\n    {\n        \n        public MainViewModel()\n        {\n            Errors = new ObservableCollection<TestClass>();\n\n            Errors.Add(new TestClass() { Category = \"Globalization\", Number = 75 });\n            Errors.Add(new TestClass() { Category = \"Features\", Number = 2 });\n            Errors.Add(new TestClass() { Category = \"ContentTypes\", Number = 12 });\n            Errors.Add(new TestClass() { Category = \"Correctness\", Number = 83 });\n        }\n\n        public ObservableCollection<TestClass> Errors\n        {\n            get;\n            set;\n        }\n    }\n\n    public class TestClass : INotifyPropertyChanged\n    {\n        private string _category = \"\";\n        public string Category\n        {\n            get\n            {\n                return _category;\n            }\n            set\n            {\n                _category = value;\n                if (PropertyChanged != null)\n                {\n                    this.PropertyChanged(this, new PropertyChangedEventArgs(\"Category\"));\n                }\n            }\n        }\n\n        private double _number = 0;\n        public double Number\n        {\n            get\n            {\n                return _number;\n            }\n            set\n            {\n                _number = value;\n                if (PropertyChanged != null)\n                {\n                    this.PropertyChanged(this, new PropertyChangedEventArgs(\"Number\"));\n                }\n            }\n\n        }\n\n        public event PropertyChangedEventHandler PropertyChanged;\n    }\n```\n\nMy goal is that I want to be able to edit data in the DataGrid and that these changes will alter the graph.",
+    "LastUpdatedDate": "2014-05-20T07:10:07.463-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "modernuicharts",
+    "ReportedDate": "2014-05-20T07:10:07.463-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Binding Chart and DataGrid to same ObservableCollection",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 16844
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

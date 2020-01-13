@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1254396",
+    "ThreadId": "548055",
+    "Html": "Hi\r<br />\n<br />\nFirst up, excellent project! I found it a few hours ago and can't stop playing with it. I have a quick question that i'm hoping someone could help me with.\r<br />\n<br />\nIn some cases I have a very simple chart requirement... 1 series, but lots of columns (up to 25 columns). I'd like to see the x value of each column underneath that specific column as the legend becomes difficult to follow. My x values are really short (in fact they are just numbers). If I add each value as a series with a single SeriesData (with 1 item), then I get really thin columns.\r<br />\n<br />\nExample Series:\r<br />\n<br />\nRounds:\r<br />\nX - Y\r<br />\n1 - 25\r<br />\n2 - 76\r<br />\n3 - 12\r<br />\n4 - 15\r<br />\n<br />\nSo here the X axis could have the Round Number (1,2,3,4 etc) and the Y axis would have the value (25, 76, 12, 15 etc). So there are 25 items in Round 1, 76 in Round 2 etc.\r<br />\n<br />\nI'm trying to get this:\r<br />\n<a href=\"http://imgur.com/tYj5ssX\" rel=\"nofollow\">http://imgur.com/tYj5ssX</a>\r<br />\n<br />\nI gather I would need to try change some data templates and add some more properties to some classes to carry the extra data. Can anyone point me in the right direction for a column or bar chart?<br />\n",
+    "PostedDate": "2014-06-09T06:38:13.067-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1254431",
+    "ThreadId": "548055",
+    "Html": "Ok, figured it out...\r<br />\n<br />\nI was previously not setting the category to the same value for each Item I added to a series data. Doing the following works 100% for me.\r<br />\n<br />\n for (int i = 1; i &lt; 11; i++)<br />\n<pre><code>        {\n            ObservableCollection&lt;TestClass&gt; seriesData = new ObservableCollection&lt;TestClass&gt;();\n            seriesData.Add(new TestClass() { Category = &quot;Round&quot;, Number = i*10 });\n            Series.Add(new SeriesData() { SeriesDisplayName = i.ToString(), Items = seriesData });\n        }</code></pre>\n\n",
+    "PostedDate": "2014-06-09T07:44:29.26-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1320498",
+    "ThreadId": "548055",
+    "Html": "Could you post your entire code?  I'm trying to get this done and I can't figure it out.<br />\n",
+    "PostedDate": "2014-11-10T02:09:46.76-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

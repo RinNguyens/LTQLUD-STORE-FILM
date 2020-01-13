@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1250781",
+    "ThreadId": "546893",
+    "Html": "I am finding that with large titles for series on a clustered column chart that there is no margin or padding between the series titles.  Once i got it to stagger titles so they did not push each other out.  I changed the chart and cannot figure out how to get the staggered pattern where one is lower or higher than the next title.  Anyone figure out how to do this?<br />\n",
+    "PostedDate": "2014-05-29T03:00:27.157-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1252452",
+    "ThreadId": "546893",
+    "Html": "The math you have in ColumnSeriesPanel does not always work.  For long Series titles with 3 or more Data Series to a cluster the titles mash together.  I did a simple fix that really only works in my case.  I forced the number of rows for the series titles to print on to 2, built it to my local machine and replaced the reference files in my project.  A good quick addition could be to add a control to allow the user to automatically stagger series titles to two rows. since I always want them staggered like that it works for me.\r<br />\n<br />\nI would add it in and submit it but I have to admit my skill with the MVVM and Control Templates is not as high as yours, my code is old school, but I am learning MVVM as I go.  I am afraid it would not fit in with your structure well most likely.<br />\n",
+    "PostedDate": "2014-06-03T08:53:16.467-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]
